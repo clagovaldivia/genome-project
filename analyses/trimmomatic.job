@@ -1,0 +1,25 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 1
+#SBATCH -t 03:00:00
+#SBATCH -J fastqc-claudia
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+# FastQC quality control script
+
+# Load modules
+module load bioinfo-tools
+module load trimmomatic
+
+# Sequence directories
+SEQDIR="/home/claudg/genome-project/analyses"
+OUTDIR="/home/claudg/genome-project/analyses"
+
+# Run Trimmomatic for untrimmed RNA after QC
+mkdir $OUTDIR/RNA_trimmed_trimmomatic
+
+java -jar /sw/apps/bioinfo/trimmomatic/0.36/milou/trimmomatic-0.36.jar PE -threads 5 -phred33
+
