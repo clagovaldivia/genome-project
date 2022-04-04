@@ -22,4 +22,3 @@ OUTDIR="/home/claudg/genome-project/analyses"
 mkdir $OUTDIR/RNA_trimmed_trimmomatic
 
 java -jar /sw/apps/bioinfo/trimmomatic/0.36/milou/trimmomatic-0.36.jar PE -threads 5 -phred33
-
