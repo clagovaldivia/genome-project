@@ -1,0 +1,30 @@
+megahit: Output directory /home/claudg/genome-project/analyses/DNA_assembled_megahit/1 already exists, please change the parameter -o to another value to avoid overwriting.
+2022-04-08 15:43:21 - MEGAHIT v1.2.9
+2022-04-08 15:43:21 - Using megahit_core with POPCNT support
+2022-04-08 15:43:21 - Convert reads to binary library
+2022-04-08 15:45:50 - INFO  sequence/io/sequence_lib.cpp  :   75 - Lib 0 (/home/claudg/genome-project/raw_data/DNA_trimmed/SRR4342133_1.paired.trimmed.fastq.gz,/home/claudg/genome-project/raw_data/DNA_trimmed/SRR4342133_2.paired.trimmed.fastq.gz): pe, 59954188 reads, 101 max length
+2022-04-08 15:45:53 - INFO  utils/utils.h                 :  152 - Real: 151.9761	user: 63.4920	sys: 7.4643	maxrss: 273164
+2022-04-08 15:45:53 - Start assembly. Number of CPU threads 16 
+2022-04-08 15:45:53 - k list: 65,75,85,95,105 
+2022-04-08 15:45:53 - Memory used: 121485610598
+2022-04-08 15:45:53 - Extracting solid (k+1)-mers and building sdbg for k = 65
+2022-04-08 16:22:06 - Assemble contigs from SdBG for k = 65
+2022-04-08 16:40:38 - Local assembly for k = 65
+2022-04-08 17:04:58 - Extract iterative edges from k = 65 to 75 
+2022-04-08 17:07:33 - Build graph for k = 75 
+2022-04-08 17:09:37 - Assemble contigs from SdBG for k = 75
+2022-04-08 17:18:26 - Local assembly for k = 75
+2022-04-08 17:35:53 - Extract iterative edges from k = 75 to 85 
+2022-04-08 17:37:43 - Build graph for k = 85 
+2022-04-08 17:39:28 - Assemble contigs from SdBG for k = 85
+2022-04-08 17:47:18 - Local assembly for k = 85
+2022-04-08 18:00:06 - Extract iterative edges from k = 85 to 95 
+2022-04-08 18:01:14 - Build graph for k = 95 
+2022-04-08 18:02:43 - Assemble contigs from SdBG for k = 95
+2022-04-08 18:09:46 - Local assembly for k = 95
+2022-04-08 18:19:42 - Extract iterative edges from k = 95 to 105 
+2022-04-08 18:19:47 - Build graph for k = 105 
+2022-04-08 18:20:54 - Assemble contigs from SdBG for k = 105
+2022-04-08 18:26:53 - Merging to output final contigs 
+2022-04-08 18:26:56 - 166148 contigs, total 150487812 bp, min 200 bp, max 266140 bp, avg 905 bp, N50 1156 bp
+2022-04-08 18:26:56 - ALL DONE. Time elapsed: 9815.064327 seconds 
