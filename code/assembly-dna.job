@@ -19,7 +19,7 @@ OUTDIR="/home/claudg/genome-project/analyses"
 # --kmin-1pass to reduce memory usage in UPPMAX
 #create output-dir
 
-#assembly 2
+#assembly 1
 megahit --k-min 65 --k-max 105 --k-step 10 --kmin-1pass -1 $SEQDIR/SRR4342129_1.paired.trimmed.fastq.gz -2 $SEQDIR/SRR4342129_2.paired.trimmed.fastq.gz -o $OUTDIR/DNA_assembled_megahit/1 
 
 #assembly 2
