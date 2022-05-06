@@ -2,7 +2,7 @@
 #SBATCH -A uppmax2022-2-5
 #SBATCH -M snowy
 #SBATCH -p core
-#SBATCH -n 2
+#SBATCH -n 4
 #SBATCH -t 13:00:00
 #SBATCH -J megahit
 #SBATCH --mail-type=ALL
@@ -13,14 +13,11 @@ module load bioinfo-tools megahit
 
 #DATA
 SEQDIR="/home/claudg/genome-project/raw_data/DNA_trimmed"
-OUTDIR="/home/claudg/genome-project/analyses"
-
-#Assembly trimmed DNA
-# --kmin-1pass to reduce memory usage in UPPMAX
-#create output-dir
+OUTDIR="/home/claudg/genome-project/analyses/DNA_assembled_megahit"
+cd $OUTDIR
 
 #assembly 1
-megahit --k-min 65 --k-max 105 --k-step 10 --kmin-1pass -1 $SEQDIR/SRR4342129_1.paired.trimmed.fastq.gz -2 $SEQDIR/SRR4342129_2.paired.trimmed.fastq.gz -o $OUTDIR/DNA_assembled_megahit/1 
+megahit --k-min 65 --k-max 105 -t 4 --k-step 10 --kmin-1pass -1 $SEQDIR/SRR4342129_1.paired.trimmed.fastq.gz -2 $SEQDIR/SRR4342129_2.paired.trimmed.fastq.gz -o 1
 
 #assembly 2
-megahit --k-min 65 --k-max 105 --k-step 10 --kmin-1pass -1 $SEQDIR/SRR4342133_1.paired.trimmed.fastq.gz -2 $SEQDIR/SRR4342133_2.paired.trimmed.fastq.gz -o $OUTDIR/DNA_assembled_megahit/2
+megahit --k-min 65 --k-max 105 -t 4 --k-step 10 --kmin-1pass -1 $SEQDIR/SRR4342133_1.paired.trimmed.fastq.gz -2 $SEQDIR/SRR4342133_2.paired.trimmed.fastq.gz -o 2
