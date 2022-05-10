@@ -1,0 +1,31 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5 -M snowy
+#SBATCH -p core
+#SBATCH -n 8
+#SBATCH -J annotation-egg
+#SBATCH -t 120:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+#Load modules
+module load bioinfo-tools eggNOG-mapper
+export INDIR="/domus/h1/claudg/genome-project/analyses/DNA_bins_metabat"
+
+cd $INDIR/1 
+for sample in *
+do
+echo $sample
+#emapper.py -i FASTA_FILE_PROTEINS --itype type of data --output_dir output directory
+#emapper.py --itype metagenome -i $f -o $f --output_dir /domus/h1/pcr98/GenomeAnalysis/GenomeAnalysis/output/functann/D1
+emapper.py --itype metagenome -i $sample -o $sample --output_dir /proj/genomeanalysis2022/nobackup/work/claudg/DNA_egg
+done
+
+
+cd $INDIR/2 
+for sample in *
+do
+echo $sample
+#emapper.py -i FASTA_FILE_PROTEINS --itype type of data --output_dir output directory
+#emapper.py --itype metagenome -i $f -o $f --output_dir /domus/h1/pcr98/GenomeAnalysis/GenomeAnalysis/output/functann/D3
+emapper.py --itype metagenome -i $sample -o $sample --output_dir /proj/genomeanalysis2022/nobackup/work/claudg/DNA_egg  #too large to save it in my directory
+done
