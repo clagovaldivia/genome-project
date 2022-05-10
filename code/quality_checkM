@@ -1,0 +1,34 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 4
+#SBATCH -t 48:00:00
+#SBATCH -J quality-checkM
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+#Load modules
+module load bioinfo-tools
+module load CheckM
+
+#Load path to input data dir and output dir
+export INDIR="/home/claudg/genome-project/analyses/DNA_bins_metabat"
+export OUTDIR="/home/claudg/genome-project/analyses/DNA_checkM"
+
+#Copy data in temporary dir
+mkdir $SNIC_TMP/CheckM_data
+cp -r /home/claudg/genome-project/analyses/CheckM_data/* $SNIC_TMP/CheckM_data
+cd /home/claudg/genome-project/analyses/CheckM_data
+checkm data setRoot $PWD
+
+# 4 threads (-t) and fa (-x) as a file extension
+#First assembly
+checkm lineage_wf -t 4 -x fa --reduced_tree $INDIR/1 $OUTDIR/1 
+#checkm tree_qa $OUTDIR/1 -o 2 $OUTDIR/1/
+#checkm bin_qa_plot $OUTDIR/1/ $OUTDIR/1/ $OUTDIR/1/
+
+#Second assembly
+checkm lineage_wf -t 4 -x fa --reduced_tree $INDIR/2 $OUTDIR/2 
+#checkm tree_qa -o 2 $OUTDIR/1 $OUTDIR/1/
+#checkm bin_qa_plot $OUTDIR/2/ $OUTDIR/2/ $OUTDIR/2
