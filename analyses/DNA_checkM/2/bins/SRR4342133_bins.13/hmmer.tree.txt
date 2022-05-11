@@ -1,0 +1,28 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+k105_84559_2         -             90 Ribosomal_S15        PF00312.17    83   1.2e-31  104.6   1.6   1   1   1.2e-34   1.3e-31  104.4   1.6     2    83     7    88     6    88 0.98 # 514 # 783 # -1 # ID=223_2;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.530
+k105_121932_3        -            131 Ribosomal_S9         PF00380.14   121   9.7e-47  154.5   0.5   1   1     1e-49   1.1e-46  154.3   0.5     1   121    10   130    10   130 1.00 # 1075 # 1467 # -1 # ID=202_3;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.585
+k105_121932_4        -            143 Ribosomal_L13        PF00572.13   128     2e-56  185.8   0.1   1   1   2.1e-59   2.2e-56  185.6   0.1     1   127    15   141    15   142 0.99 # 1478 # 1906 # -1 # ID=202_4;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.576
+k105_138675_1        -            248 Ribosomal_L18p       PF00861.17   119    0.0065   13.0   0.1   1   1   1.5e-05     0.016   11.7   0.1    77   118   149   193   125   194 0.88 # 53 # 796 # -1 # ID=50_1;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.634
+k105_84559_3         -            308 TruB_N               PF01509.13   149   1.6e-58  193.4   0.0   1   1     2e-61   2.2e-58  192.9   0.0     1   149    32   183    32   183 0.98 # 868 # 1791 # -1 # ID=223_3;partial=00;start_type=GTG;rbs_motif=None;rbs_spacer=None;gc_cont=0.585
+k105_84083_2         -            460 SRP_SPB              PF02978.14   104   5.3e-35  116.1   7.7   1   1   4.9e-38   5.3e-35  116.1   7.7     1   104   328   426   328   426 0.97 # 1075 # 2454 # 1 # ID=220_2;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.593
+k105_84559_5         -            168 IF-2                 PF11987.3    109   6.5e-22   73.8   0.4   1   1     2e-24   1.1e-21   73.1   0.4    53   108     2    57     1    58 0.98 # 2213 # 2716 # -1 # ID=223_5;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.563
+k105_67377_1         -            699 IF-2                 PF11987.3    109   1.4e-12   43.7   2.1   1   1   4.2e-15   2.3e-12   43.1   0.1     2    49   652   699   651   699 0.97 # 2 # 2098 # -1 # ID=132_1;partial=10;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.597
+k105_84083_2         -            460 TIGR00344            TIGR00344    847     0.014    9.5   0.7   1   1     2e-05     0.022    8.9   0.7   719   841   317   436   297   442 0.72 # 1075 # 2454 # 1 # ID=220_2;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.593
+k105_116560_3        -            782 TIGR00422            TIGR00422    863         0 1123.6   0.0   1   1         0         0 1123.5   0.0     1   743     1   781     1   782 0.98 # 1227 # 3572 # 1 # ID=179_3;partial=01;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.576
+k105_58084_1         -            517 TIGR00422            TIGR00422    863   1.6e-64  214.2   0.0   1   2   1.8e-38   3.9e-36  120.3   0.0     3   231     8   240     6   254 0.94 # 2 # 1552 # -1 # ID=88_1;partial=10;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.565
+k105_58084_1         -            517 TIGR00422            TIGR00422    863   1.6e-64  214.2   0.0   2   2   6.1e-30   1.3e-27   92.1   0.0   246   420   293   465   243   481 0.88 # 2 # 1552 # -1 # ID=88_1;partial=10;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.565
+k105_109164_1        -            259 TIGR00422            TIGR00422    863   1.9e-28   94.8   0.0   1   1   1.6e-30   3.4e-28   94.0   0.0   508   763     3   234     1   257 0.82 # 1 # 777 # 1 # ID=138_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.578
+k105_111277_1        -            178 TIGR00422            TIGR00422    863   2.3e-24   81.3   0.0   1   1   1.2e-26   2.7e-24   81.1   0.0   709   861     2   153     1   155 0.97 # 1 # 534 # 1 # ID=152_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.577
+k105_63699_1         -            381 TIGR00422            TIGR00422    863   3.9e-20   67.3   0.0   1   1   1.1e-21   2.3e-19   64.8   0.0   526   723   140   320   136   358 0.79 # 1 # 1143 # 1 # ID=108_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.591
+#
+# Program:         hmmsearch
+# Version:         3.3.1 (Jul 2020)
+# Pipeline mode:   SEARCH
+# Query file:      /scratch/6200473/a795da92-0e66-4f79-9fd8-53116ad5968c
+# Target file:     /home/claudg/genome-project/analyses/DNA_checkM/2/bins/SRR4342133_bins.13/genes.faa
+# Option settings: hmmsearch --domtblout /home/claudg/genome-project/analyses/DNA_checkM/2/bins/SRR4342133_bins.13/hmmer.tree.txt --noali --notextw -E 0.1 --domE 0.1 --cpu 1 /scratch/6200473/a795da92-0e66-4f79-9fd8-53116ad5968c /home/claudg/genome-project/analyses/DNA_checkM/2/bins/SRR4342133_bins.13/genes.faa 
+# Current dir:     /home/claudg/genome-project/analyses/CheckM_data
+# Date:            Tue May 10 19:24:15 2022
+# [ok]
