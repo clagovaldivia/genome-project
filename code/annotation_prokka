@@ -1,0 +1,33 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 13:00:00
+#SBATCH -J annotation-prokka
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+#Load modules
+module load bioinfo-tools
+module load prokka
+
+#Load path to input data dir and output dir
+export DATA="/domus/h1/claudg/genome-project/analyses"
+export INDIR=$DATA/DNA_bins_metabat
+export OUTDIR=$DATA/DNA_annotation_prokka
+
+
+cd $INDIR/1
+for bins in *
+do
+echo $bins
+prokka --addgenes --metagenome --cpus 2 $bins --force --outdir $OUTDIR/1
+done
+
+cd $INDIR/2
+for bins in *
+do
+echo bins
+prokka --addgenes --metagenome --cpus 2 $bins --force --outdir $OUTDIR/2
+done
