@@ -1,0 +1,25 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+k105_89888_1         -            103 Ribosom_S12_S23      PF00164.20   122   4.3e-48  158.0   0.3   1   1   4.7e-51   4.8e-48  157.8   0.3     2   102     3   103     2   103 0.99 # 3 # 311 # -1 # ID=20_1;partial=10;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.592
+k105_12154_2         -            330 Ribosomal_L29        PF00831.18    58    0.0046   12.8   0.5   1   1   4.5e-06    0.0046   12.8   0.5     6    27    42    63    39    67 0.91 # 202 # 1191 # -1 # ID=64_2;partial=00;start_type=ATG;rbs_motif=AGGA;rbs_spacer=5-10bp;gc_cont=0.549
+k105_120345_6        -             94 RNA_pol_Rpb6         PF01192.17    57     5e-20   67.2   0.1   1   1   7.4e-23   7.6e-20   66.6   0.1     1    55     7    60     7    62 0.97 # 3903 # 4184 # 1 # ID=203_6;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.564
+k105_89888_2         -            879 RNA_pol_Rpb1_4       PF05000.12   108   1.8e-21   72.1   0.1   1   1   5.2e-24   5.4e-21   70.6   0.1     1   107   121   211   121   212 0.81 # 599 # 3235 # -1 # ID=20_2;partial=01;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.571
+k105_46089_4         -             91 IF-2                 PF11987.3    109    0.0041   13.2   0.1   1   1     5e-06    0.0051   12.9   0.1    43    89    29    75    24    87 0.89 # 1346 # 1618 # -1 # ID=17_4;partial=00;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.524
+k105_165655_4        -            234 TIGR00344            TIGR00344    847     6e-32  106.6   0.0   1   1   7.4e-35   7.6e-32  106.3   0.0   480   690    23   229     6   232 0.88 # 2635 # 3336 # 1 # ID=200_4;partial=00;start_type=ATG;rbs_motif=AGGAG;rbs_spacer=5-10bp;gc_cont=0.597
+k105_50451_1         -            910 TIGR00422            TIGR00422    863         0 1175.7   0.0   1   1         0         0 1175.5   0.0     1   861     1   896     1   898 0.98 # 2 # 2731 # -1 # ID=44_1;partial=10;start_type=ATG;rbs_motif=None;rbs_spacer=None;gc_cont=0.579
+k105_13170_3         -           1050 TIGR00422            TIGR00422    863  7.4e-122  403.8   0.0   1   2   8.3e-35   2.8e-32  107.4   0.0     3   233     8   249     6   264 0.89 # 1916 # 5065 # 1 # ID=72_3;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.575
+k105_13170_3         -           1050 TIGR00422            TIGR00422    863  7.4e-122  403.8   0.0   2   2   2.8e-91   9.5e-89  294.3   0.0   255   791   309   871   303   904 0.87 # 1916 # 5065 # 1 # ID=72_3;partial=00;start_type=ATG;rbs_motif=GGA/GAG/AGG;rbs_spacer=5-10bp;gc_cont=0.575
+k105_162286_1        -            624 TIGR00422            TIGR00422    863   3.6e-49  163.4   0.0   1   3   0.00037      0.13    6.0   0.0   200   231    40    69    34    77 0.85 # 2 # 1873 # 1 # ID=185_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.580
+k105_162286_1        -            624 TIGR00422            TIGR00422    863   3.6e-49  163.4   0.0   2   3   5.6e-11   1.9e-08   28.6   0.0   245   298   116   169   110   221 0.78 # 2 # 1873 # 1 # ID=185_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.580
+k105_162286_1        -            624 TIGR00422            TIGR00422    863   3.6e-49  163.4   0.0   3   3     7e-40   2.4e-37  124.2   0.0   397   739   223   576   218   615 0.78 # 2 # 1873 # 1 # ID=185_1;partial=10;start_type=Edge;rbs_motif=None;rbs_spacer=None;gc_cont=0.580
+#
+# Program:         hmmsearch
+# Version:         3.3.1 (Jul 2020)
+# Pipeline mode:   SEARCH
+# Query file:      /scratch/6200473/d31ce9ed-53b4-42f3-8ec5-8a38917ac9e8
+# Target file:     /home/claudg/genome-project/analyses/DNA_checkM/2/bins/SRR4342133_bins.20/genes.faa
+# Option settings: hmmsearch --domtblout /home/claudg/genome-project/analyses/DNA_checkM/2/bins/SRR4342133_bins.20/hmmer.tree.txt --noali --notextw -E 0.1 --domE 0.1 --cpu 1 /scratch/6200473/d31ce9ed-53b4-42f3-8ec5-8a38917ac9e8 /home/claudg/genome-project/analyses/DNA_checkM/2/bins/SRR4342133_bins.20/genes.faa 
+# Current dir:     /home/claudg/genome-project/analyses/CheckM_data
+# Date:            Tue May 10 19:24:16 2022
+# [ok]

@@ -1,0 +1,45 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 4
+#SBATCH -t 200:00:00
+#SBATCH -J bwa_2
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+#Load modules
+module load bioinfo-tools
+module load bwa
+module load samtools
+module load MetaBat
+
+#Load path to input data dir and output dir
+export HOME="/home/claudg/genome-project/analyses"
+export INDIR=$HOME/DNA_bins_metabat
+export RNA=$HOME/RNA_trimmed
+mkdir -p $HOME/DNA_bwa
+export OUTDIR=$HOME/DNA_bwa
+
+#Index bins as reference
+#Index and align ref-1
+
+REF=$HOME/DNA_assembled_megahit
+cd $INDIR/1
+#bwa and samtools
+
+for ref in *.fa
+do
+	bwa index $ref
+	bwa mem -t 6 $ref $RNA/SRR4342137.forward_paired.trimmed.fastq.gz $RNA/SRR4342137.reverse_paired.trimmed.fastq.gz > $OUTDIR/mem1_out.sam
+	samtools sort -@ 2 -o $OUTDIR/aln-sorted_37.bam $OUTDIR/mem1_out.sam
+done
+
+cd $INDIR/2
+for refs in *.fa
+do
+	bwa index $refs
+	bwa mem -t 6 $refs $RNA/SRR4342139.forward_paired.trimmed.fastq.gz $RNA/SRR4342139.reverse_paired.trimmed.fastq.gz > $OUTDIR/mem2_out.sam 
+	samtools sort -@ 2 -o $OUTDIR/aln-sorted_39.bam $OUTDIR/mem2_out.sam
+
+done

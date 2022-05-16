@@ -1,0 +1,18 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+k105_134044_3        -            180 Ribosomal_L16        PF00252.13   133   8.6e-30   97.7   0.3   1   1   3.5e-32     1e-29   97.4   0.3     1   132     5   167     5   169 0.90 # 781 # 1320 # -1 # ID=8_3;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.644
+k105_108478_5        -             93 Ribosomal_L11        PF00298.14    69   1.4e-08   29.3   0.2   1   1   7.7e-11   2.3e-08   28.6   0.2    11    69    13    70     6    70 0.82 # 2796 # 3074 # -1 # ID=45_5;partial=00;start_type=ATG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.595
+k105_100913_1        -            152 Ribosomal_S15        PF00312.17    83   1.1e-17   58.0   0.3   1   1   9.4e-20   2.7e-17   56.8   0.2     5    75    69   143    65   151 0.91 # 62 # 517 # 1 # ID=29_1;partial=00;start_type=ATG;rbs_motif=GGxGG;rbs_spacer=5-10bp;gc_cont=0.643
+k105_108478_3        -            339 Ribosomal_L10        PF00466.15   100   3.2e-14   47.1   0.0   1   1   2.5e-16   7.2e-14   46.0   0.0     2    90     5    93     4   103 0.88 # 1077 # 2093 # -1 # ID=45_3;partial=00;start_type=GTG;rbs_motif=GGAGG;rbs_spacer=5-10bp;gc_cont=0.650
+k105_108478_4        -            215 Ribosomal_L1         PF00687.16   220   1.7e-37  123.3   0.0   1   1     7e-40   2.1e-37  123.0   0.0     5   220     6   207     3   207 0.91 # 2090 # 2734 # -1 # ID=45_4;partial=00;start_type=ATG;rbs_motif=GGAG/GAGG;rbs_spacer=5-10bp;gc_cont=0.625
+#
+# Program:         hmmsearch
+# Version:         3.3.1 (Jul 2020)
+# Pipeline mode:   SEARCH
+# Query file:      /scratch/6200473/d9aa8894-fd80-4b6d-b554-c35c56d8ae2a
+# Target file:     /home/claudg/genome-project/analyses/DNA_checkM/2/bins/SRR4342133_bins.16/genes.faa
+# Option settings: hmmsearch --domtblout /home/claudg/genome-project/analyses/DNA_checkM/2/bins/SRR4342133_bins.16/hmmer.tree.txt --noali --notextw -E 0.1 --domE 0.1 --cpu 1 /scratch/6200473/d9aa8894-fd80-4b6d-b554-c35c56d8ae2a /home/claudg/genome-project/analyses/DNA_checkM/2/bins/SRR4342133_bins.16/genes.faa 
+# Current dir:     /home/claudg/genome-project/analyses/CheckM_data
+# Date:            Tue May 10 19:24:15 2022
+# [ok]
