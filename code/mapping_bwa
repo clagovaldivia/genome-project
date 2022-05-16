@@ -16,30 +16,34 @@ module load MetaBat
 
 #Load path to input data dir and output dir
 export HOME="/home/claudg/genome-project/analyses"
-export INDIR=$HOME/DNA_bins_metabat
-export RNA=$HOME/RNA_trimmed
-mkdir -p $HOME/DNA_bwa
-export OUTDIR=$HOME/DNA_bwa
+INDIR=$HOME/DNA_bins_metabat
+export RNA="/proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed"
+mkdir -p $HOME/RNA_bwa
+OUTDIR=$HOME/RNA_bwa
 
 #Index bins as reference
 #Index and align ref-1
 
-REF=$HOME/DNA_assembled_megahit
 cd $INDIR/1
 #bwa and samtools
 
 for ref in *.fa
 do
+	outname=$(basename ${ref});
+	outpath=$OUTDIR/${outname}.bam ;
 	bwa index $ref
-	bwa mem -t 6 $ref $RNA/SRR4342137.forward_paired.trimmed.fastq.gz $RNA/SRR4342137.reverse_paired.trimmed.fastq.gz > $OUTDIR/mem1_out.sam
-	samtools sort -@ 2 -o $OUTDIR/aln-sorted_37.bam $OUTDIR/mem1_out.sam
+	bwa mem -t 6 $ref $RNA/SRR4342137.forward_paired.trimmed.fastq.gz $RNA/SRR4342137.reverse_paired.trimmed.fastq.gz | samtools sort -@ 2 -o ${outpath} ;
+
 done
+
+#Index and align ref 2
 
 cd $INDIR/2
 for refs in *.fa
 do
+	outname=$(basename ${ref});
+	outpath=$OUTDIR/${outname}.bam ;
 	bwa index $refs
-	bwa mem -t 6 $refs $RNA/SRR4342139.forward_paired.trimmed.fastq.gz $RNA/SRR4342139.reverse_paired.trimmed.fastq.gz > $OUTDIR/mem2_out.sam 
-	samtools sort -@ 2 -o $OUTDIR/aln-sorted_39.bam $OUTDIR/mem2_out.sam
+	bwa mem -t 6 $refs $RNA/SRR4342139.forward_paired.trimmed.fastq.gz $RNA/SRR4342139.reverse_paired.trimmed.fastq.gz | samtools sort -@ 2 -o ${outpath};
 
 done
