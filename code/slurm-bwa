@@ -1,12 +1,12 @@
 [bwa_index] Pack FASTA... 0.02 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 0.69 seconds elapse.
-[bwa_index] Update BWT... 0.01 sec
-[bwa_index] Pack forward-only FASTA... 0.02 sec
-[bwa_index] Construct SA from BWT and Occ... 0.31 sec
+[bwa_index] 0.72 seconds elapse.
+[bwa_index] Update BWT... 0.02 sec
+[bwa_index] Pack forward-only FASTA... 0.01 sec
+[bwa_index] Construct SA from BWT and Occ... 0.30 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342129_bins.10.fa
-[main] Real time: 1.154 sec; CPU: 1.057 sec
+[main] Real time: 1.185 sec; CPU: 1.087 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612338 sequences (60000143 bp)...
 [M::process] read 615934 sequences (60000052 bp)...
@@ -24,7 +24,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 793)
 [M::mem_pestat] skip orientation RR as there are not enough pairs
 [M::mem_pestat] skip orientation RF
-[M::mem_process_seqs] Processed 612338 reads in 38.092 CPU sec, 10.567 real sec
+[M::mem_process_seqs] Processed 612338 reads in 38.177 CPU sec, 10.789 real sec
 [M::process] read 387078 sequences (37528727 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (2, 16302, 21, 3)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -40,7 +40,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 1258)
 [M::mem_pestat] skip orientation RR as there are not enough pairs
 [M::mem_pestat] skip orientation RF
-[M::mem_process_seqs] Processed 615934 reads in 37.662 CPU sec, 9.684 real sec
+[M::mem_process_seqs] Processed 615934 reads in 37.418 CPU sec, 9.520 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (1, 10241, 11, 2)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -55,20 +55,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 790)
 [M::mem_pestat] skip orientation RR as there are not enough pairs
 [M::mem_pestat] skip orientation RF
-[M::mem_process_seqs] Processed 387078 reads in 22.502 CPU sec, 5.787 real sec
+[M::mem_process_seqs] Processed 387078 reads in 22.758 CPU sec, 5.828 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342129_bins.10.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.reverse_paired.trimmed.fastq.gz
-[main] Real time: 28.351 sec; CPU: 100.383 sec
+[main] Real time: 28.317 sec; CPU: 100.413 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.00 sec
 [bwa_index] Construct BWT for the packed sequence...
 [bwa_index] 0.19 seconds elapse.
-[bwa_index] Update BWT... 0.00 sec
-[bwa_index] Pack forward-only FASTA... 0.00 sec
+[bwa_index] Update BWT... 0.01 sec
+[bwa_index] Pack forward-only FASTA... 0.01 sec
 [bwa_index] Construct SA from BWT and Occ... 0.10 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342129_bins.11.fa
-[main] Real time: 0.348 sec; CPU: 0.301 sec
+[main] Real time: 0.365 sec; CPU: 0.319 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612338 sequences (60000143 bp)...
 [M::process] read 615934 sequences (60000052 bp)...
@@ -81,7 +81,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 395)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612338 reads in 34.234 CPU sec, 9.136 real sec
+[M::mem_process_seqs] Processed 612338 reads in 34.769 CPU sec, 9.431 real sec
 [M::process] read 387078 sequences (37528727 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1113, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -92,7 +92,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 427)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 615934 reads in 32.898 CPU sec, 8.452 real sec
+[M::mem_process_seqs] Processed 615934 reads in 33.255 CPU sec, 8.460 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 704, 0, 1)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -102,10 +102,10 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 405)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 387078 reads in 19.870 CPU sec, 5.106 real sec
+[M::mem_process_seqs] Processed 387078 reads in 20.180 CPU sec, 5.183 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342129_bins.11.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.reverse_paired.trimmed.fastq.gz
-[main] Real time: 24.713 sec; CPU: 89.010 sec
+[main] Real time: 25.060 sec; CPU: 90.185 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.00 sec
 [bwa_index] Construct BWT for the packed sequence...
@@ -115,7 +115,7 @@
 [bwa_index] Construct SA from BWT and Occ... 0.02 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342129_bins.12.fa
-[main] Real time: 0.106 sec; CPU: 0.082 sec
+[main] Real time: 0.108 sec; CPU: 0.084 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612338 sequences (60000143 bp)...
 [M::process] read 615934 sequences (60000052 bp)...
@@ -128,7 +128,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 356)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612338 reads in 31.267 CPU sec, 8.272 real sec
+[M::mem_process_seqs] Processed 612338 reads in 31.338 CPU sec, 8.562 real sec
 [M::process] read 387078 sequences (37528727 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 206, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -139,7 +139,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 369)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 615934 reads in 29.625 CPU sec, 7.565 real sec
+[M::mem_process_seqs] Processed 615934 reads in 29.986 CPU sec, 7.635 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 111, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -149,20 +149,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 385)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 387078 reads in 17.970 CPU sec, 4.626 real sec
+[M::mem_process_seqs] Processed 387078 reads in 18.095 CPU sec, 4.661 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342129_bins.12.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.reverse_paired.trimmed.fastq.gz
-[main] Real time: 22.403 sec; CPU: 80.797 sec
+[main] Real time: 22.852 sec; CPU: 81.408 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.00 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 0.18 seconds elapse.
-[bwa_index] Update BWT... 0.02 sec
-[bwa_index] Pack forward-only FASTA... 0.00 sec
+[bwa_index] 0.20 seconds elapse.
+[bwa_index] Update BWT... 0.00 sec
+[bwa_index] Pack forward-only FASTA... 0.02 sec
 [bwa_index] Construct SA from BWT and Occ... 0.10 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342129_bins.1.fa
-[main] Real time: 0.370 sec; CPU: 0.310 sec
+[main] Real time: 0.382 sec; CPU: 0.327 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612338 sequences (60000143 bp)...
 [M::process] read 615934 sequences (60000052 bp)...
@@ -175,7 +175,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 321)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612338 reads in 33.086 CPU sec, 8.815 real sec
+[M::mem_process_seqs] Processed 612338 reads in 33.844 CPU sec, 9.354 real sec
 [M::process] read 387078 sequences (37528727 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1709, 1, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -186,7 +186,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 329)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 615934 reads in 32.534 CPU sec, 8.306 real sec
+[M::mem_process_seqs] Processed 615934 reads in 32.287 CPU sec, 8.216 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1011, 1, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -196,20 +196,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 397)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 387078 reads in 19.341 CPU sec, 4.959 real sec
+[M::mem_process_seqs] Processed 387078 reads in 19.512 CPU sec, 5.001 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342129_bins.1.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.reverse_paired.trimmed.fastq.gz
-[main] Real time: 24.090 sec; CPU: 86.943 sec
+[main] Real time: 24.564 sec; CPU: 87.632 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.00 sec
 [bwa_index] Construct BWT for the packed sequence...
 [bwa_index] 0.09 seconds elapse.
 [bwa_index] Update BWT... 0.00 sec
-[bwa_index] Pack forward-only FASTA... 0.00 sec
+[bwa_index] Pack forward-only FASTA... 0.01 sec
 [bwa_index] Construct SA from BWT and Occ... 0.05 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342129_bins.2.fa
-[main] Real time: 0.187 sec; CPU: 0.156 sec
+[main] Real time: 0.185 sec; CPU: 0.155 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612338 sequences (60000143 bp)...
 [M::process] read 615934 sequences (60000052 bp)...
@@ -222,7 +222,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 438)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612338 reads in 32.123 CPU sec, 8.508 real sec
+[M::mem_process_seqs] Processed 612338 reads in 32.816 CPU sec, 9.071 real sec
 [M::process] read 387078 sequences (37528727 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 432, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -233,7 +233,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 438)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 615934 reads in 31.613 CPU sec, 8.073 real sec
+[M::mem_process_seqs] Processed 615934 reads in 31.289 CPU sec, 7.973 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 249, 1, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -243,20 +243,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 423)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 387078 reads in 18.953 CPU sec, 4.926 real sec
+[M::mem_process_seqs] Processed 387078 reads in 18.392 CPU sec, 4.734 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342129_bins.2.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.reverse_paired.trimmed.fastq.gz
-[main] Real time: 23.454 sec; CPU: 84.630 sec
+[main] Real time: 23.765 sec; CPU: 84.478 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.01 sec
 [bwa_index] Construct BWT for the packed sequence...
 [bwa_index] 0.33 seconds elapse.
 [bwa_index] Update BWT... 0.01 sec
-[bwa_index] Pack forward-only FASTA... 0.00 sec
-[bwa_index] Construct SA from BWT and Occ... 0.17 sec
+[bwa_index] Pack forward-only FASTA... 0.01 sec
+[bwa_index] Construct SA from BWT and Occ... 0.16 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342129_bins.3.fa
-[main] Real time: 0.584 sec; CPU: 0.525 sec
+[main] Real time: 0.602 sec; CPU: 0.529 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612338 sequences (60000143 bp)...
 [M::process] read 615934 sequences (60000052 bp)...
@@ -269,7 +269,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 371)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612338 reads in 34.970 CPU sec, 9.239 real sec
+[M::mem_process_seqs] Processed 612338 reads in 34.396 CPU sec, 9.225 real sec
 [M::process] read 387078 sequences (37528727 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 814, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -280,7 +280,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 407)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 615934 reads in 34.068 CPU sec, 8.679 real sec
+[M::mem_process_seqs] Processed 615934 reads in 32.787 CPU sec, 8.341 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 487, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -290,20 +290,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 446)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 387078 reads in 20.504 CPU sec, 5.272 real sec
+[M::mem_process_seqs] Processed 387078 reads in 19.792 CPU sec, 5.071 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342129_bins.3.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.reverse_paired.trimmed.fastq.gz
-[main] Real time: 25.169 sec; CPU: 91.514 sec
+[main] Real time: 24.560 sec; CPU: 88.894 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.00 sec
 [bwa_index] Construct BWT for the packed sequence...
 [bwa_index] 0.15 seconds elapse.
-[bwa_index] Update BWT... 0.01 sec
-[bwa_index] Pack forward-only FASTA... 0.01 sec
+[bwa_index] Update BWT... 0.00 sec
+[bwa_index] Pack forward-only FASTA... 0.00 sec
 [bwa_index] Construct SA from BWT and Occ... 0.08 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342129_bins.4.fa
-[main] Real time: 0.292 sec; CPU: 0.257 sec
+[main] Real time: 0.277 sec; CPU: 0.240 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612338 sequences (60000143 bp)...
 [M::process] read 615934 sequences (60000052 bp)...
@@ -316,7 +316,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 433)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612338 reads in 34.165 CPU sec, 8.967 real sec
+[M::mem_process_seqs] Processed 612338 reads in 34.227 CPU sec, 9.208 real sec
 [M::process] read 387078 sequences (37528727 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 142, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -327,7 +327,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 427)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 615934 reads in 32.853 CPU sec, 8.371 real sec
+[M::mem_process_seqs] Processed 615934 reads in 32.689 CPU sec, 8.310 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 72, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -337,20 +337,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 438)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 387078 reads in 20.240 CPU sec, 5.209 real sec
+[M::mem_process_seqs] Processed 387078 reads in 19.740 CPU sec, 5.061 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342129_bins.4.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.reverse_paired.trimmed.fastq.gz
-[main] Real time: 24.552 sec; CPU: 89.253 sec
+[main] Real time: 24.560 sec; CPU: 88.630 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.01 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 0.57 seconds elapse.
+[bwa_index] 0.56 seconds elapse.
 [bwa_index] Update BWT... 0.01 sec
 [bwa_index] Pack forward-only FASTA... 0.02 sec
-[bwa_index] Construct SA from BWT and Occ... 0.25 sec
+[bwa_index] Construct SA from BWT and Occ... 0.24 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342129_bins.5.fa
-[main] Real time: 1.102 sec; CPU: 0.873 sec
+[main] Real time: 0.936 sec; CPU: 0.844 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612338 sequences (60000143 bp)...
 [M::process] read 615934 sequences (60000052 bp)...
@@ -363,7 +363,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 392)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612338 reads in 37.931 CPU sec, 10.032 real sec
+[M::mem_process_seqs] Processed 612338 reads in 36.993 CPU sec, 9.759 real sec
 [M::process] read 387078 sequences (37528727 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1104, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -374,7 +374,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 410)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 615934 reads in 36.114 CPU sec, 9.191 real sec
+[M::mem_process_seqs] Processed 615934 reads in 35.388 CPU sec, 8.987 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 713, 1, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -384,20 +384,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 424)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 387078 reads in 21.472 CPU sec, 5.508 real sec
+[M::mem_process_seqs] Processed 387078 reads in 21.493 CPU sec, 5.502 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342129_bins.5.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.reverse_paired.trimmed.fastq.gz
-[main] Real time: 26.814 sec; CPU: 97.592 sec
+[main] Real time: 26.243 sec; CPU: 95.863 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.05 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 1.78 seconds elapse.
+[bwa_index] 2.27 seconds elapse.
 [bwa_index] Update BWT... 0.04 sec
-[bwa_index] Pack forward-only FASTA... 0.02 sec
-[bwa_index] Construct SA from BWT and Occ... 0.69 sec
+[bwa_index] Pack forward-only FASTA... 0.04 sec
+[bwa_index] Construct SA from BWT and Occ... 0.72 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342129_bins.6.fa
-[main] Real time: 2.766 sec; CPU: 2.591 sec
+[main] Real time: 3.330 sec; CPU: 3.136 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612338 sequences (60000143 bp)...
 [M::process] read 615934 sequences (60000052 bp)...
@@ -410,7 +410,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 286)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612338 reads in 39.113 CPU sec, 11.823 real sec
+[M::mem_process_seqs] Processed 612338 reads in 39.755 CPU sec, 11.928 real sec
 [M::process] read 387078 sequences (37528727 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (1, 24624, 11, 5)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -426,7 +426,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 294)
 [M::mem_pestat] skip orientation RR as there are not enough pairs
 [M::mem_pestat] skip orientation RF
-[M::mem_process_seqs] Processed 615934 reads in 38.737 CPU sec, 9.902 real sec
+[M::mem_process_seqs] Processed 615934 reads in 38.527 CPU sec, 9.792 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 15494, 5, 2)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -436,20 +436,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 330)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 387078 reads in 24.169 CPU sec, 6.210 real sec
+[M::mem_process_seqs] Processed 387078 reads in 23.368 CPU sec, 5.996 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342129_bins.6.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.reverse_paired.trimmed.fastq.gz
-[main] Real time: 29.981 sec; CPU: 104.055 sec
+[main] Real time: 29.868 sec; CPU: 103.713 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.01 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 0.32 seconds elapse.
+[bwa_index] 0.33 seconds elapse.
 [bwa_index] Update BWT... 0.00 sec
 [bwa_index] Pack forward-only FASTA... 0.01 sec
 [bwa_index] Construct SA from BWT and Occ... 0.16 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342129_bins.7.fa
-[main] Real time: 0.575 sec; CPU: 0.516 sec
+[main] Real time: 0.586 sec; CPU: 0.523 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612338 sequences (60000143 bp)...
 [M::process] read 615934 sequences (60000052 bp)...
@@ -462,7 +462,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 463)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612338 reads in 35.471 CPU sec, 9.277 real sec
+[M::mem_process_seqs] Processed 612338 reads in 36.162 CPU sec, 9.803 real sec
 [M::process] read 387078 sequences (37528727 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 519, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -473,7 +473,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 471)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 615934 reads in 34.529 CPU sec, 8.829 real sec
+[M::mem_process_seqs] Processed 615934 reads in 34.625 CPU sec, 8.795 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (1, 333, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -483,20 +483,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 407)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 387078 reads in 20.789 CPU sec, 5.350 real sec
+[M::mem_process_seqs] Processed 387078 reads in 21.048 CPU sec, 5.400 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342129_bins.7.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.reverse_paired.trimmed.fastq.gz
-[main] Real time: 25.560 sec; CPU: 92.879 sec
+[main] Real time: 26.003 sec; CPU: 93.834 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
-[bwa_index] Pack FASTA... 0.02 sec
+[bwa_index] Pack FASTA... 0.01 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 0.65 seconds elapse.
-[bwa_index] Update BWT... 0.03 sec
+[bwa_index] 0.73 seconds elapse.
+[bwa_index] Update BWT... 0.02 sec
 [bwa_index] Pack forward-only FASTA... 0.01 sec
-[bwa_index] Construct SA from BWT and Occ... 0.28 sec
+[bwa_index] Construct SA from BWT and Occ... 0.30 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342129_bins.8.fa
-[main] Real time: 1.098 sec; CPU: 1.008 sec
+[main] Real time: 1.183 sec; CPU: 1.079 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612338 sequences (60000143 bp)...
 [M::process] read 615934 sequences (60000052 bp)...
@@ -509,7 +509,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 426)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612338 reads in 35.115 CPU sec, 9.203 real sec
+[M::mem_process_seqs] Processed 612338 reads in 35.566 CPU sec, 9.968 real sec
 [M::process] read 387078 sequences (37528727 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 247, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -520,7 +520,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 431)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 615934 reads in 34.031 CPU sec, 8.697 real sec
+[M::mem_process_seqs] Processed 615934 reads in 33.778 CPU sec, 8.582 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 147, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -530,20 +530,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 493)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 387078 reads in 20.552 CPU sec, 5.282 real sec
+[M::mem_process_seqs] Processed 387078 reads in 20.550 CPU sec, 5.275 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342129_bins.8.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.reverse_paired.trimmed.fastq.gz
-[main] Real time: 25.340 sec; CPU: 91.741 sec
+[main] Real time: 25.822 sec; CPU: 91.885 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
-[bwa_index] Pack FASTA... 0.01 sec
+[bwa_index] Pack FASTA... 0.00 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 0.23 seconds elapse.
-[bwa_index] Update BWT... 0.02 sec
-[bwa_index] Pack forward-only FASTA... 0.00 sec
+[bwa_index] 0.25 seconds elapse.
+[bwa_index] Update BWT... 0.01 sec
+[bwa_index] Pack forward-only FASTA... 0.01 sec
 [bwa_index] Construct SA from BWT and Occ... 0.13 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342129_bins.9.fa
-[main] Real time: 0.448 sec; CPU: 0.398 sec
+[main] Real time: 0.461 sec; CPU: 0.410 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612338 sequences (60000143 bp)...
 [M::process] read 615934 sequences (60000052 bp)...
@@ -556,7 +556,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 251)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612338 reads in 32.289 CPU sec, 8.511 real sec
+[M::mem_process_seqs] Processed 612338 reads in 33.036 CPU sec, 8.820 real sec
 [M::process] read 387078 sequences (37528727 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1551, 1, 1)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -567,7 +567,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 273)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 615934 reads in 31.803 CPU sec, 8.139 real sec
+[M::mem_process_seqs] Processed 615934 reads in 31.856 CPU sec, 8.123 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 876, 0, 1)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -577,20 +577,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 337)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 387078 reads in 18.816 CPU sec, 4.859 real sec
+[M::mem_process_seqs] Processed 387078 reads in 18.888 CPU sec, 4.850 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342129_bins.9.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342137.reverse_paired.trimmed.fastq.gz
-[main] Real time: 23.499 sec; CPU: 84.890 sec
+[main] Real time: 23.790 sec; CPU: 85.770 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
-[bwa_index] Pack FASTA... 0.02 sec
+[bwa_index] Pack FASTA... 0.01 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 0.74 seconds elapse.
+[bwa_index] 0.67 seconds elapse.
 [bwa_index] Update BWT... 0.01 sec
 [bwa_index] Pack forward-only FASTA... 0.01 sec
 [bwa_index] Construct SA from BWT and Occ... 0.28 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342133_bins.10.fa
-[main] Real time: 1.172 sec; CPU: 1.076 sec
+[main] Real time: 1.087 sec; CPU: 0.998 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612302 sequences (60000077 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 545, 0, 0)
@@ -602,7 +602,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 449)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612302 reads in 37.831 CPU sec, 10.087 real sec
+[M::mem_process_seqs] Processed 612302 reads in 37.205 CPU sec, 9.686 real sec
 [M::process] read 617128 sequences (60000134 bp)...
 [M::process] read 128226 sequences (12439773 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 459, 0, 0)
@@ -614,7 +614,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 481)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 617128 reads in 32.496 CPU sec, 8.177 real sec
+[M::mem_process_seqs] Processed 617128 reads in 32.307 CPU sec, 8.117 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 94, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -624,20 +624,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 472)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 128226 reads in 8.643 CPU sec, 2.283 real sec
+[M::mem_process_seqs] Processed 128226 reads in 8.024 CPU sec, 2.119 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342133_bins.10.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.reverse_paired.trimmed.fastq.gz
-[main] Real time: 48.980 sec; CPU: 107.453 sec
+[main] Real time: 56.877 sec; CPU: 114.532 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.02 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 0.95 seconds elapse.
-[bwa_index] Update BWT... 0.02 sec
+[bwa_index] 1.04 seconds elapse.
+[bwa_index] Update BWT... 0.01 sec
 [bwa_index] Pack forward-only FASTA... 0.02 sec
-[bwa_index] Construct SA from BWT and Occ... 0.38 sec
+[bwa_index] Construct SA from BWT and Occ... 0.40 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342133_bins.11.fa
-[main] Real time: 1.525 sec; CPU: 1.404 sec
+[main] Real time: 1.624 sec; CPU: 1.499 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612302 sequences (60000077 bp)...
 [M::process] read 617128 sequences (60000134 bp)...
@@ -650,7 +650,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 404)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612302 reads in 35.104 CPU sec, 9.442 real sec
+[M::mem_process_seqs] Processed 612302 reads in 35.330 CPU sec, 9.280 real sec
 [M::process] read 128226 sequences (12439773 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 312, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -661,7 +661,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 430)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 617128 reads in 32.976 CPU sec, 8.392 real sec
+[M::mem_process_seqs] Processed 617128 reads in 33.276 CPU sec, 8.460 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 59, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -671,20 +671,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 506)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 128226 reads in 8.571 CPU sec, 2.259 real sec
+[M::mem_process_seqs] Processed 128226 reads in 7.816 CPU sec, 2.081 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342133_bins.11.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.reverse_paired.trimmed.fastq.gz
-[main] Real time: 21.954 sec; CPU: 78.503 sec
+[main] Real time: 21.688 sec; CPU: 78.283 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.01 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 0.57 seconds elapse.
-[bwa_index] Update BWT... 0.01 sec
-[bwa_index] Pack forward-only FASTA... 0.01 sec
-[bwa_index] Construct SA from BWT and Occ... 0.24 sec
+[bwa_index] 0.52 seconds elapse.
+[bwa_index] Update BWT... 0.00 sec
+[bwa_index] Pack forward-only FASTA... 0.02 sec
+[bwa_index] Construct SA from BWT and Occ... 0.23 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342133_bins.12.fa
-[main] Real time: 0.924 sec; CPU: 0.848 sec
+[main] Real time: 0.878 sec; CPU: 0.791 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612302 sequences (60000077 bp)...
 [M::process] read 617128 sequences (60000134 bp)...
@@ -697,7 +697,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 355)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612302 reads in 34.726 CPU sec, 9.177 real sec
+[M::mem_process_seqs] Processed 612302 reads in 34.686 CPU sec, 9.339 real sec
 [M::process] read 128226 sequences (12439773 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 825, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -708,7 +708,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 378)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 617128 reads in 32.579 CPU sec, 8.321 real sec
+[M::mem_process_seqs] Processed 617128 reads in 32.552 CPU sec, 8.276 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 179, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -718,20 +718,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 375)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 128226 reads in 9.035 CPU sec, 2.381 real sec
+[M::mem_process_seqs] Processed 128226 reads in 7.632 CPU sec, 2.026 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342133_bins.12.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.reverse_paired.trimmed.fastq.gz
-[main] Real time: 21.740 sec; CPU: 78.194 sec
+[main] Real time: 21.502 sec; CPU: 76.726 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.00 sec
 [bwa_index] Construct BWT for the packed sequence...
 [bwa_index] 0.21 seconds elapse.
-[bwa_index] Update BWT... 0.00 sec
-[bwa_index] Pack forward-only FASTA... 0.01 sec
-[bwa_index] Construct SA from BWT and Occ... 0.10 sec
+[bwa_index] Update BWT... 0.01 sec
+[bwa_index] Pack forward-only FASTA... 0.00 sec
+[bwa_index] Construct SA from BWT and Occ... 0.11 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342133_bins.13.fa
-[main] Real time: 0.376 sec; CPU: 0.334 sec
+[main] Real time: 0.383 sec; CPU: 0.338 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612302 sequences (60000077 bp)...
 [M::process] read 617128 sequences (60000134 bp)...
@@ -744,7 +744,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 477)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612302 reads in 33.913 CPU sec, 9.061 real sec
+[M::mem_process_seqs] Processed 612302 reads in 33.867 CPU sec, 9.099 real sec
 [M::process] read 128226 sequences (12439773 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 113, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -755,7 +755,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 489)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 617128 reads in 31.832 CPU sec, 8.113 real sec
+[M::mem_process_seqs] Processed 617128 reads in 31.850 CPU sec, 8.101 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 21, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -765,20 +765,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 455)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 128226 reads in 8.056 CPU sec, 2.122 real sec
+[M::mem_process_seqs] Processed 128226 reads in 7.468 CPU sec, 1.984 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342133_bins.13.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.reverse_paired.trimmed.fastq.gz
-[main] Real time: 21.147 sec; CPU: 75.645 sec
+[main] Real time: 21.035 sec; CPU: 75.029 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.01 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 0.26 seconds elapse.
+[bwa_index] 0.27 seconds elapse.
 [bwa_index] Update BWT... 0.01 sec
-[bwa_index] Pack forward-only FASTA... 0.01 sec
+[bwa_index] Pack forward-only FASTA... 0.00 sec
 [bwa_index] Construct SA from BWT and Occ... 0.14 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342133_bins.14.fa
-[main] Real time: 0.518 sec; CPU: 0.435 sec
+[main] Real time: 0.498 sec; CPU: 0.438 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612302 sequences (60000077 bp)...
 [M::process] read 617128 sequences (60000134 bp)...
@@ -791,7 +791,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (53, 214)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612302 reads in 34.522 CPU sec, 9.758 real sec
+[M::mem_process_seqs] Processed 612302 reads in 34.615 CPU sec, 9.026 real sec
 [M::process] read 128226 sequences (12439773 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 4082, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -802,7 +802,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (53, 214)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 617128 reads in 32.758 CPU sec, 8.407 real sec
+[M::mem_process_seqs] Processed 617128 reads in 32.584 CPU sec, 8.290 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 834, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -812,20 +812,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (53, 214)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 128226 reads in 9.663 CPU sec, 2.533 real sec
+[M::mem_process_seqs] Processed 128226 reads in 7.685 CPU sec, 2.054 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342133_bins.14.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.reverse_paired.trimmed.fastq.gz
-[main] Real time: 22.599 sec; CPU: 78.832 sec
+[main] Real time: 21.224 sec; CPU: 76.732 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.01 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 0.40 seconds elapse.
+[bwa_index] 0.42 seconds elapse.
 [bwa_index] Update BWT... 0.01 sec
 [bwa_index] Pack forward-only FASTA... 0.01 sec
-[bwa_index] Construct SA from BWT and Occ... 0.19 sec
+[bwa_index] Construct SA from BWT and Occ... 0.21 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342133_bins.15.fa
-[main] Real time: 0.725 sec; CPU: 0.636 sec
+[main] Real time: 0.742 sec; CPU: 0.662 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612302 sequences (60000077 bp)...
 [M::process] read 617128 sequences (60000134 bp)...
@@ -838,7 +838,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 402)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612302 reads in 36.035 CPU sec, 9.637 real sec
+[M::mem_process_seqs] Processed 612302 reads in 36.070 CPU sec, 9.816 real sec
 [M::process] read 128226 sequences (12439773 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1336, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -849,7 +849,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 426)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 617128 reads in 33.490 CPU sec, 8.519 real sec
+[M::mem_process_seqs] Processed 617128 reads in 33.977 CPU sec, 8.635 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 267, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -859,10 +859,10 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 450)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 128226 reads in 9.414 CPU sec, 2.476 real sec
+[M::mem_process_seqs] Processed 128226 reads in 7.969 CPU sec, 2.116 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342133_bins.15.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.reverse_paired.trimmed.fastq.gz
-[main] Real time: 22.453 sec; CPU: 80.758 sec
+[main] Real time: 22.422 sec; CPU: 79.865 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.00 sec
 [bwa_index] Construct BWT for the packed sequence...
@@ -872,7 +872,7 @@
 [bwa_index] Construct SA from BWT and Occ... 0.03 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342133_bins.16.fa
-[main] Real time: 0.118 sec; CPU: 0.094 sec
+[main] Real time: 0.120 sec; CPU: 0.094 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612302 sequences (60000077 bp)...
 [M::process] read 617128 sequences (60000134 bp)...
@@ -885,7 +885,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 560)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612302 reads in 31.024 CPU sec, 8.347 real sec
+[M::mem_process_seqs] Processed 612302 reads in 30.261 CPU sec, 8.235 real sec
 [M::process] read 128226 sequences (12439773 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 104, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -896,7 +896,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 567)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 617128 reads in 29.107 CPU sec, 7.452 real sec
+[M::mem_process_seqs] Processed 617128 reads in 28.216 CPU sec, 7.194 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 16, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -906,20 +906,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 578)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 128226 reads in 7.617 CPU sec, 2.041 real sec
+[M::mem_process_seqs] Processed 128226 reads in 6.552 CPU sec, 1.774 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342133_bins.16.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.reverse_paired.trimmed.fastq.gz
-[main] Real time: 19.671 sec; CPU: 69.577 sec
+[main] Real time: 19.057 sec; CPU: 66.879 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.03 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 1.23 seconds elapse.
-[bwa_index] Update BWT... 0.02 sec
-[bwa_index] Pack forward-only FASTA... 0.03 sec
-[bwa_index] Construct SA from BWT and Occ... 0.47 sec
+[bwa_index] 1.37 seconds elapse.
+[bwa_index] Update BWT... 0.03 sec
+[bwa_index] Pack forward-only FASTA... 0.02 sec
+[bwa_index] Construct SA from BWT and Occ... 0.49 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342133_bins.17.fa
-[main] Real time: 1.928 sec; CPU: 1.789 sec
+[main] Real time: 2.092 sec; CPU: 1.949 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612302 sequences (60000077 bp)...
 [M::process] read 617128 sequences (60000134 bp)...
@@ -932,7 +932,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 433)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612302 reads in 35.729 CPU sec, 9.701 real sec
+[M::mem_process_seqs] Processed 612302 reads in 36.746 CPU sec, 10.201 real sec
 [M::process] read 128226 sequences (12439773 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 2047, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -943,7 +943,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 454)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 617128 reads in 34.495 CPU sec, 8.809 real sec
+[M::mem_process_seqs] Processed 617128 reads in 34.406 CPU sec, 8.751 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 413, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -953,20 +953,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 455)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 128226 reads in 10.936 CPU sec, 2.869 real sec
+[M::mem_process_seqs] Processed 128226 reads in 8.081 CPU sec, 2.153 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342133_bins.17.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.reverse_paired.trimmed.fastq.gz
-[main] Real time: 23.298 sec; CPU: 83.056 sec
+[main] Real time: 22.978 sec; CPU: 81.100 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.01 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 0.30 seconds elapse.
-[bwa_index] Update BWT... 0.00 sec
-[bwa_index] Pack forward-only FASTA... 0.01 sec
+[bwa_index] 0.31 seconds elapse.
+[bwa_index] Update BWT... 0.01 sec
+[bwa_index] Pack forward-only FASTA... 0.00 sec
 [bwa_index] Construct SA from BWT and Occ... 0.15 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342133_bins.18.fa
-[main] Real time: 0.551 sec; CPU: 0.487 sec
+[main] Real time: 0.565 sec; CPU: 0.494 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612302 sequences (60000077 bp)...
 [M::process] read 617128 sequences (60000134 bp)...
@@ -979,7 +979,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 425)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612302 reads in 33.932 CPU sec, 9.176 real sec
+[M::mem_process_seqs] Processed 612302 reads in 34.341 CPU sec, 9.318 real sec
 [M::process] read 128226 sequences (12439773 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1113, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -990,7 +990,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 476)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 617128 reads in 32.442 CPU sec, 8.291 real sec
+[M::mem_process_seqs] Processed 617128 reads in 32.237 CPU sec, 8.202 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 226, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -1000,20 +1000,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 444)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 128226 reads in 8.397 CPU sec, 2.228 real sec
+[M::mem_process_seqs] Processed 128226 reads in 7.928 CPU sec, 2.111 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342133_bins.18.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.reverse_paired.trimmed.fastq.gz
-[main] Real time: 21.547 sec; CPU: 76.604 sec
+[main] Real time: 21.494 sec; CPU: 76.365 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
-[bwa_index] Pack FASTA... 0.01 sec
+[bwa_index] Pack FASTA... 0.00 sec
 [bwa_index] Construct BWT for the packed sequence...
 [bwa_index] 0.35 seconds elapse.
 [bwa_index] Update BWT... 0.00 sec
 [bwa_index] Pack forward-only FASTA... 0.01 sec
-[bwa_index] Construct SA from BWT and Occ... 0.17 sec
+[bwa_index] Construct SA from BWT and Occ... 0.16 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342133_bins.19.fa
-[main] Real time: 0.613 sec; CPU: 0.549 sec
+[main] Real time: 0.617 sec; CPU: 0.538 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612302 sequences (60000077 bp)...
 [M::process] read 617128 sequences (60000134 bp)...
@@ -1026,7 +1026,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 398)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612302 reads in 35.096 CPU sec, 9.536 real sec
+[M::mem_process_seqs] Processed 612302 reads in 35.793 CPU sec, 9.628 real sec
 [M::process] read 128226 sequences (12439773 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1447, 1, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -1037,7 +1037,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 408)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 617128 reads in 33.878 CPU sec, 8.683 real sec
+[M::mem_process_seqs] Processed 617128 reads in 33.414 CPU sec, 8.495 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 282, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -1047,20 +1047,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 441)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 128226 reads in 9.141 CPU sec, 2.397 real sec
+[M::mem_process_seqs] Processed 128226 reads in 7.888 CPU sec, 2.098 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342133_bins.19.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.reverse_paired.trimmed.fastq.gz
-[main] Real time: 22.561 sec; CPU: 80.036 sec
+[main] Real time: 22.081 sec; CPU: 78.949 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.01 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 0.37 seconds elapse.
-[bwa_index] Update BWT... 0.00 sec
+[bwa_index] 0.38 seconds elapse.
+[bwa_index] Update BWT... 0.01 sec
 [bwa_index] Pack forward-only FASTA... 0.01 sec
 [bwa_index] Construct SA from BWT and Occ... 0.18 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342133_bins.1.fa
-[main] Real time: 0.664 sec; CPU: 0.585 sec
+[main] Real time: 0.671 sec; CPU: 0.597 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612302 sequences (60000077 bp)...
 [M::process] read 617128 sequences (60000134 bp)...
@@ -1073,7 +1073,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 387)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612302 reads in 35.317 CPU sec, 9.303 real sec
+[M::mem_process_seqs] Processed 612302 reads in 35.731 CPU sec, 9.886 real sec
 [M::process] read 128226 sequences (12439773 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1610, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -1084,7 +1084,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 436)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 617128 reads in 33.394 CPU sec, 8.509 real sec
+[M::mem_process_seqs] Processed 617128 reads in 33.443 CPU sec, 8.497 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 313, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -1094,20 +1094,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 448)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 128226 reads in 8.924 CPU sec, 2.347 real sec
+[M::mem_process_seqs] Processed 128226 reads in 8.175 CPU sec, 2.175 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342133_bins.1.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.reverse_paired.trimmed.fastq.gz
-[main] Real time: 22.105 sec; CPU: 79.575 sec
+[main] Real time: 22.416 sec; CPU: 79.202 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.00 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 0.20 seconds elapse.
-[bwa_index] Update BWT... 0.00 sec
-[bwa_index] Pack forward-only FASTA... 0.02 sec
+[bwa_index] 0.21 seconds elapse.
+[bwa_index] Update BWT... 0.01 sec
+[bwa_index] Pack forward-only FASTA... 0.00 sec
 [bwa_index] Construct SA from BWT and Occ... 0.11 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342133_bins.20.fa
-[main] Real time: 0.374 sec; CPU: 0.333 sec
+[main] Real time: 0.390 sec; CPU: 0.345 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612302 sequences (60000077 bp)...
 [M::process] read 617128 sequences (60000134 bp)...
@@ -1120,7 +1120,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 589)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612302 reads in 33.856 CPU sec, 9.037 real sec
+[M::mem_process_seqs] Processed 612302 reads in 33.850 CPU sec, 9.047 real sec
 [M::process] read 128226 sequences (12439773 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 55, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -1131,7 +1131,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 539)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 617128 reads in 31.768 CPU sec, 8.101 real sec
+[M::mem_process_seqs] Processed 617128 reads in 31.704 CPU sec, 8.070 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 15, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -1141,20 +1141,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 707)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 128226 reads in 8.427 CPU sec, 2.230 real sec
+[M::mem_process_seqs] Processed 128226 reads in 7.395 CPU sec, 1.975 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342133_bins.20.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.reverse_paired.trimmed.fastq.gz
-[main] Real time: 21.214 sec; CPU: 75.894 sec
+[main] Real time: 20.953 sec; CPU: 74.805 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.00 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 0.21 seconds elapse.
-[bwa_index] Update BWT... 0.02 sec
+[bwa_index] 0.22 seconds elapse.
+[bwa_index] Update BWT... 0.01 sec
 [bwa_index] Pack forward-only FASTA... 0.00 sec
 [bwa_index] Construct SA from BWT and Occ... 0.12 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342133_bins.21.fa
-[main] Real time: 0.403 sec; CPU: 0.354 sec
+[main] Real time: 0.405 sec; CPU: 0.355 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612302 sequences (60000077 bp)...
 [M::process] read 617128 sequences (60000134 bp)...
@@ -1167,7 +1167,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 351)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612302 reads in 34.724 CPU sec, 9.109 real sec
+[M::mem_process_seqs] Processed 612302 reads in 34.975 CPU sec, 9.259 real sec
 [M::process] read 128226 sequences (12439773 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 643, 3, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -1178,7 +1178,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 358)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 617128 reads in 33.133 CPU sec, 8.476 real sec
+[M::mem_process_seqs] Processed 617128 reads in 32.933 CPU sec, 8.373 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 135, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -1188,20 +1188,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 362)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 128226 reads in 9.375 CPU sec, 2.467 real sec
+[M::mem_process_seqs] Processed 128226 reads in 8.151 CPU sec, 2.157 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342133_bins.21.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.reverse_paired.trimmed.fastq.gz
-[main] Real time: 21.978 sec; CPU: 79.132 sec
+[main] Real time: 21.648 sec; CPU: 77.912 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.01 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 0.51 seconds elapse.
+[bwa_index] 0.56 seconds elapse.
 [bwa_index] Update BWT... 0.02 sec
 [bwa_index] Pack forward-only FASTA... 0.01 sec
-[bwa_index] Construct SA from BWT and Occ... 0.23 sec
+[bwa_index] Construct SA from BWT and Occ... 0.25 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342133_bins.2.fa
-[main] Real time: 0.875 sec; CPU: 0.793 sec
+[main] Real time: 0.955 sec; CPU: 0.860 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612302 sequences (60000077 bp)...
 [M::process] read 617128 sequences (60000134 bp)...
@@ -1214,7 +1214,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 395)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612302 reads in 36.347 CPU sec, 9.805 real sec
+[M::mem_process_seqs] Processed 612302 reads in 36.979 CPU sec, 10.016 real sec
 [M::process] read 128226 sequences (12439773 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 501, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -1225,7 +1225,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 408)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 617128 reads in 34.668 CPU sec, 8.854 real sec
+[M::mem_process_seqs] Processed 617128 reads in 34.567 CPU sec, 8.781 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 100, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -1235,10 +1235,10 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 445)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 128226 reads in 8.957 CPU sec, 2.358 real sec
+[M::mem_process_seqs] Processed 128226 reads in 8.234 CPU sec, 2.190 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342133_bins.2.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.reverse_paired.trimmed.fastq.gz
-[main] Real time: 22.837 sec; CPU: 81.763 sec
+[main] Real time: 22.854 sec; CPU: 81.641 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.00 sec
 [bwa_index] Construct BWT for the packed sequence...
@@ -1248,7 +1248,7 @@
 [bwa_index] Construct SA from BWT and Occ... 0.03 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342133_bins.3.fa
-[main] Real time: 0.114 sec; CPU: 0.092 sec
+[main] Real time: 0.116 sec; CPU: 0.092 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612302 sequences (60000077 bp)...
 [M::process] read 617128 sequences (60000134 bp)...
@@ -1261,7 +1261,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 480)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612302 reads in 28.731 CPU sec, 7.763 real sec
+[M::mem_process_seqs] Processed 612302 reads in 28.633 CPU sec, 7.733 real sec
 [M::process] read 128226 sequences (12439773 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 43, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -1272,26 +1272,26 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 597)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 617128 reads in 27.129 CPU sec, 6.953 real sec
+[M::mem_process_seqs] Processed 617128 reads in 26.536 CPU sec, 6.773 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 5, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] skip orientation FR as there are not enough pairs
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 128226 reads in 7.651 CPU sec, 2.039 real sec
+[M::mem_process_seqs] Processed 128226 reads in 7.066 CPU sec, 1.899 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342133_bins.3.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.reverse_paired.trimmed.fastq.gz
-[main] Real time: 18.669 sec; CPU: 65.406 sec
+[main] Real time: 18.257 sec; CPU: 64.083 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
 [bwa_index] Pack FASTA... 0.00 sec
 [bwa_index] Construct BWT for the packed sequence...
 [bwa_index] 0.25 seconds elapse.
-[bwa_index] Update BWT... 0.01 sec
-[bwa_index] Pack forward-only FASTA... 0.00 sec
-[bwa_index] Construct SA from BWT and Occ... 0.13 sec
+[bwa_index] Update BWT... 0.00 sec
+[bwa_index] Pack forward-only FASTA... 0.01 sec
+[bwa_index] Construct SA from BWT and Occ... 0.12 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342133_bins.4.fa
-[main] Real time: 0.451 sec; CPU: 0.395 sec
+[main] Real time: 0.451 sec; CPU: 0.392 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612302 sequences (60000077 bp)...
 [M::process] read 617128 sequences (60000134 bp)...
@@ -1304,7 +1304,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 394)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612302 reads in 34.722 CPU sec, 9.321 real sec
+[M::mem_process_seqs] Processed 612302 reads in 35.014 CPU sec, 9.805 real sec
 [M::process] read 128226 sequences (12439773 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 681, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -1315,7 +1315,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 430)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 617128 reads in 32.532 CPU sec, 8.290 real sec
+[M::mem_process_seqs] Processed 617128 reads in 32.585 CPU sec, 8.286 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 126, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -1325,20 +1325,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 426)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 128226 reads in 8.378 CPU sec, 2.213 real sec
+[M::mem_process_seqs] Processed 128226 reads in 7.672 CPU sec, 2.044 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342133_bins.4.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.reverse_paired.trimmed.fastq.gz
-[main] Real time: 21.691 sec; CPU: 77.491 sec
+[main] Real time: 21.988 sec; CPU: 77.118 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
-[bwa_index] Pack FASTA... 0.02 sec
+[bwa_index] Pack FASTA... 0.01 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 0.83 seconds elapse.
+[bwa_index] 0.73 seconds elapse.
 [bwa_index] Update BWT... 0.01 sec
 [bwa_index] Pack forward-only FASTA... 0.01 sec
 [bwa_index] Construct SA from BWT and Occ... 0.30 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342133_bins.5.fa
-[main] Real time: 1.310 sec; CPU: 1.187 sec
+[main] Real time: 1.192 sec; CPU: 1.073 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612302 sequences (60000077 bp)...
 [M::process] read 617128 sequences (60000134 bp)...
@@ -1351,7 +1351,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 445)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612302 reads in 34.738 CPU sec, 9.530 real sec
+[M::mem_process_seqs] Processed 612302 reads in 35.214 CPU sec, 9.519 real sec
 [M::process] read 128226 sequences (12439773 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 1314, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -1362,7 +1362,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 470)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 617128 reads in 33.391 CPU sec, 8.552 real sec
+[M::mem_process_seqs] Processed 617128 reads in 33.275 CPU sec, 8.457 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 264, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -1372,20 +1372,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 484)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 128226 reads in 10.432 CPU sec, 2.742 real sec
+[M::mem_process_seqs] Processed 128226 reads in 7.946 CPU sec, 2.117 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342133_bins.5.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.reverse_paired.trimmed.fastq.gz
-[main] Real time: 22.693 sec; CPU: 80.423 sec
+[main] Real time: 21.948 sec; CPU: 78.284 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
-[bwa_index] Pack FASTA... 0.02 sec
+[bwa_index] Pack FASTA... 0.01 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 0.67 seconds elapse.
+[bwa_index] 0.73 seconds elapse.
 [bwa_index] Update BWT... 0.02 sec
 [bwa_index] Pack forward-only FASTA... 0.01 sec
-[bwa_index] Construct SA from BWT and Occ... 0.30 sec
+[bwa_index] Construct SA from BWT and Occ... 0.31 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342133_bins.6.fa
-[main] Real time: 1.126 sec; CPU: 1.031 sec
+[main] Real time: 1.194 sec; CPU: 1.087 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612302 sequences (60000077 bp)...
 [M::process] read 617128 sequences (60000134 bp)...
@@ -1398,7 +1398,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 399)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612302 reads in 35.200 CPU sec, 9.920 real sec
+[M::mem_process_seqs] Processed 612302 reads in 35.666 CPU sec, 9.496 real sec
 [M::process] read 128226 sequences (12439773 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 2476, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -1409,7 +1409,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 415)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 617128 reads in 33.510 CPU sec, 8.529 real sec
+[M::mem_process_seqs] Processed 617128 reads in 33.846 CPU sec, 8.601 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 487, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -1419,20 +1419,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 407)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 128226 reads in 12.019 CPU sec, 3.123 real sec
+[M::mem_process_seqs] Processed 128226 reads in 7.976 CPU sec, 2.123 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342133_bins.6.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.reverse_paired.trimmed.fastq.gz
-[main] Real time: 23.423 sec; CPU: 82.573 sec
+[main] Real time: 22.079 sec; CPU: 79.341 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
-[bwa_index] Pack FASTA... 0.06 sec
+[bwa_index] Pack FASTA... 0.05 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 3.04 seconds elapse.
+[bwa_index] 2.83 seconds elapse.
 [bwa_index] Update BWT... 0.04 sec
 [bwa_index] Pack forward-only FASTA... 0.03 sec
 [bwa_index] Construct SA from BWT and Occ... 0.93 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342133_bins.7.fa
-[main] Real time: 4.342 sec; CPU: 4.115 sec
+[main] Real time: 4.110 sec; CPU: 3.883 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612302 sequences (60000077 bp)...
 [M::process] read 617128 sequences (60000134 bp)...
@@ -1450,7 +1450,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 1248)
 [M::mem_pestat] skip orientation RR as there are not enough pairs
 [M::mem_pestat] skip orientation RF
-[M::mem_process_seqs] Processed 612302 reads in 42.240 CPU sec, 13.072 real sec
+[M::mem_process_seqs] Processed 612302 reads in 40.721 CPU sec, 11.815 real sec
 [M::process] read 128226 sequences (12439773 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (2, 11133, 11, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -1466,7 +1466,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 1128)
 [M::mem_pestat] skip orientation RR as there are not enough pairs
 [M::mem_pestat] skip orientation RF
-[M::mem_process_seqs] Processed 617128 reads in 40.416 CPU sec, 10.333 real sec
+[M::mem_process_seqs] Processed 617128 reads in 38.653 CPU sec, 9.827 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 2369, 2, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -1476,20 +1476,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 410)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 128226 reads in 12.574 CPU sec, 3.288 real sec
+[M::mem_process_seqs] Processed 128226 reads in 9.359 CPU sec, 2.463 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342133_bins.7.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.reverse_paired.trimmed.fastq.gz
-[main] Real time: 28.582 sec; CPU: 97.110 sec
+[main] Real time: 25.970 sec; CPU: 90.590 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
-[bwa_index] Pack FASTA... 0.02 sec
+[bwa_index] Pack FASTA... 0.03 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 1.35 seconds elapse.
+[bwa_index] 1.17 seconds elapse.
 [bwa_index] Update BWT... 0.03 sec
-[bwa_index] Pack forward-only FASTA... 0.02 sec
-[bwa_index] Construct SA from BWT and Occ... 0.41 sec
+[bwa_index] Pack forward-only FASTA... 0.01 sec
+[bwa_index] Construct SA from BWT and Occ... 0.43 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342133_bins.8.fa
-[main] Real time: 1.968 sec; CPU: 1.839 sec
+[main] Real time: 1.811 sec; CPU: 1.682 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612302 sequences (60000077 bp)...
 [M::process] read 617128 sequences (60000134 bp)...
@@ -1502,7 +1502,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 441)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612302 reads in 34.679 CPU sec, 9.381 real sec
+[M::mem_process_seqs] Processed 612302 reads in 35.229 CPU sec, 9.644 real sec
 [M::process] read 128226 sequences (12439773 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 192, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -1513,7 +1513,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 469)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 617128 reads in 33.054 CPU sec, 8.486 real sec
+[M::mem_process_seqs] Processed 617128 reads in 33.163 CPU sec, 8.433 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 40, 0, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -1523,20 +1523,20 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 495)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 128226 reads in 8.527 CPU sec, 2.326 real sec
+[M::mem_process_seqs] Processed 128226 reads in 8.577 CPU sec, 2.274 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342133_bins.8.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.reverse_paired.trimmed.fastq.gz
-[main] Real time: 21.980 sec; CPU: 78.045 sec
+[main] Real time: 22.212 sec; CPU: 78.823 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...
-[bwa_index] Pack FASTA... 0.03 sec
+[bwa_index] Pack FASTA... 0.02 sec
 [bwa_index] Construct BWT for the packed sequence...
-[bwa_index] 1.12 seconds elapse.
+[bwa_index] 1.23 seconds elapse.
 [bwa_index] Update BWT... 0.02 sec
-[bwa_index] Pack forward-only FASTA... 0.03 sec
-[bwa_index] Construct SA from BWT and Occ... 0.44 sec
+[bwa_index] Pack forward-only FASTA... 0.02 sec
+[bwa_index] Construct SA from BWT and Occ... 0.46 sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa index SRR4342133_bins.9.fa
-[main] Real time: 1.787 sec; CPU: 1.650 sec
+[main] Real time: 1.945 sec; CPU: 1.753 sec
 [M::bwa_idx_load_from_disk] read 0 ALT contigs
 [M::process] read 612302 sequences (60000077 bp)...
 [M::process] read 617128 sequences (60000134 bp)...
@@ -1549,7 +1549,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 373)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 612302 reads in 41.827 CPU sec, 13.331 real sec
+[M::mem_process_seqs] Processed 612302 reads in 42.341 CPU sec, 12.638 real sec
 [M::process] read 128226 sequences (12439773 bp)...
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (2, 28231, 4, 3)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
@@ -1560,7 +1560,7 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 404)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 617128 reads in 40.520 CPU sec, 10.369 real sec
+[M::mem_process_seqs] Processed 617128 reads in 40.453 CPU sec, 10.269 real sec
 [M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 5972, 2, 0)
 [M::mem_pestat] skip orientation FF as there are not enough pairs
 [M::mem_pestat] analyzing insert size distribution for orientation FR...
@@ -1570,8 +1570,8 @@
 [M::mem_pestat] low and high boundaries for proper pairs: (1, 403)
 [M::mem_pestat] skip orientation RF as there are not enough pairs
 [M::mem_pestat] skip orientation RR as there are not enough pairs
-[M::mem_process_seqs] Processed 128226 reads in 9.752 CPU sec, 2.586 real sec
+[M::mem_process_seqs] Processed 128226 reads in 9.428 CPU sec, 2.487 real sec
 [main] Version: 0.7.17-r1188
 [main] CMD: bwa mem -t 6 SRR4342133_bins.9.fa /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.forward_paired.trimmed.fastq.gz /proj/genomeanalysis2022/nobackup/work/claudg/RNA_trimmed/SRR4342139.reverse_paired.trimmed.fastq.gz
-[main] Real time: 28.279 sec; CPU: 94.076 sec
+[main] Real time: 27.267 sec; CPU: 94.088 sec
 [bam_sort_core] merging from 0 files and 2 in-memory blocks...

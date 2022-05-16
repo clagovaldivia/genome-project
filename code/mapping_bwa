@@ -41,7 +41,7 @@ done
 cd $INDIR/2
 for refs in *.fa
 do
-	outname=$(basename ${ref});
+	outname=$(basename ${refs});
 	outpath=$OUTDIR/${outname}.bam ;
 	bwa index $refs
 	bwa mem -t 6 $refs $RNA/SRR4342139.forward_paired.trimmed.fastq.gz $RNA/SRR4342139.reverse_paired.trimmed.fastq.gz | samtools sort -@ 2 -o ${outpath};
