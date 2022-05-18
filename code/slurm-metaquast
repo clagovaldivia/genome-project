@@ -1,0 +1,1410 @@
+/sw/bioinfo/quast/5.0.2/rackham/bin/metaquast.py -o /home/claudg/genome-project//analyses/DNA_metaquast/1 /home/claudg/genome-project//analyses/DNA_assembled_megahit/1/final.contigs.fa
+
+Version: 5.0.2
+
+System information:
+  OS: Linux-3.10.0-1160.62.1.el7.x86_64-x86_64-with-centos-7.9.2009-Core (linux_64)
+  Python version: 3.7.2
+  CPUs number: 16
+
+Started: 2022-05-18 10:39:37
+
+Logging to /home/claudg/genome-project/analyses/DNA_metaquast/1/metaquast.log
+NOTICE: Maximum number of threads is set to 4 (use --threads option to set it manually)
+
+Contigs:
+  Pre-processing...
+  /home/claudg/genome-project//analyses/DNA_assembled_megahit/1/final.contigs.fa ==> final.contigs
+
+No references are provided, starting to search for reference genomes in SILVA 16S rRNA database and to download them from NCBI...
+
+2022-05-18 10:39:48
+Downloading blast (file: makeblastdb)...
+ 0.0% of 27429520 bytes
+ 1.0% of 27429520 bytes
+ 2.0% of 27429520 bytes
+ 3.0% of 27429520 bytes
+ 4.0% of 27429520 bytes
+ 5.0% of 27429520 bytes
+ 6.0% of 27429520 bytes
+ 7.0% of 27429520 bytes
+ 8.0% of 27429520 bytes
+ 9.0% of 27429520 bytes
+ 10.0% of 27429520 bytes
+ 11.0% of 27429520 bytes
+ 12.0% of 27429520 bytes
+ 13.0% of 27429520 bytes
+ 14.0% of 27429520 bytes
+ 15.0% of 27429520 bytes
+ 16.0% of 27429520 bytes
+ 17.0% of 27429520 bytes
+ 18.0% of 27429520 bytes
+ 19.0% of 27429520 bytes
+ 20.0% of 27429520 bytes
+ 21.0% of 27429520 bytes
+ 22.0% of 27429520 bytes
+ 23.0% of 27429520 bytes
+ 24.0% of 27429520 bytes
+ 25.0% of 27429520 bytes
+ 26.0% of 27429520 bytes
+ 27.0% of 27429520 bytes
+ 28.0% of 27429520 bytes
+ 29.0% of 27429520 bytes
+ 30.0% of 27429520 bytes
+ 31.0% of 27429520 bytes
+ 32.0% of 27429520 bytes
+ 33.0% of 27429520 bytes
+ 34.0% of 27429520 bytes
+ 35.0% of 27429520 bytes
+ 36.0% of 27429520 bytes
+ 37.0% of 27429520 bytes
+ 38.0% of 27429520 bytes
+ 39.0% of 27429520 bytes
+ 40.0% of 27429520 bytes
+ 41.0% of 27429520 bytes
+ 42.0% of 27429520 bytes
+ 43.0% of 27429520 bytes
+ 44.0% of 27429520 bytes
+ 45.0% of 27429520 bytes
+ 46.0% of 27429520 bytes
+ 47.0% of 27429520 bytes
+ 48.0% of 27429520 bytes
+ 49.0% of 27429520 bytes
+ 50.0% of 27429520 bytes
+ 51.0% of 27429520 bytes
+ 52.0% of 27429520 bytes
+ 53.0% of 27429520 bytes
+ 54.0% of 27429520 bytes
+ 55.0% of 27429520 bytes
+ 56.0% of 27429520 bytes
+ 57.0% of 27429520 bytes
+ 58.0% of 27429520 bytes
+ 59.0% of 27429520 bytes
+ 60.0% of 27429520 bytes
+ 61.0% of 27429520 bytes
+ 62.0% of 27429520 bytes
+ 63.0% of 27429520 bytes
+ 64.0% of 27429520 bytes
+ 65.0% of 27429520 bytes
+ 66.0% of 27429520 bytes
+ 67.0% of 27429520 bytes
+ 68.0% of 27429520 bytes
+ 68.0% of 27429520 bytes
+ 69.0% of 27429520 bytes
+ 70.0% of 27429520 bytes
+ 71.0% of 27429520 bytes
+ 72.0% of 27429520 bytes
+ 73.0% of 27429520 bytes
+ 74.0% of 27429520 bytes
+ 75.0% of 27429520 bytes
+ 76.0% of 27429520 bytes
+ 77.0% of 27429520 bytes
+ 78.0% of 27429520 bytes
+ 79.0% of 27429520 bytes
+ 80.0% of 27429520 bytes
+ 81.0% of 27429520 bytes
+ 82.0% of 27429520 bytes
+ 83.0% of 27429520 bytes
+ 84.0% of 27429520 bytes
+ 85.0% of 27429520 bytes
+ 86.0% of 27429520 bytes
+ 87.0% of 27429520 bytes
+ 88.0% of 27429520 bytes
+ 89.0% of 27429520 bytes
+ 90.0% of 27429520 bytes
+ 91.0% of 27429520 bytes
+ 92.0% of 27429520 bytes
+ 93.0% of 27429520 bytes
+ 94.0% of 27429520 bytes
+ 95.0% of 27429520 bytes
+ 96.0% of 27429520 bytes
+ 97.0% of 27429520 bytes
+ 98.0% of 27429520 bytes
+ 99.0% of 27429520 bytes
+blast successfully downloaded!
+Downloading blast (file: blastn)...
+ 0.0% of 39777200 bytes
+ 1.0% of 39777200 bytes
+ 2.0% of 39777200 bytes
+ 3.0% of 39777200 bytes
+ 4.0% of 39777200 bytes
+ 5.0% of 39777200 bytes
+ 6.0% of 39777200 bytes
+ 7.0% of 39777200 bytes
+ 8.0% of 39777200 bytes
+ 9.0% of 39777200 bytes
+ 10.0% of 39777200 bytes
+ 11.0% of 39777200 bytes
+ 12.0% of 39777200 bytes
+ 13.0% of 39777200 bytes
+ 14.0% of 39777200 bytes
+ 15.0% of 39777200 bytes
+ 16.0% of 39777200 bytes
+ 17.0% of 39777200 bytes
+ 18.0% of 39777200 bytes
+ 19.0% of 39777200 bytes
+ 20.0% of 39777200 bytes
+ 21.0% of 39777200 bytes
+ 22.0% of 39777200 bytes
+ 23.0% of 39777200 bytes
+ 24.0% of 39777200 bytes
+ 25.0% of 39777200 bytes
+ 26.0% of 39777200 bytes
+ 27.0% of 39777200 bytes
+ 28.0% of 39777200 bytes
+ 29.0% of 39777200 bytes
+ 30.0% of 39777200 bytes
+ 31.0% of 39777200 bytes
+ 32.0% of 39777200 bytes
+ 33.0% of 39777200 bytes
+ 34.0% of 39777200 bytes
+ 35.0% of 39777200 bytes
+ 36.0% of 39777200 bytes
+ 37.0% of 39777200 bytes
+ 38.0% of 39777200 bytes
+ 39.0% of 39777200 bytes
+ 40.0% of 39777200 bytes
+ 41.0% of 39777200 bytes
+ 42.0% of 39777200 bytes
+ 43.0% of 39777200 bytes
+ 44.0% of 39777200 bytes
+ 45.0% of 39777200 bytes
+ 46.0% of 39777200 bytes
+ 47.0% of 39777200 bytes
+ 48.0% of 39777200 bytes
+ 49.0% of 39777200 bytes
+ 50.0% of 39777200 bytes
+ 51.0% of 39777200 bytes
+ 52.0% of 39777200 bytes
+ 53.0% of 39777200 bytes
+ 54.0% of 39777200 bytes
+ 55.0% of 39777200 bytes
+ 56.0% of 39777200 bytes
+ 57.0% of 39777200 bytes
+ 58.0% of 39777200 bytes
+ 59.0% of 39777200 bytes
+ 60.0% of 39777200 bytes
+ 61.0% of 39777200 bytes
+ 62.0% of 39777200 bytes
+ 63.0% of 39777200 bytes
+ 64.0% of 39777200 bytes
+ 65.0% of 39777200 bytes
+ 66.0% of 39777200 bytes
+ 67.0% of 39777200 bytes
+ 68.0% of 39777200 bytes
+ 69.0% of 39777200 bytes
+ 70.0% of 39777200 bytes
+ 71.0% of 39777200 bytes
+ 72.0% of 39777200 bytes
+ 73.0% of 39777200 bytes
+ 74.0% of 39777200 bytes
+ 75.0% of 39777200 bytes
+ 76.0% of 39777200 bytes
+ 77.0% of 39777200 bytes
+ 78.0% of 39777200 bytes
+ 79.0% of 39777200 bytes
+ 80.0% of 39777200 bytes
+ 81.0% of 39777200 bytes
+ 82.0% of 39777200 bytes
+ 83.0% of 39777200 bytes
+ 84.0% of 39777200 bytes
+ 85.0% of 39777200 bytes
+ 86.0% of 39777200 bytes
+ 86.0% of 39777200 bytes
+ 87.0% of 39777200 bytes
+ 88.0% of 39777200 bytes
+ 89.0% of 39777200 bytes
+ 90.0% of 39777200 bytes
+ 91.0% of 39777200 bytes
+ 92.0% of 39777200 bytes
+ 93.0% of 39777200 bytes
+ 94.0% of 39777200 bytes
+ 95.0% of 39777200 bytes
+ 96.0% of 39777200 bytes
+ 97.0% of 39777200 bytes
+ 98.0% of 39777200 bytes
+ 99.0% of 39777200 bytes
+blast successfully downloaded!
+NOTICE: Permission denied accessing /sw/bioinfo/quast/5.0.2/rackham/lib/python3.7/site-packages/quast_libs/silva. Silva will be downloaded to home directory /home/claudg/genome-project/.quast
+
+Downloading SILVA 16S ribosomal RNA gene database...
+ 0.0% of 177015356 bytes
+ 1.0% of 177015356 bytes
+ 2.0% of 177015356 bytes
+ 3.0% of 177015356 bytes
+ 4.0% of 177015356 bytes
+ 5.0% of 177015356 bytes
+ 6.0% of 177015356 bytes
+ 7.0% of 177015356 bytes
+ 8.0% of 177015356 bytes
+ 9.0% of 177015356 bytes
+ 10.0% of 177015356 bytes
+ 11.0% of 177015356 bytes
+ 12.0% of 177015356 bytes
+ 13.0% of 177015356 bytes
+ 14.0% of 177015356 bytes
+ 15.0% of 177015356 bytes
+ 16.0% of 177015356 bytes
+ 17.0% of 177015356 bytes
+ 18.0% of 177015356 bytes
+ 19.0% of 177015356 bytes
+ 20.0% of 177015356 bytes
+ 21.0% of 177015356 bytes
+ 22.0% of 177015356 bytes
+ 23.0% of 177015356 bytes
+ 24.0% of 177015356 bytes
+ 25.0% of 177015356 bytes
+ 26.0% of 177015356 bytes
+ 27.0% of 177015356 bytes
+ 28.0% of 177015356 bytes
+ 29.0% of 177015356 bytes
+ 30.0% of 177015356 bytes
+ 31.0% of 177015356 bytes
+ 32.0% of 177015356 bytes
+ 33.0% of 177015356 bytes
+ 34.0% of 177015356 bytes
+ 35.0% of 177015356 bytes
+ 36.0% of 177015356 bytes
+ 37.0% of 177015356 bytes
+ 38.0% of 177015356 bytes
+ 39.0% of 177015356 bytes
+ 40.0% of 177015356 bytes
+ 41.0% of 177015356 bytes
+ 42.0% of 177015356 bytes
+ 43.0% of 177015356 bytes
+ 44.0% of 177015356 bytes
+ 45.0% of 177015356 bytes
+ 46.0% of 177015356 bytes
+ 47.0% of 177015356 bytes
+ 48.0% of 177015356 bytes
+ 49.0% of 177015356 bytes
+ 50.0% of 177015356 bytes
+ 51.0% of 177015356 bytes
+ 52.0% of 177015356 bytes
+ 53.0% of 177015356 bytes
+ 54.0% of 177015356 bytes
+ 55.0% of 177015356 bytes
+ 56.0% of 177015356 bytes
+ 57.0% of 177015356 bytes
+ 58.0% of 177015356 bytes
+ 59.0% of 177015356 bytes
+ 60.0% of 177015356 bytes
+ 61.0% of 177015356 bytes
+ 62.0% of 177015356 bytes
+ 63.0% of 177015356 bytes
+ 64.0% of 177015356 bytes
+ 65.0% of 177015356 bytes
+ 66.0% of 177015356 bytes
+ 67.0% of 177015356 bytes
+ 68.0% of 177015356 bytes
+ 69.0% of 177015356 bytes
+ 70.0% of 177015356 bytes
+ 71.0% of 177015356 bytes
+ 72.0% of 177015356 bytes
+ 73.0% of 177015356 bytes
+ 74.0% of 177015356 bytes
+ 75.0% of 177015356 bytes
+ 76.0% of 177015356 bytes
+ 77.0% of 177015356 bytes
+ 78.0% of 177015356 bytes
+ 79.0% of 177015356 bytes
+ 80.0% of 177015356 bytes
+ 81.0% of 177015356 bytes
+ 82.0% of 177015356 bytes
+ 83.0% of 177015356 bytes
+ 84.0% of 177015356 bytes
+ 85.0% of 177015356 bytes
+ 86.0% of 177015356 bytes
+ 87.0% of 177015356 bytes
+ 88.0% of 177015356 bytes
+ 89.0% of 177015356 bytes
+ 90.0% of 177015356 bytes
+ 91.0% of 177015356 bytes
+ 92.0% of 177015356 bytes
+ 93.0% of 177015356 bytes
+ 94.0% of 177015356 bytes
+ 95.0% of 177015356 bytes
+ 96.0% of 177015356 bytes
+ 97.0% of 177015356 bytes
+ 98.0% of 177015356 bytes
+ 99.0% of 177015356 bytes
+Processing downloaded file. Logging to /home/claudg/genome-project/.quast/silva/blastdb.log...
+Unpacking and replacing " " with "_"...
+Making BLAST database...
+Running BlastN..
+  processing final.contigs
+  BLAST results for final.contigs are saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/blast.res_final-contigs...
+
+
+2022-05-18 10:56:46
+Trying to download found references from NCBI. Totally 50 organisms to try.
+  unidentified_marine_bacterioplankton                                      | not found in the NCBI database
+  unidentified_marine_bacterioplankton was not found in NCBI database, trying to download the next best match
+  Streptomyces_cyaneogriseus_subsp._noncyanogenus                           | successfully downloaded (total 1, 49 more to go)
+  marine_metagenome                                                         | successfully downloaded (total 2, 48 more to go)
+  marine_gamma_proteobacterium_HTCC2080                                     | successfully downloaded (total 3, 47 more to go)
+  marine_bacterium_NAMAF003                                                 | not found in the NCBI database
+  marine_bacterium_NAMAF003 was not found in NCBI database, trying to download the next best match
+  Lishizhenia_caseinilytica                                                 | not found in the NCBI database
+  Lishizhenia_caseinilytica was not found in NCBI database, trying to download the next best match
+  Weeksella_virosa_DSM_16922                                                | successfully downloaded (total 4, 46 more to go)
+  magnetic_coccus_MP17                                                      | not found in the NCBI database
+  magnetic_coccus_MP17 was not found in NCBI database, trying to download the next best match
+  Aurantimonas_manganoxydans_SI85-9A1                                       | successfully downloaded (total 5, 45 more to go)
+  heterotrophic_extracellular_symbiont_BG-C2_of_Benthomodiolus_geikotsucola | not found in the NCBI database
+  heterotrophic_extracellular_symbiont_BG-C2_of_Benthomodiolus_geikotsucola was not found in NCBI database, trying to download the next best match
+  Arenicella_chitinivorans                                                  | successfully downloaded (total 6, 44 more to go)
+  gamma_proteobacterium_SCGC_AB-629-P17                                     | successfully downloaded (total 7, 43 more to go)
+  endosymbiont_of_Nuclearia_sp._N                                           | not found in the NCBI database
+  endosymbiont_of_Nuclearia_sp._N was not found in NCBI database, trying to download the next best match
+  proteobacterium_symbiont_of_Osedax_sp._MB3                                | not found in the NCBI database
+  proteobacterium_symbiont_of_Osedax_sp._MB3 was not found in NCBI database, trying to download the next best match
+  Pseudomonas_mohnii                                                        | successfully downloaded (total 8, 42 more to go)
+  denitrifying_bacterium_enrichment_culture_clone_NOB_2_C9                  | not found in the NCBI database
+  denitrifying_bacterium_enrichment_culture_clone_NOB_2_C9 was not found in NCBI database, trying to download the next best match
+  Desulfocurvus_vexinensis                                                  | successfully downloaded (total 9, 41 more to go)
+  bacterium_symbiont_of_Idas_sp                                             | not found in the NCBI database
+  bacterium_symbiont_of_Idas_sp was not found in NCBI database, trying to download the next best match
+  Formosa_algae                                                             | successfully downloaded (total 10, 40 more to go)
+  bacterium_rJ7                                                             | not found in the NCBI database
+  bacterium_rJ7 was not found in NCBI database, trying to download the next best match
+  bacterium_rJ14                                                            | not found in the NCBI database
+  bacterium_rJ14 was not found in NCBI database, trying to download the next best match
+  actinobacterium_GP-6                                                      | not found in the NCBI database
+  actinobacterium_GP-6 was not found in NCBI database, trying to download the next best match
+  Actinomycetales_bacterium_GP-5                                            | not found in the NCBI database
+  bacterium_endosymbiont_of_Abyssogena_southwardae                          | not found in the NCBI database
+  bacterium_endosymbiont_of_Abyssogena_southwardae was not found in NCBI database, trying to download the next best match
+  bacterium_enrichment_culture_clone_M114                                   | not found in the NCBI database
+  bacterium_enrichment_culture_clone_M114 was not found in NCBI database, trying to download the next best match
+  bacterium_enrichment_culture_clone_58                                     | not found in the NCBI database
+  bacterium_K2-75                                                           | not found in the NCBI database
+  bacterium_K2-75 was not found in NCBI database, trying to download the next best match
+  Nisaea_denitrificans_DSM_18348                                            | successfully downloaded (total 11, 37 more to go)
+  bacterium_D78                                                             | not found in the NCBI database
+  bacterium_D78 was not found in NCBI database, trying to download the next best match
+  Oceanibaculum_pacificum                                                   | successfully downloaded (total 12, 36 more to go)
+  alpha_proteobacterium_SCGC_AAA015-O19                                     | successfully downloaded (total 13, 35 more to go)
+  Zymomonas_mobilis                                                         | successfully downloaded (total 14, 34 more to go)
+  Vibrio_sinaloensis                                                        | successfully downloaded (total 15, 33 more to go)
+  Vesicomya_sp._mt-II_symbiont                                              | not found in the NCBI database
+  Vesicomya_sp._mt-II_symbiont was not found in NCBI database, trying to download the next best match
+  Calyptogena_sp._Florida_gill_symbiont                                     | not found in the NCBI database
+  Calyptogena_sp._Florida_gill_symbiont was not found in NCBI database, trying to download the next best match
+  Calyptogena_fossajaponica_gill_thioautotophic_symbiont                    | not found in the NCBI database
+  Verrucomicrobia_bacterium_WY51                                            | not found in the NCBI database
+  Verrucomicrobia_bacterium_WY51 was not found in NCBI database, trying to download the next best match
+  Haloferula_harenae                                                        | not found in the NCBI database
+  Haloferula_harenae was not found in NCBI database, trying to download the next best match
+  Haloferula_phyci                                                          | not found in the NCBI database
+  Haloferula_phyci was not found in NCBI database, trying to download the next best match
+  Verrucomicrobium_sp._KLE1210                                              | not found in the NCBI database
+  Ureaplasma_sp._ES2783-GEN                                                 | not found in the NCBI database
+  Uncultured_Pseudospirillum_sp                                             | not found in the NCBI database
+  Uncultured_Pseudospirillum_sp was not found in NCBI database, trying to download the next best match
+  Haliea_sp._ETY-M                                                          | not found in the NCBI database
+  Thiodictyon_elegans                                                       | not found in the NCBI database
+  Thiodictyon_elegans was not found in NCBI database, trying to download the next best match
+  Thiodictyon_bacillosum                                                    | not found in the NCBI database
+  Thiodictyon_bacillosum was not found in NCBI database, trying to download the next best match
+  Pseudoalteromonas_tunicata_D2                                             | successfully downloaded (total 16, 28 more to go)
+  Thioalkalivibrio_sulfidiphilus_HL-EbGr7                                   | successfully downloaded (total 17, 27 more to go)
+  Thermoplasmatales_archaeon_A-plasma                                       | successfully downloaded (total 18, 26 more to go)
+  Thalassobaculum_salexigens_DSM_19539                                      | successfully downloaded (total 19, 25 more to go)
+  Syntrophus_aciditrophicus                                                 | successfully downloaded (total 20, 24 more to go)
+  Synechococcus_sp._RCC307                                                  | successfully downloaded (total 21, 23 more to go)
+  Synechococcus_sp._KORDI-49                                                | successfully downloaded (total 22, 22 more to go)
+  Spongiibacter_tropicus_DSM_19543                                          | successfully downloaded (total 23, 21 more to go)
+  Sphingobium_sp._GR1                                                       | not found in the NCBI database
+  Sphingobium_sp._GR1 was not found in NCBI database, trying to download the next best match
+  Sphingobium_sp._FL24                                                      | not found in the NCBI database
+  Sphingobium_sp._FL24 was not found in NCBI database, trying to download the next best match
+  Sphingobium_sp._IT-4                                                      | not found in the NCBI database
+  Sphingobium_sp._IT-4 was not found in NCBI database, trying to download the next best match
+  Sphingobium_czechense_LL01                                                | successfully downloaded (total 24, 20 more to go)
+  Sinobacterium_caligoides                                                  | successfully downloaded (total 25, 19 more to go)
+  Shewanella_amazonensis_SB2B                                               | successfully downloaded (total 26, 18 more to go)
+  Serratia_symbiotica                                                       | successfully downloaded (total 27, 17 more to go)
+  Ruegeria_sp._enrichment_culture_clone_KSE55-3                             | not found in the NCBI database
+  Ruegeria_sp._enrichment_culture_clone_KSE55-3 was not found in NCBI database, trying to download the next best match
+  Thalassobacter_sp._W-2-2                                                  | not found in the NCBI database
+  Thalassobacter_sp._W-2-2 was not found in NCBI database, trying to download the next best match
+  Tateyamaria_sp._ANG-S1                                                    | successfully downloaded (total 28, 16 more to go)
+  Rubrobacterales_bacterium_Pa33                                            | not found in the NCBI database
+  Rubrobacterales_bacterium_Pa33 was not found in NCBI database, trying to download the next best match
+  Solirubrobacter_soli_DSM_22325                                            | successfully downloaded (total 29, 15 more to go)
+  Roseobacter_sp._SK209-2-6                                                 | successfully downloaded (total 30, 14 more to go)
+  Roseibacterium_elongatum_DSM_19469                                        | successfully downloaded (total 31, 13 more to go)
+  Rhodobacteraceae_bacterium_HIMB11                                         | successfully downloaded (total 32, 12 more to go)
+  Puniceicoccus_vermicola                                                   | successfully downloaded (total 33, 11 more to go)
+  Psychroserpens_sp._PAMC_27130                                             | successfully downloaded (total 34, 10 more to go)
+  Pseudohongiella_spirulinae                                                | successfully downloaded (total 35, 9 more to go)
+  Pseudoalteromonas_atlantica_T6c                                           | successfully downloaded (total 36, 8 more to go)
+  Prosthecobacter_debontii                                                  | successfully downloaded (total 37, 7 more to go)
+  Porticoccus_hydrocarbonoclasticus_MCTG13d                                 | successfully downloaded (total 38, 6 more to go)
+  Polaribacter_sp._KYW_601                                                  | not found in the NCBI database
+  Polaribacter_sp._KYW_601 was not found in NCBI database, trying to download the next best match
+  Polaribacter_sp._KYW612                                                   | not found in the NCBI database
+  Polaribacter_sp._KYW612 was not found in NCBI database, trying to download the next best match
+  Polaribacter_sp._SM1202                                                   | not found in the NCBI database
+  Polaribacter_sp._SM1202 was not found in NCBI database, trying to download the next best match
+  Polaribacter_sp._USW115                                                   | not found in the NCBI database
+  Planctomyces_maris_DSM_8797                                               | successfully downloaded (total 39, 4 more to go)
+  Pirellula_sp                                                              | not found in the NCBI database
+  Pirellula_sp was not found in NCBI database, trying to download the next best match
+  Blastopirellula_marina                                                    | successfully downloaded (total 40, 3 more to go)
+  Photobacterium_halotolerans                                               | successfully downloaded (total 41, 2 more to go)
+  Pelagicoccus_croceus                                                      | not found in the NCBI database
+  Pelagicoccus_croceus was not found in NCBI database, trying to download the next best match
+  marine_bacterium_RS.Sph.002                                               | not found in the NCBI database
+  marine_bacterium_RS.Sph.002 was not found in NCBI database, trying to download the next best match
+  Pelagicoccus_mobilis                                                      | successfully downloaded (total 42, 1 more to go)
+  Pararhodospirillum_sulfurexigens                                          | not found in the NCBI database
+  Pararhodospirillum_sulfurexigens was not found in NCBI database, trying to download the next best match
+  Rhodothalassium_salexigens                                                | successfully downloaded (total 43, 0 more to go)
+
+Downloaded reference(s):
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Arenicella_chitinivorans.fasta ==> Arenicella_chitinivorans
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Aurantimonas_manganoxydans_SI85_9A1.fasta ==> Aurantimonas_manganoxydans_SI85_9A1
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Blastopirellula_marina.fasta ==> Blastopirellula_marina
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Desulfocurvus_vexinensis.fasta ==> Desulfocurvus_vexinensis
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Formosa_algae.fasta ==> Formosa_algae
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Nisaea_denitrificans_DSM_18348.fasta ==> Nisaea_denitrificans_DSM_18348
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Oceanibaculum_pacificum.fasta ==> Oceanibaculum_pacificum
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Pelagicoccus_mobilis.fasta ==> Pelagicoccus_mobilis
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Photobacterium_halotolerans.fasta ==> Photobacterium_halotolerans
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Planctomyces_maris_DSM_8797.fasta ==> Planctomyces_maris_DSM_8797
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Porticoccus_hydrocarbonoclasticus_MCTG13d.fasta ==> Porticoccus_hydrocarbonoclasticus_MCTG13d
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Prosthecobacter_debontii.fasta ==> Prosthecobacter_debontii
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Pseudoalteromonas_atlantica_T6c.fasta ==> Pseudoalteromonas_atlantica_T6c
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Pseudoalteromonas_tunicata_D2.fasta ==> Pseudoalteromonas_tunicata_D2
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Pseudohongiella_spirulinae.fasta ==> Pseudohongiella_spirulinae
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Pseudomonas_mohnii.fasta ==> Pseudomonas_mohnii
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Psychroserpens_sp._PAMC_27130.fasta ==> Psychroserpens_sp._PAMC_27130
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Puniceicoccus_vermicola.fasta ==> Puniceicoccus_vermicola
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Rhodobacteraceae_bacterium_HIMB11.fasta ==> Rhodobacteraceae_bacterium_HIMB11
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Rhodothalassium_salexigens.fasta ==> Rhodothalassium_salexigens
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Roseibacterium_elongatum_DSM_19469.fasta ==> Roseibacterium_elongatum_DSM_19469
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Roseobacter_sp._SK209_2_6.fasta ==> Roseobacter_sp._SK209_2_6
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Serratia_symbiotica.fasta ==> Serratia_symbiotica
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Shewanella_amazonensis_SB2B.fasta ==> Shewanella_amazonensis_SB2B
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Sinobacterium_caligoides.fasta ==> Sinobacterium_caligoides
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Solirubrobacter_soli_DSM_22325.fasta ==> Solirubrobacter_soli_DSM_22325
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Sphingobium_czechense_LL01.fasta ==> Sphingobium_czechense_LL01
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Spongiibacter_tropicus_DSM_19543.fasta ==> Spongiibacter_tropicus_DSM_19543
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Streptomyces_cyaneogriseus_subsp._noncyanogenus.fasta ==> Streptomyces_cyaneogriseus_subsp._noncyanogenus
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Synechococcus_sp._KORDI_49.fasta ==> Synechococcus_sp._KORDI_49
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Synechococcus_sp._RCC307.fasta ==> Synechococcus_sp._RCC307
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Syntrophus_aciditrophicus.fasta ==> Syntrophus_aciditrophicus
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Tateyamaria_sp._ANG_S1.fasta ==> Tateyamaria_sp._ANG_S1
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Thalassobaculum_salexigens_DSM_19539.fasta ==> Thalassobaculum_salexigens_DSM_19539
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Thermoplasmatales_archaeon_A_plasma.fasta ==> Thermoplasmatales_archaeon_A_plasma
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Thioalkalivibrio_sulfidiphilus_HL_EbGr7.fasta ==> Thioalkalivibrio_sulfidiphilus_HL_EbGr7
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Vibrio_sinaloensis.fasta ==> Vibrio_sinaloensis
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Weeksella_virosa_DSM_16922.fasta ==> Weeksella_virosa_DSM_16922
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Zymomonas_mobilis.fasta ==> Zymomonas_mobilis
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/alpha_proteobacterium_SCGC_AAA015_O19.fasta ==> alpha_proteobacterium_SCGC_AAA015_O19
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/gamma_proteobacterium_SCGC_AB_629_P17.fasta ==> gamma_proteobacterium_SCGC_AB_629_P17
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/marine_gamma_proteobacterium_HTCC2080.fasta ==> marine_gamma_proteobacterium_HTCC2080
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/marine_metagenome.fasta ==> marine_metagenome
+  All references were combined in combined_reference.fasta
+
+Starting quast.py for the combined reference...
+/sw/bioinfo/quast/5.0.2/rackham/bin/quast.py --combined-ref --colors #E31A1C --ls solid --ambiguity-usage all /home/claudg/genome-project//analyses/DNA_assembled_megahit/1/final.contigs.fa -R /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_corrected_input/combined_reference.fasta -o /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference --labels final.contigs
+
+Started: 2022-05-18 11:25:17
+
+Logging to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/quast.log
+NOTICE: Maximum number of threads is set to 4 (use --threads option to set it manually)
+
+CWD: /domus/h1/claudg/genome-project/code
+Main parameters: 
+  MODE: meta, threads: 4, minimum contig length: 500, minimum alignment length: 65, ambiguity: all, \
+  threshold for extensive misassembly size: 1000
+
+Reference:
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_corrected_input/combined_reference.fasta ==> combined_reference
+
+Contigs:
+  Pre-processing...
+  /home/claudg/genome-project//analyses/DNA_assembled_megahit/1/final.contigs.fa ==> final.contigs
+
+2022-05-18 11:25:24
+Running Basic statistics processor...
+  Reference genome:
+    combined_reference.fasta, length = 181452235, num fragments = 1571, GC % = 55.88
+WARNING:   Reference genome is fragmented. You may consider rerunning QUAST using --fragmented option. QUAST will try to detect misassemblies caused by the fragmentation and mark them fake (will be excluded from # misassemblies).
+  Contig files: 
+    final.contigs
+  Calculating N50 and L50...
+    final.contigs, N50 = 1095, L50 = 21215, Total length = 95542768, GC % = 46.53, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+/sw/apps/bioinfo/quast/5.0.2/snowy/bin/metaquast.py:136: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/basic_stats/GC_content_plot.pdf
+  Drawing final.contigs GC content plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/basic_stats/final.contigs_GC_content_plot.pdf
+Done.
+
+2022-05-18 11:25:59
+Running Contig analyzer...
+  final.contigs
+  Logging to files /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/contigs_reports/contigs_report_final-contigs.stdout and contigs_report_final-contigs.stderr...
+  Aligning contigs to the reference
+  Analysis is finished.
+  Information about interspecies translocations by references for final_contigs is saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/contigs_reports/interspecies_translocations_by_refs_final_contigs.info
+  Drawing Intergenomic misassemblies (found and supposed) metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/contigs_reports/intergenomic_misassemblies.pdf
+  Creating total report...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2022-05-18 11:26:55
+Running NA-NGA calculation...
+  final.contigs, Largest alignment = 3896, NA50 = None, LA50 = None
+  Drawing cumulative plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/aligned_stats/NAx_plot.pdf
+Done.
+
+2022-05-18 11:27:03
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  final.contigs
+  Analysis is finished.
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2022-05-18 11:28:08
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2022-05-18 11:28:20
+RESULTS:
+  Text versions of total report are saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/report.html
+  PDF version (tables and plots) is saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/report.pdf
+  Icarus (contig browser) is saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/icarus.html
+
+Excluding downloaded references with low genome fraction from further analysis..
+
+Filtered reference(s):
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_downloaded_references/Synechococcus_sp._RCC307.fasta ==> Synechococcus_sp._RCC307
+  All references were combined in combined_reference.fasta
+  Pre-processing...
+  /home/claudg/genome-project//analyses/DNA_assembled_megahit/1/final.contigs.fa ==> final.contigs
+
+Starting quast.py for the corrected combined reference...
+/sw/bioinfo/quast/5.0.2/rackham/bin/quast.py --combined-ref --colors #E31A1C --ls solid --ambiguity-usage all /home/claudg/genome-project//analyses/DNA_assembled_megahit/1/final.contigs.fa -R /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_corrected_input/combined_reference.fasta -o /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference --labels final.contigs
+
+Started: 2022-05-18 11:28:30
+
+Logging to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/quast.log
+NOTICE: Output directory already exists and looks like a QUAST output dir. Existing results can be reused (e.g. previously generated alignments)!
+NOTICE: Maximum number of threads is set to 4 (use --threads option to set it manually)
+
+CWD: /domus/h1/claudg/genome-project/code
+Main parameters: 
+  MODE: meta, threads: 4, minimum contig length: 500, minimum alignment length: 65, ambiguity: all, \
+  threshold for extensive misassembly size: 1000
+
+Reference:
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_corrected_input/combined_reference.fasta ==> combined_reference
+
+Contigs:
+  Pre-processing...
+  /home/claudg/genome-project//analyses/DNA_assembled_megahit/1/final.contigs.fa ==> final.contigs
+
+2022-05-18 11:28:38
+Running Basic statistics processor...
+  Reference genome:
+    combined_reference.fasta, length = 2224914, num fragments = 1, GC % = 60.84
+  Contig files: 
+    final.contigs
+  Calculating N50 and L50...
+    final.contigs, N50 = 1095, L50 = 21215, Total length = 95542768, GC % = 46.53, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/basic_stats/GC_content_plot.pdf
+  Drawing final.contigs GC content plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/basic_stats/final.contigs_GC_content_plot.pdf
+Done.
+
+2022-05-18 11:28:48
+Running Contig analyzer...
+  final.contigs
+  Logging to files /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/contigs_reports/contigs_report_final-contigs.stdout and contigs_report_final-contigs.stderr...
+  Aligning contigs to the reference
+  Analysis is finished.
+  Information about interspecies translocations by references for final_contigs is saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/contigs_reports/interspecies_translocations_by_refs_final_contigs.info
+  Drawing Intergenomic misassemblies (found and supposed) metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/contigs_reports/intergenomic_misassemblies.pdf
+  Creating total report...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2022-05-18 11:28:57
+Running NA-NGA calculation...
+  final.contigs, Largest alignment = 3896, NA50 = None, LA50 = None
+  Drawing cumulative plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/aligned_stats/NAx_plot.pdf
+Done.
+
+2022-05-18 11:29:00
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  final.contigs
+  Analysis is finished.
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2022-05-18 11:29:02
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2022-05-18 11:29:05
+RESULTS:
+  Text versions of total report are saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/report.html
+  PDF version (tables and plots) is saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/report.pdf
+  Icarus (contig browser) is saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/combined_reference/icarus.html
+
+Partitioning contigs into bins aligned to each reference..
+  processing final.contigs
+
+Starting quast.py for the contigs aligned to Synechococcus_sp._RCC307... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/1/runs_per_reference/Synechococcus_sp._RCC307/quast.log)
+/sw/bioinfo/quast/5.0.2/rackham/bin/quast.py --colors #E31A1C --ls solid --no-check-meta --contig-thresholds 1000,5000,10000,25000,50000 /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_corrected_input/final-contigs_to_Synechococcus_sp._RCC307.fasta -R /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_corrected_input/Synechococcus_sp._RCC307.fasta__1 -o /home/claudg/genome-project/analyses/DNA_metaquast/1/runs_per_reference/Synechococcus_sp._RCC307 --labels final.contigs
+
+Started: 2022-05-18 11:29:13
+
+Logging to /home/claudg/genome-project/analyses/DNA_metaquast/1/runs_per_reference/Synechococcus_sp._RCC307/quast.log
+NOTICE: Maximum number of threads is set to 4 (use --threads option to set it manually)
+
+CWD: /domus/h1/claudg/genome-project/code
+Main parameters: 
+  MODE: meta, threads: 4, minimum contig length: 500, minimum alignment length: 65, ambiguity: one, \
+  threshold for extensive misassembly size: 1000
+
+Reference:
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_corrected_input/Synechococcus_sp._RCC307.fasta__1 ==> Synechococcus_sp._RCC307
+
+Contigs:
+  Pre-processing...
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_corrected_input/final-contigs_to_Synechococcus_sp._RCC307.fasta ==> final.contigs
+
+2022-05-18 11:29:13
+Running Basic statistics processor...
+  Reference genome:
+    Synechococcus_sp._RCC307.fasta__1, length = 2224914, num fragments = 1, GC % = 60.84
+  Contig files: 
+    final.contigs
+  Calculating N50 and L50...
+    final.contigs, N50 = 1040, L50 = 429, Total length = 1358321, GC % = 61.38, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/runs_per_reference/Synechococcus_sp._RCC307/basic_stats/Nx_plot.pdf
+  Drawing NGx plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/runs_per_reference/Synechococcus_sp._RCC307/basic_stats/NGx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/runs_per_reference/Synechococcus_sp._RCC307/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/runs_per_reference/Synechococcus_sp._RCC307/basic_stats/GC_content_plot.pdf
+  Drawing final.contigs GC content plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/runs_per_reference/Synechococcus_sp._RCC307/basic_stats/final.contigs_GC_content_plot.pdf
+Done.
+
+2022-05-18 11:29:15
+Running Contig analyzer...
+  final.contigs
+  Logging to files /home/claudg/genome-project/analyses/DNA_metaquast/1/runs_per_reference/Synechococcus_sp._RCC307/contigs_reports/contigs_report_final-contigs.stdout and contigs_report_final-contigs.stderr...
+  Aligning contigs to the reference
+  Analysis is finished.
+  Creating total report...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/runs_per_reference/Synechococcus_sp._RCC307/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/runs_per_reference/Synechococcus_sp._RCC307/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/runs_per_reference/Synechococcus_sp._RCC307/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/runs_per_reference/Synechococcus_sp._RCC307/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/runs_per_reference/Synechococcus_sp._RCC307/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2022-05-18 11:29:17
+Running NA-NGA calculation...
+  final.contigs, Largest alignment = 3896, NA50 = 981, NGA50 = 621, LA50 = 457, LGA50 = 1020
+  Drawing cumulative plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/runs_per_reference/Synechococcus_sp._RCC307/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/runs_per_reference/Synechococcus_sp._RCC307/aligned_stats/NAx_plot.pdf
+  Drawing NGAx plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/runs_per_reference/Synechococcus_sp._RCC307/aligned_stats/NGAx_plot.pdf
+Done.
+
+2022-05-18 11:29:18
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  final.contigs
+  Analysis is finished.
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2022-05-18 11:29:19
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2022-05-18 11:29:20
+RESULTS:
+  Text versions of total report are saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/runs_per_reference/Synechococcus_sp._RCC307/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/runs_per_reference/Synechococcus_sp._RCC307/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/runs_per_reference/Synechococcus_sp._RCC307/report.html
+  PDF version (tables and plots) is saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/runs_per_reference/Synechococcus_sp._RCC307/report.pdf
+  Icarus (contig browser) is saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/runs_per_reference/Synechococcus_sp._RCC307/icarus.html
+
+Starting quast.py for the contigs not aligned anywhere... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/1/not_aligned/quast.log)
+/sw/bioinfo/quast/5.0.2/rackham/bin/quast.py --colors #E31A1C --ls solid --no-check-meta --contig-thresholds 1000,5000,10000,25000,50000 -t 4 /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_corrected_input/final-contigs_not_aligned_anywhere.fasta -o /home/claudg/genome-project/analyses/DNA_metaquast/1/not_aligned --labels final.contigs
+
+Started: 2022-05-18 11:29:21
+
+Logging to /home/claudg/genome-project/analyses/DNA_metaquast/1/not_aligned/quast.log
+
+CWD: /domus/h1/claudg/genome-project/code
+Main parameters: 
+  MODE: meta, threads: 4, minimum contig length: 500, minimum alignment length: 65, ambiguity: one, \
+  threshold for extensive misassembly size: 1000
+
+Contigs:
+  Pre-processing...
+  /home/claudg/genome-project/analyses/DNA_metaquast/1/quast_corrected_input/final-contigs_not_aligned_anywhere.fasta ==> final.contigs
+
+2022-05-18 11:29:26
+Running Basic statistics processor...
+  Contig files: 
+    final.contigs
+  Calculating N50 and L50...
+    final.contigs, N50 = 1097, L50 = 20787, Total length = 94184447, GC % = 46.31, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/not_aligned/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/not_aligned/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/not_aligned/basic_stats/GC_content_plot.pdf
+  Drawing final.contigs GC content plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/not_aligned/basic_stats/final.contigs_GC_content_plot.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2022-05-18 11:29:35
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2022-05-18 11:29:37
+RESULTS:
+  Text versions of total report are saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/not_aligned/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/not_aligned/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/not_aligned/report.html
+  PDF version (tables and plots) is saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/not_aligned/report.pdf
+  Icarus (contig browser) is saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/not_aligned/icarus.html
+
+2022-05-18 11:29:38
+Summarizing results...
+  Drawing # contigs metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/summary/PDF/num_contigs.pdf
+  Drawing Largest contig metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/summary/PDF/Largest_contig.pdf
+  Drawing Total length metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/summary/PDF/Total_length.pdf
+  Drawing Largest alignment metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/summary/PDF/Largest_alignment.pdf
+  Drawing Total aligned length metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/summary/PDF/Total_aligned_length.pdf
+  Drawing Total length (>= 1000 bp) metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/summary/PDF/Total_length_(ge_1000_bp).pdf
+  Drawing Total length (>= 10000 bp) metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/summary/PDF/Total_length_(ge_10000_bp).pdf
+  Drawing Total length (>= 50000 bp) metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/summary/PDF/Total_length_(ge_50000_bp).pdf
+  Drawing # misassemblies metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/summary/PDF/num_misassemblies.pdf
+  Drawing metaQUAST summary misassemblies plot for final.contigs...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/summary/PDF/final-contigs_misassemblies.pdf
+  Drawing Misassembled contigs length metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/summary/PDF/Misassembled_contigs_length.pdf
+  Drawing # mismatches per 100 kbp metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/summary/PDF/num_mismatches_per_100_kbp.pdf
+  Drawing # indels per 100 kbp metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/summary/PDF/num_indels_per_100_kbp.pdf
+  Drawing # N's per 100 kbp metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/summary/PDF/num_Ns_per_100_kbp.pdf
+  Drawing Genome fraction (%) metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/summary/PDF/Genome_fraction.pdf
+  Drawing Duplication ratio metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/summary/PDF/Duplication_ratio.pdf
+  Drawing NGA50 metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/summary/PDF/NGA50.pdf
+  Drawing LGA50 metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/summary/PDF/LGA50.pdf
+
+  Text versions of reports and plots for each metric (for all references and assemblies) are saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/summary/
+  Icarus (contig browser) is saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/icarus.html
+  Drawing interactive Krona plots...
+  Krona chart for final.contigs is saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/krona_charts/final.contigs_taxonomy_chart.html
+  Extended version of HTML-report (for all references and assemblies) is saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/report.html
+
+MetaQUAST finished.
+  Log is saved to /home/claudg/genome-project/analyses/DNA_metaquast/1/metaquast.log
+
+Finished: 2022-05-18 11:29:42
+Elapsed time: 0:50:04.895615
+Total NOTICEs: 11; WARNINGs: 1; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
+/sw/bioinfo/quast/5.0.2/rackham/bin/metaquast.py -o /home/claudg/genome-project//analyses/DNA_metaquast/2 /home/claudg/genome-project//analyses/DNA_assembled_megahit/2/final.contigs.fa
+
+Version: 5.0.2
+
+System information:
+  OS: Linux-3.10.0-1160.62.1.el7.x86_64-x86_64-with-centos-7.9.2009-Core (linux_64)
+  Python version: 3.7.2
+  CPUs number: 16
+
+Started: 2022-05-18 11:29:42
+
+Logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/metaquast.log
+NOTICE: Maximum number of threads is set to 4 (use --threads option to set it manually)
+
+Contigs:
+  Pre-processing...
+  /home/claudg/genome-project//analyses/DNA_assembled_megahit/2/final.contigs.fa ==> final.contigs
+
+No references are provided, starting to search for reference genomes in SILVA 16S rRNA database and to download them from NCBI...
+
+2022-05-18 11:29:51
+Running BlastN..
+  processing final.contigs
+  BLAST results for final.contigs are saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/blast.res_final-contigs...
+
+
+2022-05-18 11:45:39
+Trying to download found references from NCBI. Totally 50 organisms to try.
+  unidentified_marine_bacterioplankton        | not found in the NCBI database
+  unidentified_marine_bacterioplankton was not found in NCBI database, trying to download the next best match
+  Gaiella_sp._EBR4-R2                         | not found in the NCBI database
+  Gaiella_sp._EBR4-R2 was not found in NCBI database, trying to download the next best match
+  Conexibacter_woesei_Iso977N                 | successfully downloaded (total 1, 49 more to go)
+  unidentified_eubacterium_LD29               | not found in the NCBI database
+  unidentified_eubacterium_LD29 was not found in NCBI database, trying to download the next best match
+  bacterium_enrichment_culture_clone_136(2011) | not found in the NCBI database
+  bacterium_enrichment_culture_clone_136(2011) was not found in NCBI database, trying to download the next best match
+  bacterium_Ellin511                          | not found in the NCBI database
+  bacterium_Ellin511 was not found in NCBI database, trying to download the next best match
+  Verrucomicrobia_bacterium_WY51              | not found in the NCBI database
+  sulfur-oxidizing_bacterium_OBII5            | not found in the NCBI database
+  sulfur-oxidizing_bacterium_OBII5 was not found in NCBI database, trying to download the next best match
+  bacterium_enrichment_culture_clone_CBNH_1102_HA1_MIDDLE_5 | not found in the NCBI database
+  bacterium_enrichment_culture_clone_CBNH_1102_HA1_MIDDLE_5 was not found in NCBI database, trying to download the next best match
+  Alcanivorax_pacificus_W11-5                 | successfully downloaded (total 2, 47 more to go)
+  saltmarsh_clone_LCP-89                      | not found in the NCBI database
+  saltmarsh_clone_LCP-89 was not found in NCBI database, trying to download the next best match
+  iron-reducing_bacterium_enrichment_culture_clone_HN-HFO18 | not found in the NCBI database
+  iron-reducing_bacterium_enrichment_culture_clone_HN-HFO18 was not found in NCBI database, trying to download the next best match
+  Desulfitibacter_alkalitolerans_DSM_16504    | successfully downloaded (total 3, 46 more to go)
+  mine_drainage_metagenome                    | successfully downloaded (total 4, 45 more to go)
+  marine_metagenome                           | successfully downloaded (total 5, 44 more to go)
+  marine_gamma_proteobacterium_HTCC2080       | successfully downloaded (total 6, 43 more to go)
+  magnetic_coccus_MP17                        | not found in the NCBI database
+  magnetic_coccus_MP17 was not found in NCBI database, trying to download the next best match
+  Aurantimonas_manganoxydans_SI85-9A1         | successfully downloaded (total 7, 42 more to go)
+  gamma_proteobacterium_SCGC_AB-629-P17       | successfully downloaded (total 8, 41 more to go)
+bioreactor metagenome has too fragmented reference genome! It will not be downloaded.
+  bioreactor_metagenome                       | not found in the NCBI database
+  bioreactor_metagenome was not found in NCBI database, trying to download the next best match
+  bacterium_enrichment_culture_clone_AOM-SR-B3 | not found in the NCBI database
+  bacterium_enrichment_culture_clone_AOM-SR-B3 was not found in NCBI database, trying to download the next best match
+wastewater metagenome has too fragmented reference genome! It will not be downloaded.
+  wastewater_metagenome                       | not found in the NCBI database
+  wastewater_metagenome was not found in NCBI database, trying to download the next best match
+  denitrifying_bacterium_enrichment_culture_clone_NOB_2_E8 | not found in the NCBI database
+  benzene_mineralizing_consortium_clone_SB-5  | not found in the NCBI database
+  benzene_mineralizing_consortium_clone_SB-5 was not found in NCBI database, trying to download the next best match
+  iron-reducing_bacterium_enrichment_culture_clone_HN105 | not found in the NCBI database
+  iron-reducing_bacterium_enrichment_culture_clone_HN105 was not found in NCBI database, trying to download the next best match
+  Owenweeksia_hongkongensis_DSM_17368         | successfully downloaded (total 9, 39 more to go)
+  bacterium_rJ7                               | not found in the NCBI database
+  bacterium_rJ7 was not found in NCBI database, trying to download the next best match
+  bacterium_rJ14                              | not found in the NCBI database
+  bacterium_rJ14 was not found in NCBI database, trying to download the next best match
+  actinobacterium_GP-6                        | not found in the NCBI database
+  actinobacterium_GP-6 was not found in NCBI database, trying to download the next best match
+  Actinomycetales_bacterium_GP-5              | not found in the NCBI database
+  bacterium_enrichment_culture_clone_69(2013) | not found in the NCBI database
+  bacterium_enrichment_culture_clone_69(2013) was not found in NCBI database, trying to download the next best match
+  Marispirillum_indicum                       | not found in the NCBI database
+  Marispirillum_indicum was not found in NCBI database, trying to download the next best match
+  alpha_proteobacterium_RW12                  | not found in the NCBI database
+  alpha_proteobacterium_RW12 was not found in NCBI database, trying to download the next best match
+  Methyloligella_solikamskensis               | not found in the NCBI database
+  bacterium_WH3-1                             | not found in the NCBI database
+  bacterium_WH3-1 was not found in NCBI database, trying to download the next best match
+  Gracilibacteria_bacterium_JGI_0000069-P22   | successfully downloaded (total 10, 36 more to go)
+  bacterium_SH1-3                             | not found in the NCBI database
+  bacterium_SH1-3 was not found in NCBI database, trying to download the next best match
+  Fluviicola_taffensis_DSM_16823              | successfully downloaded (total 11, 35 more to go)
+  bacterium_Ellin6543                         | not found in the NCBI database
+  bacterium_Ellin6543 was not found in NCBI database, trying to download the next best match
+  Dehalococcoides_sp._BHI80-15                | not found in the NCBI database
+  Dehalococcoides_sp._BHI80-15 was not found in NCBI database, trying to download the next best match
+  bacterium_Ellin6519                         | not found in the NCBI database
+  bacterium_Ellin6519 was not found in NCBI database, trying to download the next best match
+  unidentified_green_non-sulfur_bacterium_OPB12 | not found in the NCBI database
+  bacterium_Ellin5273                         | not found in the NCBI database
+  bacterium_Ellin5273 was not found in NCBI database, trying to download the next best match
+  bacterium_Ellin5247                         | not found in the NCBI database
+  alpha_proteobacterium_BAL199                | successfully downloaded (total 12, 32 more to go)
+  Vesicomya_sp._mt-II_symbiont                | not found in the NCBI database
+  Vesicomya_sp._mt-II_symbiont was not found in NCBI database, trying to download the next best match
+  Calyptogena_sp._Florida_gill_symbiont       | not found in the NCBI database
+  Calyptogena_sp._Florida_gill_symbiont was not found in NCBI database, trying to download the next best match
+  bacterium_symbiont_of_Laubiericoncha_chuni  | not found in the NCBI database
+  bacterium_symbiont_of_Laubiericoncha_chuni was not found in NCBI database, trying to download the next best match
+  endosymbiont_of_Ridgeia_piscesae            | successfully downloaded (total 13, 31 more to go)
+  Ulvibacter_litoralis                        | successfully downloaded (total 14, 30 more to go)
+  Thiohalobacter_thiocyanaticus               | successfully downloaded (total 15, 29 more to go)
+  Thioalkalivibrio_sulfidiphilus_HL-EbGr7     | successfully downloaded (total 16, 28 more to go)
+  Thioalkalivibrio_sp._ALJ17                  | successfully downloaded (total 17, 27 more to go)
+  Tenacibaculum_sp._KYW_576                   | not found in the NCBI database
+  Tenacibaculum_sp._KYW_576 was not found in NCBI database, trying to download the next best match
+  Tenacibaculum_skagerrakense                 | successfully downloaded (total 18, 26 more to go)
+  Syntrophus_aciditrophicus                   | successfully downloaded (total 19, 25 more to go)
+  Synechococcus_sp._KORDI-49                  | successfully downloaded (total 20, 24 more to go)
+  Sulfitobacter_sp._NAS-14.1                  | successfully downloaded (total 21, 23 more to go)
+  Stenotrophomonas_sp._canine_oral_taxon_224  | not found in the NCBI database
+  Stenotrophomonas_sp._canine_oral_taxon_224 was not found in NCBI database, trying to download the next best match
+  Xanthomonas_citri_subsp._malvacearum        | successfully downloaded (total 22, 22 more to go)
+  Sporosarcina_sp._EUR3_2.2.2                 | not found in the NCBI database
+  Sporosarcina_sp._EUR3_2.2.2 was not found in NCBI database, trying to download the next best match
+  Paenisporosarcina_macmurdoensis             | not found in the NCBI database
+  Paenisporosarcina_macmurdoensis was not found in NCBI database, trying to download the next best match
+  Sporosarcina_sp._3061                       | not found in the NCBI database
+  Sphingomonas_sp._JEM-1                      | not found in the NCBI database
+  Sphingomonas_sp._JEM-1 was not found in NCBI database, trying to download the next best match
+  Sphingobium_fuliginis                       | successfully downloaded (total 23, 20 more to go)
+  Solemya_reidi_gill_symbiont                 | not found in the NCBI database
+  Solemya_reidi_gill_symbiont was not found in NCBI database, trying to download the next best match
+  Marinospirillum_sp._NB6                     | not found in the NCBI database
+  Marinospirillum_sp._NB6 was not found in NCBI database, trying to download the next best match
+  Modicisalibacter_tunisiensis                | successfully downloaded (total 24, 19 more to go)
+  Sinobacterium_caligoides                    | successfully downloaded (total 25, 18 more to go)
+  Simiduia_sp._J-MY2                          | successfully downloaded (total 26, 17 more to go)
+  Shewanella_amazonensis_SB2B                 | successfully downloaded (total 27, 16 more to go)
+  Roseobacter_sp._SK209-2-6                   | successfully downloaded (total 28, 15 more to go)
+  Rhodopirellula_sp._SM50                     | successfully downloaded (total 29, 14 more to go)
+  Rhodopirellula_lusitana                     | not found in the NCBI database
+  Pseudoruegeria_aquimaris                    | successfully downloaded (total 30, 12 more to go)
+  Porticoccus_hydrocarbonoclasticus_MCTG13d   | successfully downloaded (total 31, 11 more to go)
+  Pelobacter_sp._AOP6                         | not found in the NCBI database
+  Pelobacter_sp._AOP6 was not found in NCBI database, trying to download the next best match
+  Desulfuromonas_palmitatis                   | not found in the NCBI database
+  Desulfuromonas_palmitatis was not found in NCBI database, trying to download the next best match
+  Desulfuromonas_michiganensis                | not found in the NCBI database
+  Desulfuromonas_michiganensis was not found in NCBI database, trying to download the next best match
+  Desulfuromonas_thiophila                    | successfully downloaded (total 32, 10 more to go)
+  Paracoccus_aminophilus                      | successfully downloaded (total 33, 9 more to go)
+  Oceanicola_granulosus_HTCC2516              | successfully downloaded (total 34, 8 more to go)
+  Nitrospina_sp._SCGC_AAA288-L16              | successfully downloaded (total 35, 7 more to go)
+  Nitrospina_sp._347                          | not found in the NCBI database
+  Nitrospina_sp._347 was not found in NCBI database, trying to download the next best match
+  Nitrospina_gracilis                         | successfully downloaded (total 36, 6 more to go)
+  Nitrospina_sp._3005                         | not found in the NCBI database
+  Nitrospina_sp._3005 was not found in NCBI database, trying to download the next best match
+  Nitrospina_gracilis                         | was downloaded previously (total 37, 5 more to go)
+  Nitrospina_gracilis_3                       | not found in the NCBI database
+  Nitrospina_gracilis_3 was not found in NCBI database, trying to download the next best match
+  Nitrospina_sp._enrichment_culture_clone_Cb12 | not found in the NCBI database
+  Neisseria_sp._CSL_7565                      | successfully downloaded (total 38, 3 more to go)
+  Mollicutes_bacterium_HR1                    | successfully downloaded (total 39, 2 more to go)
+  Methylobacter_sp._XLMV4                     | successfully downloaded (total 40, 1 more to go)
+  Marinomonas_communis                        | successfully downloaded (total 41, 0 more to go)
+
+Downloaded reference(s):
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Alcanivorax_pacificus_W11_5.fasta ==> Alcanivorax_pacificus_W11_5
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Aurantimonas_manganoxydans_SI85_9A1.fasta ==> Aurantimonas_manganoxydans_SI85_9A1
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Conexibacter_woesei_Iso977N.fasta ==> Conexibacter_woesei_Iso977N
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Desulfitibacter_alkalitolerans_DSM_16504.fasta ==> Desulfitibacter_alkalitolerans_DSM_16504
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Desulfuromonas_thiophila.fasta ==> Desulfuromonas_thiophila
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Fluviicola_taffensis_DSM_16823.fasta ==> Fluviicola_taffensis_DSM_16823
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Gracilibacteria_bacterium_JGI_0000069_P22.fasta ==> Gracilibacteria_bacterium_JGI_0000069_P22
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Marinomonas_communis.fasta ==> Marinomonas_communis
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Methylobacter_sp._XLMV4.fasta ==> Methylobacter_sp._XLMV4
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Modicisalibacter_tunisiensis.fasta ==> Modicisalibacter_tunisiensis
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Mollicutes_bacterium_HR1.fasta ==> Mollicutes_bacterium_HR1
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Neisseria_sp._CSL_7565.fasta ==> Neisseria_sp._CSL_7565
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Nitrospina_gracilis.fasta ==> Nitrospina_gracilis
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Nitrospina_sp._SCGC_AAA288_L16.fasta ==> Nitrospina_sp._SCGC_AAA288_L16
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Oceanicola_granulosus_HTCC2516.fasta ==> Oceanicola_granulosus_HTCC2516
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Owenweeksia_hongkongensis_DSM_17368.fasta ==> Owenweeksia_hongkongensis_DSM_17368
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Paracoccus_aminophilus.fasta ==> Paracoccus_aminophilus
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Porticoccus_hydrocarbonoclasticus_MCTG13d.fasta ==> Porticoccus_hydrocarbonoclasticus_MCTG13d
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Pseudoruegeria_aquimaris.fasta ==> Pseudoruegeria_aquimaris
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Rhodopirellula_sp._SM50.fasta ==> Rhodopirellula_sp._SM50
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Roseobacter_sp._SK209_2_6.fasta ==> Roseobacter_sp._SK209_2_6
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Shewanella_amazonensis_SB2B.fasta ==> Shewanella_amazonensis_SB2B
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Simiduia_sp._J_MY2.fasta ==> Simiduia_sp._J_MY2
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Sinobacterium_caligoides.fasta ==> Sinobacterium_caligoides
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Sphingobium_fuliginis.fasta ==> Sphingobium_fuliginis
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Sulfitobacter_sp._NAS_14.1.fasta ==> Sulfitobacter_sp._NAS_14.1
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Synechococcus_sp._KORDI_49.fasta ==> Synechococcus_sp._KORDI_49
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Syntrophus_aciditrophicus.fasta ==> Syntrophus_aciditrophicus
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Tenacibaculum_skagerrakense.fasta ==> Tenacibaculum_skagerrakense
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Thioalkalivibrio_sp._ALJ17.fasta ==> Thioalkalivibrio_sp._ALJ17
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Thioalkalivibrio_sulfidiphilus_HL_EbGr7.fasta ==> Thioalkalivibrio_sulfidiphilus_HL_EbGr7
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Thiohalobacter_thiocyanaticus.fasta ==> Thiohalobacter_thiocyanaticus
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Ulvibacter_litoralis.fasta ==> Ulvibacter_litoralis
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/Xanthomonas_citri_subsp._malvacearum.fasta ==> Xanthomonas_citri_subsp._malvacearum
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/alpha_proteobacterium_BAL199.fasta ==> alpha_proteobacterium_BAL199
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/endosymbiont_of_Ridgeia_piscesae.fasta ==> endosymbiont_of_Ridgeia_piscesae
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/gamma_proteobacterium_SCGC_AB_629_P17.fasta ==> gamma_proteobacterium_SCGC_AB_629_P17
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/marine_gamma_proteobacterium_HTCC2080.fasta ==> marine_gamma_proteobacterium_HTCC2080
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/marine_metagenome.fasta ==> marine_metagenome
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_downloaded_references/mine_drainage_metagenome.fasta ==> mine_drainage_metagenome
+  All references were combined in combined_reference.fasta
+
+Starting quast.py for the combined reference...
+/sw/bioinfo/quast/5.0.2/rackham/bin/quast.py --combined-ref --colors #E31A1C --ls solid --ambiguity-usage all /home/claudg/genome-project//analyses/DNA_assembled_megahit/2/final.contigs.fa -R /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_corrected_input/combined_reference.fasta -o /home/claudg/genome-project/analyses/DNA_metaquast/2/combined_reference --labels final.contigs
+
+Started: 2022-05-18 12:08:32
+
+Logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/combined_reference/quast.log
+NOTICE: Maximum number of threads is set to 4 (use --threads option to set it manually)
+
+CWD: /domus/h1/claudg/genome-project/code
+Main parameters: 
+  MODE: meta, threads: 4, minimum contig length: 500, minimum alignment length: 65, ambiguity: all, \
+  threshold for extensive misassembly size: 1000
+
+Reference:
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_corrected_input/combined_reference.fasta ==> combined_reference
+
+Contigs:
+  Pre-processing...
+  /home/claudg/genome-project//analyses/DNA_assembled_megahit/2/final.contigs.fa ==> final.contigs
+
+2022-05-18 12:08:39
+Running Basic statistics processor...
+  Reference genome:
+    combined_reference.fasta, length = 150372005, num fragments = 1096, GC % = 55.66
+WARNING:   Reference genome is fragmented. You may consider rerunning QUAST using --fragmented option. QUAST will try to detect misassemblies caused by the fragmentation and mark them fake (will be excluded from # misassemblies).
+  Contig files: 
+    final.contigs
+  Calculating N50 and L50...
+    final.contigs, N50 = 1702, L50 = 13987, Total length = 120479482, GC % = 48.08, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+/sw/apps/bioinfo/quast/5.0.2/snowy/bin/metaquast.py:136: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/combined_reference/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/combined_reference/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/combined_reference/basic_stats/GC_content_plot.pdf
+  Drawing final.contigs GC content plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/combined_reference/basic_stats/final.contigs_GC_content_plot.pdf
+Done.
+
+2022-05-18 12:09:11
+Running Contig analyzer...
+  final.contigs
+  Logging to files /home/claudg/genome-project/analyses/DNA_metaquast/2/combined_reference/contigs_reports/contigs_report_final-contigs.stdout and contigs_report_final-contigs.stderr...
+  Aligning contigs to the reference
+  Analysis is finished.
+  Information about interspecies translocations by references for final_contigs is saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/combined_reference/contigs_reports/interspecies_translocations_by_refs_final_contigs.info
+  Drawing Intergenomic misassemblies (found and supposed) metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/combined_reference/contigs_reports/intergenomic_misassemblies.pdf
+  Creating total report...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/combined_reference/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/combined_reference/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/combined_reference/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+  Drawing misassemblies by types plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/combined_reference/contigs_reports/misassemblies_plot.pdf
+  Drawing misassemblies FRCurve plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/combined_reference/contigs_reports/misassemblies_frcurve_plot.pdf
+Done.
+
+2022-05-18 12:09:56
+Running NA-NGA calculation...
+  final.contigs, Largest alignment = 1746, NA50 = None, LA50 = None
+  Drawing cumulative plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/combined_reference/aligned_stats/cumulative_plot.pdf
+  Drawing NAx plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/combined_reference/aligned_stats/NAx_plot.pdf
+Done.
+
+2022-05-18 12:10:04
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  final.contigs
+  Analysis is finished.
+  Skipping drawing Genome fraction, % histogram... (less than 2 columns histogram makes no sense)
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2022-05-18 12:10:58
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2022-05-18 12:11:08
+RESULTS:
+  Text versions of total report are saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/combined_reference/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/combined_reference/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/combined_reference/report.html
+  PDF version (tables and plots) is saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/combined_reference/report.pdf
+  Icarus (contig browser) is saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/combined_reference/icarus.html
+
+Excluding downloaded references with low genome fraction from further analysis..
+All downloaded references have low genome fraction. Nothing was excluded for now.
+
+Partitioning contigs into bins aligned to each reference..
+  processing final.contigs
+
+Run QUAST on different references in parallel..
+
+Starting quast.py for the contigs aligned to Alcanivorax_pacificus_W11_5... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Alcanivorax_pacificus_W11_5/quast.log)
+
+Starting quast.py for the contigs aligned to Aurantimonas_manganoxydans_SI85_9A1... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Aurantimonas_manganoxydans_SI85_9A1/quast.log)
+
+Starting quast.py for the contigs aligned to Conexibacter_woesei_Iso977N... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Conexibacter_woesei_Iso977N/quast.log)
+
+Starting quast.py for the contigs aligned to Desulfitibacter_alkalitolerans_DSM_16504... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Desulfitibacter_alkalitolerans_DSM_16504/quast.log)
+
+Starting quast.py for the contigs aligned to Desulfuromonas_thiophila... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Desulfuromonas_thiophila/quast.log)
+
+Starting quast.py for the contigs aligned to Fluviicola_taffensis_DSM_16823... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Fluviicola_taffensis_DSM_16823/quast.log)
+
+Starting quast.py for the contigs aligned to Gracilibacteria_bacterium_JGI_0000069_P22... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Gracilibacteria_bacterium_JGI_0000069_P22/quast.log)
+
+Starting quast.py for the contigs aligned to Marinomonas_communis... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Marinomonas_communis/quast.log)
+
+Starting quast.py for the contigs aligned to Methylobacter_sp._XLMV4... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Methylobacter_sp._XLMV4/quast.log)
+
+Starting quast.py for the contigs aligned to Modicisalibacter_tunisiensis... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Modicisalibacter_tunisiensis/quast.log)
+
+Starting quast.py for the contigs aligned to Mollicutes_bacterium_HR1... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Mollicutes_bacterium_HR1/quast.log)
+
+Starting quast.py for the contigs aligned to Neisseria_sp._CSL_7565... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Neisseria_sp._CSL_7565/quast.log)
+
+Starting quast.py for the contigs aligned to Nitrospina_gracilis... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Nitrospina_gracilis/quast.log)
+
+Starting quast.py for the contigs aligned to Nitrospina_sp._SCGC_AAA288_L16... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Nitrospina_sp._SCGC_AAA288_L16/quast.log)
+
+Starting quast.py for the contigs aligned to Oceanicola_granulosus_HTCC2516... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Oceanicola_granulosus_HTCC2516/quast.log)
+
+Starting quast.py for the contigs aligned to Owenweeksia_hongkongensis_DSM_17368... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Owenweeksia_hongkongensis_DSM_17368/quast.log)
+
+Starting quast.py for the contigs aligned to Paracoccus_aminophilus... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Paracoccus_aminophilus/quast.log)
+
+Starting quast.py for the contigs aligned to Porticoccus_hydrocarbonoclasticus_MCTG13d... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Porticoccus_hydrocarbonoclasticus_MCTG13d/quast.log)
+
+Starting quast.py for the contigs aligned to Pseudoruegeria_aquimaris... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Pseudoruegeria_aquimaris/quast.log)
+
+Starting quast.py for the contigs aligned to Rhodopirellula_sp._SM50... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Rhodopirellula_sp._SM50/quast.log)
+
+Starting quast.py for the contigs aligned to Roseobacter_sp._SK209_2_6... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Roseobacter_sp._SK209_2_6/quast.log)
+
+Starting quast.py for the contigs aligned to Shewanella_amazonensis_SB2B... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Shewanella_amazonensis_SB2B/quast.log)
+
+Starting quast.py for the contigs aligned to Simiduia_sp._J_MY2... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Simiduia_sp._J_MY2/quast.log)
+
+Starting quast.py for the contigs aligned to Sinobacterium_caligoides... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Sinobacterium_caligoides/quast.log)
+
+Starting quast.py for the contigs aligned to Sphingobium_fuliginis... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Sphingobium_fuliginis/quast.log)
+
+Starting quast.py for the contigs aligned to Sulfitobacter_sp._NAS_14.1... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Sulfitobacter_sp._NAS_14.1/quast.log)
+
+Starting quast.py for the contigs aligned to Synechococcus_sp._KORDI_49... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Synechococcus_sp._KORDI_49/quast.log)
+
+Starting quast.py for the contigs aligned to Syntrophus_aciditrophicus... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Syntrophus_aciditrophicus/quast.log)
+
+Starting quast.py for the contigs aligned to Tenacibaculum_skagerrakense... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Tenacibaculum_skagerrakense/quast.log)
+
+Starting quast.py for the contigs aligned to Thioalkalivibrio_sp._ALJ17... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Thioalkalivibrio_sp._ALJ17/quast.log)
+
+Starting quast.py for the contigs aligned to Thioalkalivibrio_sulfidiphilus_HL_EbGr7... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Thioalkalivibrio_sulfidiphilus_HL_EbGr7/quast.log)
+
+Starting quast.py for the contigs aligned to Thiohalobacter_thiocyanaticus... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Thiohalobacter_thiocyanaticus/quast.log)
+
+Starting quast.py for the contigs aligned to Ulvibacter_litoralis... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Ulvibacter_litoralis/quast.log)
+
+Starting quast.py for the contigs aligned to Xanthomonas_citri_subsp._malvacearum... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/Xanthomonas_citri_subsp._malvacearum/quast.log)
+
+Starting quast.py for the contigs aligned to alpha_proteobacterium_BAL199... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/alpha_proteobacterium_BAL199/quast.log)
+
+Starting quast.py for the contigs aligned to endosymbiont_of_Ridgeia_piscesae... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/endosymbiont_of_Ridgeia_piscesae/quast.log)
+
+Starting quast.py for the contigs aligned to gamma_proteobacterium_SCGC_AB_629_P17... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/gamma_proteobacterium_SCGC_AB_629_P17/quast.log)
+
+Starting quast.py for the contigs aligned to marine_gamma_proteobacterium_HTCC2080... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/marine_gamma_proteobacterium_HTCC2080/quast.log)
+
+Starting quast.py for the contigs aligned to marine_metagenome... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/runs_per_reference/marine_metagenome/quast.log)
+
+No contigs were aligned to the reference mine_drainage_metagenome, skipping..
+
+Starting quast.py for the contigs not aligned anywhere... (logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/not_aligned/quast.log)
+/sw/bioinfo/quast/5.0.2/rackham/bin/quast.py --colors #E31A1C --ls solid --no-check-meta --contig-thresholds 1000,5000,10000,25000,50000 -t 4 /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_corrected_input/final-contigs_not_aligned_anywhere.fasta -o /home/claudg/genome-project/analyses/DNA_metaquast/2/not_aligned --labels final.contigs
+
+Started: 2022-05-18 12:14:18
+
+Logging to /home/claudg/genome-project/analyses/DNA_metaquast/2/not_aligned/quast.log
+
+CWD: /domus/h1/claudg/genome-project/code
+Main parameters: 
+  MODE: meta, threads: 4, minimum contig length: 500, minimum alignment length: 65, ambiguity: one, \
+  threshold for extensive misassembly size: 1000
+
+Contigs:
+  Pre-processing...
+  /home/claudg/genome-project/analyses/DNA_metaquast/2/quast_corrected_input/final-contigs_not_aligned_anywhere.fasta ==> final.contigs
+
+2022-05-18 12:14:24
+Running Basic statistics processor...
+  Contig files: 
+    final.contigs
+  Calculating N50 and L50...
+    final.contigs, N50 = 1652, L50 = 14515, Total length = 117888566, GC % = 47.89, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/not_aligned/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/not_aligned/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/not_aligned/basic_stats/GC_content_plot.pdf
+  Drawing final.contigs GC content plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/not_aligned/basic_stats/final.contigs_GC_content_plot.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2022-05-18 12:14:34
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating Icarus viewers...
+  2 of 2: Creating PDF with all tables and plots...
+Done
+
+2022-05-18 12:14:37
+RESULTS:
+  Text versions of total report are saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/not_aligned/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/not_aligned/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/not_aligned/report.html
+  PDF version (tables and plots) is saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/not_aligned/report.pdf
+  Icarus (contig browser) is saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/not_aligned/icarus.html
+
+2022-05-18 12:14:37
+Summarizing results...
+  Drawing # contigs metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/summary/PDF/num_contigs.pdf
+  Drawing Largest contig metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/summary/PDF/Largest_contig.pdf
+  Drawing Total length metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/summary/PDF/Total_length.pdf
+  Drawing Largest alignment metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/summary/PDF/Largest_alignment.pdf
+  Drawing Total aligned length metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/summary/PDF/Total_aligned_length.pdf
+  Drawing Total length (>= 1000 bp) metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/summary/PDF/Total_length_(ge_1000_bp).pdf
+  Drawing Total length (>= 10000 bp) metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/summary/PDF/Total_length_(ge_10000_bp).pdf
+  Drawing Total length (>= 50000 bp) metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/summary/PDF/Total_length_(ge_50000_bp).pdf
+  Drawing # misassemblies metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/summary/PDF/num_misassemblies.pdf
+  Drawing metaQUAST summary misassemblies plot for final.contigs...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/summary/PDF/final-contigs_misassemblies.pdf
+  Drawing Misassembled contigs length metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/summary/PDF/Misassembled_contigs_length.pdf
+  Drawing # mismatches per 100 kbp metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/summary/PDF/num_mismatches_per_100_kbp.pdf
+  Drawing # indels per 100 kbp metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/summary/PDF/num_indels_per_100_kbp.pdf
+  Drawing # N's per 100 kbp metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/summary/PDF/num_Ns_per_100_kbp.pdf
+  Drawing Genome fraction (%) metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/summary/PDF/Genome_fraction.pdf
+  Drawing Duplication ratio metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/summary/PDF/Duplication_ratio.pdf
+  Drawing NGA50 metaQUAST summary plot...
+    saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/summary/PDF/NGA50.pdf
+
+  Text versions of reports and plots for each metric (for all references and assemblies) are saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/summary/
+  Icarus (contig browser) is saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/icarus.html
+  Drawing interactive Krona plots...
+  Krona chart for final.contigs is saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/krona_charts/final.contigs_taxonomy_chart.html
+  Extended version of HTML-report (for all references and assemblies) is saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/report.html
+
+MetaQUAST finished.
+  Log is saved to /home/claudg/genome-project/analyses/DNA_metaquast/2/metaquast.log
+
+Finished: 2022-05-18 12:14:51
+Elapsed time: 0:45:09.075177
+Total NOTICEs: 44; WARNINGs: 1; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
