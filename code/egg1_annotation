@@ -1,0 +1,31 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5 -M snowy
+#SBATCH -p core
+#SBATCH -n 8
+#SBATCH -J annotation-egg
+#SBATCH -t 120:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+#Load modules
+module load bioinfo-tools eggNOG-mapper
+
+#Load directories
+export INDIR="/domus/h1/claudg/genome-project/analyses/DNA_bins_metabat"
+export OUTDIR="/proj/genomeanalysis2022/nobackup/work/claudg/DNA_egg"
+mkdir -p $OUTDIR/3
+cd $INDIR/1
+
+#Run
+ 
+emapper.py --itype metagenome -i SRR4342133_bins.1.fa --output SRR4342133_bins.1.fa --output_dir $OUTDIR/3
+
+emapper.py --itype metagenome -i SRR4342133_bins.6.fa --output SRR4342133_bins.6.fa --output_dir $OUTDIR/3
+
+emapper.py --itype metagenome -i SRR4342133_bins.3.fa --output SRR4342133_bins.3.fa --output_dir $OUTDIR/3
+
+emapper.py --itype metagenome -i SRR4342133_bins.12.fa --output SRR4342133_bins.12.fa --output_dir $OUTDIR/3
+
+emapper.py --itype metagenome -i SRR4342133_bins.11.fa --output SRR4342133_bins.11.fa --output_dir $OUTDIR/3
+
+

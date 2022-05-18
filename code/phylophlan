@@ -1,7 +1,7 @@
 #!/bin/bash -l
 #SBATCH -A uppmax2022-2-5 -M snowy
 #SBATCH -p core
-#SBATCH -n 8
+#SBATCH -n 4
 #SBATCH -J phylophlan
 #SBATCH -t 120:00:00
 #SBATCH --mail-type=ALL
@@ -36,7 +36,7 @@ ln -s -f $INDIR/1/*.faa $PROJ/input/metagenome/
 ln -s -f $INDIR/2/*.faa $PROJ/input/metagenome/
 
 
-cd $OUT
-#phylophlan.py -i metagenome1 -t --nproc 4 2> phylo1.err
+cd $PROJ
+phylophlan.py -i -t --nproc 4 metagenome1 2> phylo1.err
 
-phylophlan.py -i metagenome -t --nproc 4 2> phylo.err
+phylophlan.py -i -t --nproc 4 metagenome2 2> phylo2.err
