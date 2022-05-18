@@ -20,20 +20,20 @@ export OUT="/home/claudg/genome-project/analyses/DNA_phylophlan"
 #export OUTDIR="/proj/genomeanalysis2022/nobackup/work/claudg/DNA_phylophlan"
 export PROJ="/proj/genomeanalysis2022/nobackup/work/claudg/DNA_phylophlan"
 export INDIR="/home/claudg/genome-project/analyses/DNA_annotation_prokka"
-mkdir -p $OUT/input/metagenome
-mkdir -p $OUT/output
-mkdir -p $OUT/data/ppaalns
-mkdir -p $OUT/taxcuration
+mkdir -p $PROJ/input/metagenome
+mkdir -p $PROJ/output
+mkdir -p $PROJ/data/ppaalns
+mkdir -p $PROJ/taxcuration
 
 #Load symlink
-ln -s -f /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/data/*.bz2 $OUT/data/
-ln -s -f /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/data/ppaalns/*.bz2 $OUT/data/ppaalns/
+ln -s -f /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/data/*.bz2 $PROJ/data/
+ln -s -f /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/data/ppaalns/*.bz2 $PROJ/data/ppaalns/
 
 ln -s -f /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/data/ppafull.tax.txt $OUT/data/
 
 ln -s -f /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/taxcuration/ $OUT
-ln -s -f $INDIR/1/*.faa $OUT/input/metagenome/
-ln -s -f $INDIR/2/*.faa $OUT/input/metagenome/
+ln -s -f $INDIR/1/*.faa $PROJ/input/metagenome/
+ln -s -f $INDIR/2/*.faa $PROJ/input/metagenome/
 
 
 cd $OUT
