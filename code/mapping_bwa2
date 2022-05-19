@@ -16,10 +16,10 @@ module load MetaBat
 
 #Load path to input data dir and output dir
 export HOME="/home/claudg/genome-project/analyses"
-export INDIR=$HOME/DNA_bins_metabat
-export RNA=$HOME/RNA_trimmed
+INDIR=$HOME/DNA_bins_metabat
+RNA=$HOME/RNA_trimmed
 mkdir -p $HOME/DNA_bwa
-export OUTDIR=$HOME/DNA_bwa
+OUTDIR=$HOME/DNA_bwa
 
 #Index bins as reference
 #Index and align ref-1
@@ -33,7 +33,7 @@ for refs in *.fa
 do
         bwa index $refs
         bwa mem -t 6 $refs $RNA/SRR4342139.forward_paired.trimmed.fastq.gz $RNA/SRR4342139.reverse_paired.trimmed.fastq.gz > mem2_out.sam
-	samtools sort -@ 2 -o $OUTDIR/aln-sorted_39.bam $OUTDIR/mem2_out.sam
+	samtools sort -@ 2 $OUTDIR/mem2_out.sam -o $OUTDIR/aln-sorted_39.bam
 
 done
 
