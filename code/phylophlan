@@ -1,7 +1,7 @@
 #!/bin/bash -l
 #SBATCH -A uppmax2022-2-5 -M snowy
 #SBATCH -p core
-#SBATCH -n 4
+#SBATCH -n 6
 #SBATCH -J phylophlan
 #SBATCH -t 120:00:00
 #SBATCH --mail-type=ALL
@@ -17,10 +17,10 @@ module load muscle/3.8.31
 
 #Make directory look like installation dir
 export OUT="/home/claudg/genome-project/analyses/DNA_phylophlan"
-#export OUTDIR="/proj/genomeanalysis2022/nobackup/work/claudg/DNA_phylophlan"
-export PROJ="/proj/genomeanalysis2022/nobackup/work/claudg/DNA_phylophlan"
-export INDIR="/home/claudg/genome-project/analyses/DNA_annotation_prokka"
-mkdir -p $PROJ/input/metagenome
+export OUTDIR="/proj/genomeanalysis2022/nobackup/work/claudg"
+export PROJ=$OUTDIR/DNA_phylophlan
+export INDIR=$PROJ/DNA_annotation_prokka
+mkdir -p $PROJ/input
 mkdir -p $PROJ/output
 mkdir -p $PROJ/data/ppaalns
 mkdir -p $PROJ/taxcuration
@@ -29,14 +29,17 @@ mkdir -p $PROJ/taxcuration
 ln -s -f /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/data/*.bz2 $PROJ/data/
 ln -s -f /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/data/ppaalns/*.bz2 $PROJ/data/ppaalns/
 
-ln -s -f /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/data/ppafull.tax.txt $OUT/data/
+ln -s -f /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/data/ppafull.tax.txt $PROJ/data/
 
-ln -s -f /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/taxcuration/ $OUT
-ln -s -f $INDIR/1/*.faa $PROJ/input/metagenome/
-ln -s -f $INDIR/2/*.faa $PROJ/input/metagenome/
+ln -s -f /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/taxcuration/* $PROJ/taxcuration
+
+#mkdir -p $PROJ/input/1
+#ln -s -f $INDIR/1/*.faa $PROJ/input/1
+#mkdir -p $PROJ/input/2
+#ln -s -f $INDIR/2/*.faa $PROJ/input/2
 
 
 cd $PROJ
-phylophlan.py -i -t --nproc 4 metagenome1 2> phylo1.err
+phylophlan.py -i -t --nproc 6 1 2> phylo1.err
 
-phylophlan.py -i -t --nproc 4 metagenome2 2> phylo2.err
+phylophlan.py -i -t --nproc 6 2 2> phylo2.err
