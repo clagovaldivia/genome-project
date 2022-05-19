@@ -1,0 +1,35 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 4
+#SBATCH -t 48:00:00
+#SBATCH -J gene-length
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+
+
+
+PROJ="/proj/genomeanalysis2022/nobackup/work/claudg"
+GFF=$PROJ/DNA_egg
+mkdir -p $PROJ/DNA_norm
+OUTDIR=$PROJ/DNA_norm
+
+cd $GFF/1
+for gff in *.gff
+do	
+	name=$(basename ${gff})
+	bin=$(echo $name | cut -f1-2 -d ".")
+	cut -f4,5,9 $gff | sed 's/gene_id //g' | gawk '{print $3,$2-$1+1}' | tr ' ' '\t' > $OUTDIR/$bin.genelengths
+
+done
+
+cd $GFF/2
+for gff in *.gff
+do
+        name=$(basename ${gff})
+        bin=$(echo $name | cut -f1-2 -d ".")
+        cut -f4,5,9 $gff | sed 's/gene_id //g' | gawk '{print $3,$2-$1+1}' | tr '$
+
+done

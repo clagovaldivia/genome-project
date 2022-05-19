@@ -1,0 +1,33 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 13:00:00
+#SBATCH -J megahit_graph
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+module load bioinfo-tools
+module load megahit
+
+export ASS="/home/claudg/genome-project/analyses/DNA_assembled_megahit"
+export IN1=$ASS/1/intermediate_contigs
+export IN2=$ASS/2/intermediate_contigs
+cp $IN1/*.contigs.fa $SNIC_TMP/1
+cd $SNIC_TMP/1
+megahit_toolkit contig2fastg 65 k65.contigs.fa 2> k65.contigs.fastg
+megahit_toolkit contig2fastg 75 k75.contigs.fa &> k75.contigs.fastg
+megahit_toolkit contig2fastg 85 k85.contigs.fa &> k85.contigs.fastg
+megahit_toolkit contig2fastg 95 k95.contigs.fa &> k95.contigs.fastg
+megahit_toolkit contig2fastg 105 k105.contigs.fa &> k105.contigs.fastg
+cp $IN2/2 $SNIC_TMP/2
+cd $SNIC_TMP/2
+megahit_toolkit contig2fastg 65 k65.contigs.fa 2> k65.contigs.fastg
+megahit_toolkit contig2fastg 75 k75.contigs.fa &> k75.contigs.fastg
+megahit_toolkit contig2fastg 85 k85.contigs.fa &> k85.contigs.fastg
+megahit_toolkit contig2fastg 95 k95.contigs.fa &> k95.contigs.fastg
+megahit_toolkit contig2fastg 105 k105.contigs.fa &> k105.contigs.fastg
+
+cp -r $SNIC/1/*.fastg $IN1
+cp -r $SNIC/2/*.fastg $IN2
