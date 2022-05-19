@@ -1,0 +1,30 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5 -M snowy
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -J count-bins
+#SBATCH -t 120:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+
+module load bioinfo-tools
+
+export INDIR=/home/claudg/genome-project/analysis/DNA_bins_metabat
+
+cd $INDIR/1
+echo SRR29
+list = [1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21]
+for n in list
+do
+	contig= grep -c ">" SRR4342129_bins.$n.fa
+	echo contig
+done
+
+cd $INDIR/2
+echo SRR33
+for n in list
+do
+	contig= grep -c ">" SRR4342133_bins.$n.fa
+	echo contig
+done

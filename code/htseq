@@ -1,0 +1,41 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 4
+#SBATCH -t 48:00:00
+#SBATCH -J htseq
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+#Load modules
+module load bioinfo-tools
+module load htseq
+
+#Load path to files
+export DATA="/home/claudg/genome-project/analyses"
+BWA=$DATA/RNA_bwa
+GFF="/proj/genomeanalysis2022/nobackup/work/claudg/DNA_egg"
+mkdir -p $DATA/RNA_htseq
+OUTDIR=$DATA/RNA_htseq
+
+#Expression count
+
+cd $GFF
+for gff in $GFF/1/*.gff
+do	
+	name=$(basename ${gff})
+	bin=$(echo $name | cut -f1-2 -d ".")
+	echo $bin
+	htseq-count -f bam -t CDS --idattr ID -r pos $BWA/${bin}.fa.bam $gff > $OUTDIR/1/${bin}.sam
+
+done
+
+#for gff in $GFF/2/*.gff
+#do
+	#name=$(basename ${gff})
+	#bin=$(echo $name | cut -f1-2 -d ".")
+        #echo $bin
+	#htseq-count -f bam -t CDS --idattr ID -r pos $BWA/${bin}.fa.bam $gff > $OUTDIR/2/${bin}.sam
+
+#done
