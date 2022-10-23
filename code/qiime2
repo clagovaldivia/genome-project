@@ -1,0 +1,17 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 4
+#SBATCH -t 48:00:00
+#SBATCH -J qiime2
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+#Load modules
+module load bioinfo-tools
+module load qiime2
+
+#Activate environment
+echo source activate qiime2-2018.11
+

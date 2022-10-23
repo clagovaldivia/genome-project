@@ -1,0 +1,34 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5 -M snowy
+#SBATCH -p core
+#SBATCH -n 6
+#SBATCH -J phylophlan
+#SBATCH -t 120:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+#Load modules
+module load bioinfo-tools
+module load python3
+module load BioBakery/3.0
+
+#Make directory look like installation dir
+export OUTDIR="/home/claudg/genome-project/analyses"
+mkdir -p $OUTDIR/6_DNA_metaphlan
+export PROJ=$OUTDIR/6_DNA_metaphlan
+export INDIR=$OUTDIR/5_DNA_prokka
+
+#METAGENOMES
+#metaphlan --install --index mpa_v30_CHOCOPhlAn_201901 
+
+cd $INDIR
+for folder in $INDIR
+do
+
+for bin in $folder
+do
+
+metaphlan $bin/PROKKA_10112022.faa --input_type fasta --bowtie2db "/sw/bioinfo/MetaPhlAn3/3.0.8/snowy/lib/python3.8/site-packages/metaphlan/metaphlan_databases" -x mpa_v30_CHOCOPhlAn_201901 --bowtie2out metagenome.bowtie2.bz2 --nproc 5 -o $OUTDIR/$folder/metagenome_$bin.txt
+
+done
+done

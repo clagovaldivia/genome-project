@@ -1,0 +1,10 @@
+INDIR="/home/claudg/genome-project/analyses/DNA_bins_metabat"
+OUTDIR="/home/claudg/genome-project/analyses/DNA_
+#First create index from binnings where ref.fa are my bins
+
+cp -r $INDIR/1/*.fa $SNIC_TMP/1
+cd $SNIC_TMP/1
+for ref in *.fa
+do
+	bwa index $ref 2> $OUTDIR/1
+done

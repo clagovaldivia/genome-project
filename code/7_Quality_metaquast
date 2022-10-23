@@ -1,0 +1,27 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -J metaqst
+#SBATCH -t 04:00:00
+
+module load bioinfo-tools
+module load quast
+
+HOME=/home/claudg/genome-project/
+INDIR=$HOME/analyses/DNA_assembled_megahit
+DATA=(1 2)
+
+#REFDATA=$HOME/analyses/DNA_metaquast/test_data
+
+mkdir -p $HOME/analyses/DNA_metaquast
+OUTDIR=$HOME/analyses/DNA_metaquast
+
+
+for a in ${DATA[@]}
+do
+	mkdir $OUTDIR/$a
+	metaquast.py -o $OUTDIR/$a $INDIR/$a/final.contigs.fa  
+done
+

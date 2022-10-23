@@ -1,0 +1,37 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5 -M snowy
+#SBATCH -p core
+#SBATCH -n 1
+#SBATCH -J phylophlan
+#SBATCH -t 120:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+
+
+
+export PROJ="/home/claudg/genome-project/analyses/DNA_prokka"
+IN1=$PROJ/1
+IN2=$PROJ/2
+
+list1=(1 2 3 4 5 6 7 8 9 10 11 12)
+cd $IN1
+for x in ${list1[@]}
+do
+        for file in *.$x.fa.out/PROKKA*.gff
+        do
+                grep -c "hypothetical protein" $file
+        done
+done
+
+
+list1=(1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21)
+cd $IN2
+for x in ${list1[@]}
+do
+	for file in *.$x.fa.out/PROKKA*.gff
+	do
+		grep -c "hypothetical protein" $file
+	done
+done
+

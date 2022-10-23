@@ -1,0 +1,29 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 13:00:00
+#SBATCH -J quality-checkM
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+#Load modules
+module load bioinfo-tools
+module load CheckM/1.1.3
+
+#Load path to input data dir and output dir
+export DATA="/home/claudg/genome-project/analyses"
+export INDIR="/home/claudg/genome-project/analyses/DNA_bins_metabat"
+
+mkdir $DATA/DNA_checkM
+export OUTDIR=$DATA/DNA_checkM
+
+# 4 threads (-t) and fa (-x) as a file extension
+checkm tree -t 4 -x fa --reduced_tree $INDIR $OUTDIR
+checkm analyze -t 4 -x fa $OUT/SRR4342129_qc/lineage.ms $IN/SRR4342129/bins $OUT/SRR4342129_qc
+checkm qa -t 4 -o 1 -f $OUT/SRR4342129_qc/qa.out $OUT/SRR4342129_qc/lineage.ms $OUT/SRR4342129_qc
+
+checkm lineage_wf -t 4 -x fa --reduced_tree $IN/SRR4342133/bins $OUT/SRR4342133_qc
+checkm analyze -t 4 -x fa $OUT/SRR4342133_qc/lineage.ms $IN/SRR4342133/bins $OUT/SRR4342133_qc
+checkm qa -t 4 -o 1 -f $OUT/SRR4342133_qc/qa.out $OUT/SRR4342133_qc/lineage.ms $OUT/SRR4342133_qc

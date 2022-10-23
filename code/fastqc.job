@@ -1,0 +1,27 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 1
+#SBATCH -t 03:00:00
+#SBATCH -J fastqc-claudia
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+# FastQC quality control script 
+
+# Load modules
+module load bioinfo-tools
+module load FastQC/0.11.9
+
+# Sequence directories 
+SEQDIR="/home/claudg/genome-project/raw_data"
+OUTDIR="/home/claudg/genome-project/analyses"
+
+# Run FastQC trimmed DNA
+mkdir $OUTDIR/1_DNA_trimmed_fastqc
+fastqc $SEQDIR/DNA_trimmed/* -o $OUTDIR/1_DNA_trimmed_fastqc/
+
+# Run FastQC on untrimmed RNA
+mkdir $OUTDIR/1_RNA_untrimmed_fastqc
+fastqc $SEQDIR/RNA_untrimmed/* -o $OUTDIR/RNA_untrimmed_fastqc/

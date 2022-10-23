@@ -1,0 +1,15 @@
+#!
+
+
+
+#Load modules
+module load bioinfo-tools BUSCO
+
+#Load directories
+
+export INDIR=
+export OUTDIR=
+
+#Run
+
+busco -i [SEQUENCE_FILE] -l [LINEAGE] -o [OUTPUT_NAME] -m [MODE] [OTHER OPTIONS]

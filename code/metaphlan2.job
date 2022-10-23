@@ -1,0 +1,45 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5 -M snowy
+#SBATCH -p node
+#SBATCH -n 4
+#SBATCH -J metaphlan
+#SBATCH -t 120:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+#Load modules
+module load bioinfo-tools
+module load python3
+module load BioBakery/3.0
+
+#Make directory look like installation dir
+export OUTDIR="/home/claudg/genome-project/analyses"
+mkdir -p $OUTDIR/6_DNA_metaphlan
+export PROJ=$OUTDIR/6_DNA_metaphlan
+export INDIR="/home/claudg/genome-project/raw_data"
+#mkdir $INDIR/DNA_trimmed_2
+#export IN2=$INDIR/DNA_trimmed_2
+
+#METAGENOMES
+#metaphlan --install --index mpa_v30_CHOCOPhlAn_201901 
+export IN2="/proj/genomeanalysis2022/nobackup/work/claudg/DNA_trimmed_2"
+#cp -r $IN/* $IN2
+#cp -r $IN2/* $SNIC_TMP
+cd $IN2
+
+for bin in $IN2/*29*
+do
+    name="$(basename -- ${bin%".paired.trimmed.fastq"})"
+    echo "$name"
+    echo $name
+    metaphlan $bin --input_type fastq --bowtie2db "/sw/bioinfo/MetaPhlAn3/3.0.8/snowy/lib/python3.8/site-packages/metaphlan/metaphlan_databases" -x mpa_v30_CHOCOPhlAn_201901 --bowtie2out $PROJ/$name.bowtie2.bz2 --nproc 5 -o $PROJ/$name.txt
+done
+
+#cd $INDIR/2
+for bin in $IN2/*33*
+do
+    name="$(basename -- ${bin%".paired.trimmed.fastq"})"
+    echo "$name"
+    echo $name
+    metaphlan $bin --input_type fastq --bowtie2db "/sw/bioinfo/MetaPhlAn3/3.0.8/snowy/lib/python3.8/site-packages/metaphlan/metaphlan_databases" -x mpa_v30_CHOCOPhlAn_201901 --bowtie2out $PROJ/$name.bowtie2.bz2 --nproc 5 -o $PROJ/$name.txt
+done
