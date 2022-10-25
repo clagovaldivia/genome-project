@@ -1,0 +1,27 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5 -M snowy
+#SBATCH -p node
+#SBATCH -n 4
+#SBATCH -J metaphlan
+#SBATCH -t 120:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+#Load modules
+module load bioinfo-tools
+module load python3
+module load BioBakery/3.0
+
+#Make directory look like installation dir
+export PROJ="/home/claudg/genome-project/analyses"
+export INDIR=$PROJ/6_DNA_metaphlan
+#export INDIR="/home/claudg/genome-project/raw_data"
+mkdir $INDIR/merged_data
+export OUTDIR=$INDIR/merged_data
+
+#Merge tables
+cd $INDIR
+
+merge_metaphlan_tables.py S*29_1.txt S*29_2.txt > metaphlan_29.txt
+
+merge_metaphlan_tables.py S*33_1.txt S*33_2.txt > metaphlan_33.txt
