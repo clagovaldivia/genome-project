@@ -1,0 +1,61 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5 -M snowy
+#SBATCH -p node
+#SBATCH -n 4
+#SBATCH -J metaphlan
+#SBATCH -t 120:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+#Load modules
+module load bioinfo-tools
+module load python3
+module load BioBakery/3.0
+
+#Make directory look like installation dir
+export PROJ="/home/claudg/genome-project/analyses"
+export INDIR=$PROJ/6_DNA_metaphlan
+#export INDIR="/home/claudg/genome-project/raw_data"
+mkdir $INDIR/merged_data
+export OUTDIR=$INDIR/merged_data
+
+#Merge tables
+cd $INDIR
+hclust2.py \
+  -i metaphlan_29.txt \
+  -o metaphlan_29.png \
+  --skip_rows 1 \
+  --ftop 50 \
+  --f_dist_f correlation \
+  --s_dist_f braycurtis \
+  --cell_aspect_ratio 9 \
+  -s --fperc 99 \
+  --flabel_size 4 \
+  --metadata_rows 2,3,4 \
+  --legend_file HMP.sqrt_scale.legend.png \
+  --max_flabel_len 100 \
+  --metadata_height 0.075 \
+  --minv 0.01 \
+  --no_slabels \
+  --dpi 300 \
+  --slinkage complete
+
+hclust2.py \
+  -i metaphlan_33.txt \
+  -o metaphlan_33.png \
+  --skip_rows 1 \
+  --ftop 50 \
+  --f_dist_f correlation \
+  --s_dist_f braycurtis \
+  --cell_aspect_ratio 9 \
+  -s --fperc 99 \
+  --flabel_size 4 \
+  --metadata_rows 2,3,4 \
+  --legend_file HMP.sqrt_scale.legend.png \
+  --max_flabel_len 100 \
+  --metadata_height 0.075 \
+  --minv 0.01 \
+  --no_slabels \
+  --dpi 300 \
+  --slinkage complete
+
