@@ -24,4 +24,8 @@ fastqc $SEQDIR/DNA_trimmed/* -o $OUTDIR/1_DNA_trimmed_fastqc/
 
 # Run FastQC on untrimmed RNA
 mkdir $OUTDIR/1_RNA_untrimmed_fastqc
-fastqc $SEQDIR/RNA_untrimmed/* -o $OUTDIR/RNA_untrimmed_fastqc/
+fastqc $SEQDIR/RNA_untrimmed/* -o $OUTDIR/1_RNA_untrimmed_fastqc/
+
+#Run FastQC on trimmed RNA
+mkdir $OUTDIR/1_RNA_trimmed_fastqc
+fastqc $SEQDIR/RNA_trimmed/* -o $OUTDIR/1_RNA_trimmed_fastqc/

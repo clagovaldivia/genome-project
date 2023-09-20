@@ -1,0 +1,20 @@
+Bowtie2 looks for the specified index first in the current directory, then in the directory specified in the BOWTIE2_INDEXES environment variable.
+See 'module help bowtie2/2.3.5.1' for information on locations of pregenerated indices for reference genomes.
+diamond_databases/latest : for available prebuilt databases, see 'module help diamond_databases/latest'
+Bowtie2 looks for the specified index first in the current directory, then in the directory specified in the BOWTIE2_INDEXES environment variable.
+See 'module help bowtie2/2.3.5.1' for information on locations of pregenerated indices for reference genomes.
+	trimmomatic 0.36 loaded, see 'module help trimmomatic/0.36' for more information.
+Bowtie2 looks for the specified index first in the current directory, then in the directory specified in the BOWTIE2_INDEXES environment variable.
+See 'module help bowtie2/2.3.5.1' for information on locations of pregenerated indices for reference genomes.
+BioBakery databases:
+	KneadData database (https://github.com/biobakery/kneaddata#download-the-database) is found here: $KNEADDATA
+	KneadData db human genome (https://github.com/biobakery/kneaddata#download-the-database) is found here: $KNEADDATA_DB_HUMAN_GENOME
+	ChocoPhlAn database (https://github.com/biobakery/humann#download-the-chocophlan-database) is found here: $CHOCOPHLAN
+	Uniref90 database (https://github.com/biobakery/humann#download-a-translated-search-database) is found here: $UNIREF
+Bowtie2 looks for the specified index first in the current directory, then in the directory specified in the BOWTIE2_INDEXES environment variable.
+See 'module help bowtie2/2.3.5.1' for information on locations of pregenerated indices for reference genomes.
+raxml/8.2.12-gcc : raxmlHPC (multithreading with pthreads) and raxmlHPC-AVX (single thread) are available
+
+	Includes, so far, MetaPhlAn/3.0.8, PhyloPhlAn/3.0.2, HUMAnN/3.0 and KneadData/0.10.0 and KneadData database
+	These modules can also be loaded seperately
+mkdir: cannot create directory ‘/home/claudg/genome-project/analyses/6_DNA_metaphlan/merged_data’: File exists

@@ -1,0 +1,21 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 4
+#SBATCH -t 48:00:00
+#SBATCH -J htseq
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+#Load modules
+module load bioinfo-tools
+module load htseq
+
+export DATA="/home/claudg/genome-project/analyses"
+
+
+
+
+htseq-count -f bam --type CDS --idattr ID  aln-sorted_37.bam <gff_file> 
+

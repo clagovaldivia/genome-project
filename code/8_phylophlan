@@ -10,17 +10,18 @@
 #Load modules
 module load bioinfo-tools phylophlan/0.99
 module unload python
+#module load python 2.7.15 
 module load biopython/1.73 
 module load FastTree/2.1.10
 module load usearch/5.2.32 
 module load muscle/3.8.31
-module load BioBakery_data/3.0-20210423
 
 #Make directory look like installation dir
-export OUT="/home/claudg/genome-project/analyses/DNA_phylophlan"
+export DIR="/home/claudg/genome-project/analyses"
 export OUTDIR="/proj/genomeanalysis2022/nobackup/work/claudg"
-export PROJ=$OUTDIR/DNA_phylophlan
-export INDIR=$PROJ/DNA_annotation_prokka
+mkdir -p $OUTDIR/8_DNA_phylophlan
+export PROJ=$OUTDIR/8_DNA_phylophlan
+export INDIR=$DIR/5_DNA_prokka
 mkdir -p $PROJ/input
 mkdir -p $PROJ/output
 mkdir -p $PROJ/data/ppaalns
@@ -32,15 +33,36 @@ ln -s -f /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/data/ppaalns/*.bz2 $PROJ/d
 
 ln -s -f /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/data/ppafull.tax.txt $PROJ/data/
 
-ln -s -f /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/taxcuration/* $PROJ/taxcuration
+ln -s -f /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/taxcuration/ $PROJ/taxcuration
 
-#mkdir -p $PROJ/input/1
-#ln -s -f $INDIR/1/*.faa $PROJ/input/1
-#mkdir -p $PROJ/input/2
-#ln -s -f $INDIR/2/*.faa $PROJ/input/2
+mkdir -p $PROJ/input/1
+mkdir -p $PROJ/input/2
+mkdir -p $SNIC_TMP/1 
+mkdir -p $SNIC_TMP/2
+
+cd $INDIR/1
+for bin in S*.faa
+do
+	cp -r $bin $SNIC_TMP/1
+	cd $SNIC_TMP/1
+	name=$($bin%%.*)
+	echo "$name"
+	mv $bin $name.fa
+	cp -r $name.fa $PROJ/input/1	
+done
+
+cd $INDIR/2
+for bin in S*.faa
+do
+	cp -r $bin $SNIC_TMP/2
+	cd $SNIC_TMP/2
+	name=$($bin%%.*)
+	mv $bin $name.fa
+	cp -r $name.fa $PROJ/input/2
+done
 
 
 cd $PROJ
-phylophlan.py -i -t --nproc 6 1 2> phylo1.err
+phylophlan.py -i 1 -t --nproc 2 2> phylo1.err
 
-phylophlan.py -i -t --nproc 6 2 2> phylo2.err
+phylophlan.py -i 2 -t --nproc 2 2> phylo2.err

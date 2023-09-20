@@ -1,0 +1,77 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5 -M snowy
+#SBATCH -p core
+#SBATCH -n 6
+#SBATCH -J phylophlan
+#SBATCH -t 120:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+#Load modules
+module load bioinfo-tools phylophlan/0.99
+module unload python
+#module load python 2.7.15 
+module load biopython/1.73 
+module load FastTree/2.1.10
+module load usearch/5.2.32 
+module load muscle/3.8.31
+
+#Make directory look like installation dir
+export DIR="/home/claudg/genome-project/analyses"
+export OUTDIR="/proj/genomeanalysis2022/nobackup/work/claudg"
+mkdir -p $OUTDIR/8_DNA_phylophlan
+export PROJ=$OUTDIR/8_DNA_phylophlan
+export INDIR=$DIR/5_DNA_prokka
+mkdir -p $PROJ/input
+mkdir -p $PROJ/output
+mkdir -p $PROJ/data/ppaalns
+mkdir -p $PROJ/taxcuration
+
+#Load symlink
+ln -s -f /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/data/*.bz2 $PROJ/data/
+ln -s -f /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/data/ppaalns/*.bz2 $PROJ/data/ppaalns/
+
+ln -s -f /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/data/ppafull.tax.txt $PROJ/data/
+
+ln -s -f /sw/apps/bioinfo/phylophlan/0.99/rackham/bin/taxcuration/ $PROJ/taxcuration
+
+mkdir -p $PROJ/input/1
+cp -r $INDIR/1/* $PROJ/input/1
+mkdir -p $PROJ/input/2
+cp -r $INDIR/2/* $PROJ/input/2
+
+cd $PROJ/input/1
+
+for prokkabins1 in *fa_ann.faa
+do
+	echo $prokkabins1
+        prokkaname1=$(echo "$prokkabins1" | cut -f 1 -d ".fa_ann." )
+        echo "$prokkaname1"
+        for prokkafiles1 in $prokkabins1
+	do 
+		mv $prokkafiles1 $prokkaname1".faa"
+        done
+done
+
+cd $PROJ/input/2
+
+
+for prokkabins2 in *fa_ann.faa
+do
+        echo "$prokkabins2"
+        prokkaname2=$(echo "$prokkabins2" | cut -f 1 -d ".fa." )
+        echo "$prokkaname2"
+	for prokkafiles2 in $prokkabins2
+	do
+		mv $prokkafiles2 $prokkaname2".faa"
+        done
+done
+
+
+#ln -s $INDIR/1/fa_ann.faa $PROJ/input/1
+#ln -s $INDIR/2/*.fa.faa/*.faa $PROJ/input/2/
+
+cd $PROJ
+phylophlan.py -i -t --nproc 6 1 2> phylo1.err
+
+phylophlan.py -i -t --nproc 6 2 2> phylo2.err

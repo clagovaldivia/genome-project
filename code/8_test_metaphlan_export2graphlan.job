@@ -1,0 +1,33 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5 -M snowy
+#SBATCH -p core
+#SBATCH -n 1
+#SBATCH -J metaphlan
+#SBATCH -t 120:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+#Load modules
+#module load bioinfo-tools
+#module unload python
+#module load conda 
+#module load BioBakery/3.0
+
+
+#Export directories
+export DIR="/home/claudg/genome-project/analyses"
+export INDIR=$DIR/6_DNA_metaphlan
+
+#Export files
+cd $INDIR
+conda install export2graphlan
+
+module unload python
+module load python/2.7.6
+
+for file in $INDIR/m*.txt
+do
+    filename="$(basename -- ${file%".txt"})"
+    export2graphlan.py -i $filename.txt -o $filename.out -t $filename.tree.txt -a $filename.annot.txt --title "Graphlan (MetaPhlAn2)" --max_clade_size 250 --min_clade_size 40 --annotations 5 --external_annotations 6,7 --abundance_threshold 40.5 --fname_row 0 --ftop 200 --annotation_legend_font_size 11
+done
+

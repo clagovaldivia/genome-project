@@ -1,0 +1,2 @@
+PROKADIR="/home/claudg/genome-project/analyses/DNA_annotation_prokka"
+grep -n $PROKADIR/1/PROKKA_05112022.gff | cut $PROKADIR/1/PROKKA_05112022.gff -d "##FASTA" -f 1 > functional_1.gff

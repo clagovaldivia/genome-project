@@ -1,0 +1,49 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 4
+#SBATCH -t 200:00:00
+#SBATCH -J bwa_2
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+#Load modules
+module load bioinfo-tools
+module load bwa
+module load samtools
+module load MetaBat
+
+#Load path to input data dir and output dir
+export HOME="/home/claudg/genome-project/analyses"
+INDIR=$HOME/3_DNA_bins_metabat
+export RNA="/home/claudg/genome-project/raw_data/RNA_trimmed"
+mkdir -p $HOME/6_RNA_bwa
+OUTDIR=$HOME/6_RNA_bwa
+
+#Index bins as reference
+#Index and align ref-1
+
+cd $INDIR/1
+#bwa and samtools
+
+for ref in *.fa
+do
+	outname=$(basename ${ref});
+	outpath=$OUTDIR/${outname}.bam ;
+	bwa index $ref
+	bwa mem -t 6 $ref $RNA/SRR4342137.forward_paired.trimmed.fastq.gz $RNA/SRR4342137.reverse_paired.trimmed.fastq.gz | samtools sort -@ 2 -o ${outpath} ;
+
+done
+
+#Index and align ref 2
+
+cd $INDIR/2
+for refs in *.fa
+do
+	outname=$(basename ${refs});
+	outpath=$OUTDIR/${outname}.bam ;
+	bwa index $refs
+	bwa mem -t 6 $refs $RNA/SRR4342139.forward_paired.trimmed.fastq.gz $RNA/SRR4342139.reverse_paired.trimmed.fastq.gz | samtools sort -@ 2 -o ${outpath};
+
+done

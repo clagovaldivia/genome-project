@@ -1,0 +1,128 @@
+SRR4342129_bins.11.fa_ann.faa
+SRR4342129_bins.11.fa_ann.faa/PROKKA_10102022.faa
+SRR4342129_bins.12.fa_ann.faa
+SRR4342129_bins.12.fa_ann.faa/PROKKA_10102022.faa
+SRR4342129_bins.1.fa_ann.faa
+SRR4342129_bins.1.fa_ann.faa/PROKKA_10102022.faa
+SRR4342129_bins.2.fa_ann.faa
+SRR4342129_bins.2.fa_ann.faa/PROKKA_10102022.faa
+SRR4342129_bins.3.fa_ann.faa
+SRR4342129_bins.3.fa_ann.faa/PROKKA_10102022.faa
+SRR4342129_bins.4.fa_ann.faa
+SRR4342129_bins.4.fa_ann.faa/PROKKA_10102022.faa
+SRR4342129_bins.5.fa_ann.faa
+SRR4342129_bins.5.fa_ann.faa/PROKKA_10102022.faa
+SRR4342129_bins.6.fa_ann.faa
+SRR4342129_bins.6.fa_ann.faa/PROKKA_10102022.faa
+SRR4342129_bins.7.fa_ann.faa
+SRR4342129_bins.7.fa_ann.faa/PROKKA_10102022.faa
+SRR4342129_bins.8.fa_ann.faa
+SRR4342129_bins.8.fa_ann.faa/PROKKA_10102022.faa
+SRR4342129_bins.9.fa_ann.faa
+SRR4342129_bins.9.fa_ann.faa/PROKKA_10102022.faa
+SRR4342133_bins.11.fa.faa
+SRR4342133_bins.11.fa.faa/PROKKA_10102022.faa
+SRR4342133_bins.12.fa.faa
+SRR4342133_bins.12.fa.faa/PROKKA_10102022.faa
+SRR4342133_bins.13.fa.faa
+SRR4342133_bins.13.fa.faa/PROKKA_10102022.faa
+SRR4342133_bins.14.fa.faa
+SRR4342133_bins.14.fa.faa/PROKKA_10102022.faa
+SRR4342133_bins.15.fa.faa
+SRR4342133_bins.15.fa.faa/PROKKA_10102022.faa
+SRR4342133_bins.16.fa.faa
+SRR4342133_bins.16.fa.faa/PROKKA_10102022.faa
+SRR4342133_bins.17.fa.faa
+SRR4342133_bins.17.fa.faa/PROKKA_10102022.faa
+SRR4342133_bins.18.fa.faa
+SRR4342133_bins.18.fa.faa/PROKKA_10102022.faa
+SRR4342133_bins.19.fa.faa
+SRR4342133_bins.19.fa.faa/PROKKA_10102022.faa
+SRR4342133_bins.1.fa.faa
+SRR4342133_bins.1.fa.faa/PROKKA_10102022.faa
+SRR4342133_bins.20.fa.faa
+SRR4342133_bins.20.fa.faa/PROKKA_10102022.faa
+SRR4342133_bins.21.fa.faa
+SRR4342133_bins.21.fa.faa/PROKKA_10102022.faa
+SRR4342133_bins.2.fa.faa
+SRR4342133_bins.2.fa.faa/PROKKA_10102022.faa
+SRR4342133_bins.3.fa.faa
+SRR4342133_bins.3.fa.faa/PROKKA_10102022.faa
+SRR4342133_bins.4.fa.faa
+SRR4342133_bins.4.fa.faa/PROKKA_10102022.faa
+SRR4342133_bins.5.fa.faa
+SRR4342133_bins.5.fa.faa/PROKKA_10102022.faa
+SRR4342133_bins.6.fa.faa
+SRR4342133_bins.6.fa.faa/PROKKA_10102022.faa
+SRR4342133_bins.7.fa.faa
+SRR4342133_bins.7.fa.faa/PROKKA_10102022.faa
+SRR4342133_bins.8.fa.faa
+SRR4342133_bins.8.fa.faa/PROKKA_10102022.faa
+SRR4342133_bins.9.fa.faa
+SRR4342133_bins.9.fa.faa/PROKKA_10102022.faa
+Looking for PhyloPhlAn proteins in input faa files
+Starting data/1/{SRR4342129_bins.4.fa_ann.faa%.fa_ann.faa}.b6o...
+Starting data/1/{SRR4342129_bins.1.fa_ann.faa%.fa_ann.faa}.b6o...
+Starting data/1/{SRR4342129_bins.12.fa_ann.faa%.fa_ann.faa}.b6o...
+Starting data/1/{SRR4342129_bins.9.fa_ann.faa%.fa_ann.faa}.b6o...
+Starting data/1/{SRR4342129_bins.7.fa_ann.faa%.fa_ann.faa}.b6o...
+Starting data/1/{SRR4342129_bins.2.fa_ann.faa%.fa_ann.faa}.b6o...
+data/1/{SRR4342129_bins.12.fa_ann.faa%.fa_ann.faa}.b6o generated!
+Starting data/1/{SRR4342129_bins.5.fa_ann.faa%.fa_ann.faa}.b6o...
+data/1/{SRR4342129_bins.2.fa_ann.faa%.fa_ann.faa}.b6o generated!
+Starting data/1/{SRR4342129_bins.8.fa_ann.faa%.fa_ann.faa}.b6o...
+data/1/{SRR4342129_bins.4.fa_ann.faa%.fa_ann.faa}.b6o generated!
+Starting data/1/{SRR4342129_bins.6.fa_ann.faa%.fa_ann.faa}.b6o...
+data/1/{SRR4342129_bins.1.fa_ann.faa%.fa_ann.faa}.b6o generated!
+Starting data/1/{SRR4342129_bins.3.fa_ann.faa%.fa_ann.faa}.b6o...
+data/1/{SRR4342129_bins.9.fa_ann.faa%.fa_ann.faa}.b6o generated!
+Starting data/1/{SRR4342129_bins.11.fa_ann.faa%.fa_ann.faa}.b6o...
+data/1/{SRR4342129_bins.7.fa_ann.faa%.fa_ann.faa}.b6o generated!
+data/1/{SRR4342129_bins.11.fa_ann.faa%.fa_ann.faa}.b6o generated!
+data/1/{SRR4342129_bins.5.fa_ann.faa%.fa_ann.faa}.b6o generated!
+data/1/{SRR4342129_bins.3.fa_ann.faa%.fa_ann.faa}.b6o generated!
+data/1/{SRR4342129_bins.8.fa_ann.faa%.fa_ann.faa}.b6o generated!
+data/1/{SRR4342129_bins.6.fa_ann.faa%.fa_ann.faa}.b6o generated!
+All usearch runs performed!
+Looking for PhyloPhlAn proteins in input faa files
+Starting data/2/{SRR4342133_bins.1.fa.faa%.fa.faa}.b6o...
+Starting data/2/{SRR4342133_bins.11.fa.faa%.fa.faa}.b6o...
+Starting data/2/{SRR4342133_bins.18.fa.faa%.fa.faa}.b6o...
+Starting data/2/{SRR4342133_bins.17.fa.faa%.fa.faa}.b6o...
+Starting data/2/{SRR4342133_bins.4.fa.faa%.fa.faa}.b6o...
+Starting data/2/{SRR4342133_bins.16.fa.faa%.fa.faa}.b6o...
+data/2/{SRR4342133_bins.16.fa.faa%.fa.faa}.b6o generated!
+Starting data/2/{SRR4342133_bins.8.fa.faa%.fa.faa}.b6o...
+data/2/{SRR4342133_bins.4.fa.faa%.fa.faa}.b6o generated!
+Starting data/2/{SRR4342133_bins.15.fa.faa%.fa.faa}.b6o...
+data/2/{SRR4342133_bins.1.fa.faa%.fa.faa}.b6o generated!
+Starting data/2/{SRR4342133_bins.12.fa.faa%.fa.faa}.b6o...
+data/2/{SRR4342133_bins.18.fa.faa%.fa.faa}.b6o generated!
+Starting data/2/{SRR4342133_bins.2.fa.faa%.fa.faa}.b6o...
+data/2/{SRR4342133_bins.15.fa.faa%.fa.faa}.b6o generated!
+Starting data/2/{SRR4342133_bins.21.fa.faa%.fa.faa}.b6o...
+data/2/{SRR4342133_bins.11.fa.faa%.fa.faa}.b6o generated!
+Starting data/2/{SRR4342133_bins.5.fa.faa%.fa.faa}.b6o...
+data/2/{SRR4342133_bins.2.fa.faa%.fa.faa}.b6o generated!
+Starting data/2/{SRR4342133_bins.7.fa.faa%.fa.faa}.b6o...
+data/2/{SRR4342133_bins.21.fa.faa%.fa.faa}.b6o generated!
+Starting data/2/{SRR4342133_bins.9.fa.faa%.fa.faa}.b6o...
+data/2/{SRR4342133_bins.12.fa.faa%.fa.faa}.b6o generated!
+Starting data/2/{SRR4342133_bins.6.fa.faa%.fa.faa}.b6o...
+data/2/{SRR4342133_bins.17.fa.faa%.fa.faa}.b6o generated!
+Starting data/2/{SRR4342133_bins.20.fa.faa%.fa.faa}.b6o...
+data/2/{SRR4342133_bins.8.fa.faa%.fa.faa}.b6o generated!
+Starting data/2/{SRR4342133_bins.13.fa.faa%.fa.faa}.b6o...
+data/2/{SRR4342133_bins.20.fa.faa%.fa.faa}.b6o generated!
+Starting data/2/{SRR4342133_bins.3.fa.faa%.fa.faa}.b6o...
+data/2/{SRR4342133_bins.3.fa.faa%.fa.faa}.b6o generated!
+Starting data/2/{SRR4342133_bins.14.fa.faa%.fa.faa}.b6o...
+data/2/{SRR4342133_bins.13.fa.faa%.fa.faa}.b6o generated!
+Starting data/2/{SRR4342133_bins.19.fa.faa%.fa.faa}.b6o...
+data/2/{SRR4342133_bins.6.fa.faa%.fa.faa}.b6o generated!
+data/2/{SRR4342133_bins.5.fa.faa%.fa.faa}.b6o generated!
+data/2/{SRR4342133_bins.14.fa.faa%.fa.faa}.b6o generated!
+data/2/{SRR4342133_bins.9.fa.faa%.fa.faa}.b6o generated!
+data/2/{SRR4342133_bins.19.fa.faa%.fa.faa}.b6o generated!
+data/2/{SRR4342133_bins.7.fa.faa%.fa.faa}.b6o generated!
+All usearch runs performed!

@@ -1,0 +1,37 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5
+#SBATCH -M snowy
+#SBATCH -p core
+#SBATCH -n 4
+#SBATCH -t 48:00:00
+#SBATCH -J htseq
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+#Load modules
+module load bioinfo-tools
+module load htseq
+
+#Load path to files
+export DATA="/home/claudg/genome-project/analyses"
+BWA=$DATA/RNA_bwa
+GFF="/proj/genomeanalysis2022/nobackup/work/claudg/DNA_annotation_prokka"
+mkdir -p $DATA/RNA_htseq
+OUTDIR=$DATA/RNA_htseq
+
+#Run
+
+cd $BWA
+for bam in $BWA/*29*.bam
+do
+	name=$(basename ${bam})
+	htseq-count -f bam -t CDS --idattr ID -r pos $bam $GFF/1/SRR4342129*.gff
+
+done
+
+for bam in $BWA/*33*.bam
+do
+	name=$(basename ${bam})
+	htseq-count -f bam -t CDS --idattr ID -r pos -o $OUTDIR/${name}.sam $bam $GFF/2/SRR4342133.gff -o $OUTDIR/${name}.sam
+
+done

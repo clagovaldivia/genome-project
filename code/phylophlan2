@@ -10,11 +10,11 @@
 #Load modules
 module load bioinfo-tools phylophlan/0.99
 module unload python
-module load biopython/1.73 
+module load python 2.7.15 
+#module load biopython/1.73 
 module load FastTree/2.1.10
-module load usearch/5.2.32 
+module load usearch/5.2.1551 
 module load muscle/3.8.31
-module load BioBakery_data/3.0-20210423
 
 #Make directory look like installation dir
 export OUT="/home/claudg/genome-project/analyses/DNA_phylophlan"

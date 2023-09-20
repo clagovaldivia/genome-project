@@ -1,0 +1,53 @@
+#!/bin/bash -l
+#SBATCH -A uppmax2022-2-5 -M snowy
+#SBATCH -p core
+#SBATCH -n 6
+#SBATCH -J phylophlan
+#SBATCH -t 120:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user claudia.gonzalez-valdivia.1872@student.uu.se
+
+#Load modules
+module load bioinfo-tools
+module load python3
+module load BioBakery/3.0
+
+#Make directory look like installation dir
+export OUTDIR="/home/claudg/genome-project/analyses"
+mkdir -p $OUTDIR/6_DNA_metaphlan
+export PROJ=$OUTDIR/6_DNA_metaphlan
+export INDIR=$OUTDIR/3_DNA_bins_metabat
+
+#METAGENOMES
+#metaphlan --install --index mpa_v30_CHOCOPhlAn_201901 
+
+cd $INDIR/1
+for bin in $INDIR/1
+do
+    for file in $bin/*.fa
+    do
+        echo $file
+        name="$(basename -- ${file%".fa"})"
+        echo "$name"
+        echo $name
+        metaphlan $file --input_type fasta --bowtie2db "/sw/bioinfo/MetaPhlAn3/3.0.8/snowy/lib/python3.8/site-packages/metaphlan/metaphlan_databases" -x mpa_v30_CHOCOPhlAn_201901 --bowtie2out metagenome.$name.bowtie2.bz2 --nproc 5 -o $PROJ/metagenome_$name.txt
+    done
+done
+
+cd $INDIR/2
+for bin in $INDIR/2
+do
+echo $bin
+    for file in $bin/*.fa
+    do
+        echo $file
+        name="$(basename -- ${file%".fa"})"
+        echo "$name"
+        echo $name
+        metaphlan $file --input_type fasta --bowtie2db "/sw/bioinfo/MetaPhlAn3/3.0.8/snowy/lib/python3.8/site-packages/metaphlan/metaphlan_databases" -x mpa_v30_CHOCOPhlAn_201901 --bowtie2out metagenome.$name.bowtie2.bz2 --nproc 5 -o $PROJ/metagenome_$name.txt
+    done
+done
+
+
+
+
