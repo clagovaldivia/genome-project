@@ -1,2 +1,3 @@
-# genome-project
-# genome-project
+#Genome analysis project - Uppsala University
+##Paper III: Metabolic roles of uncultivated bacterioplankton lineages in the Northern Gulf of Mexico “dead zone”
+###Marine regions with low dissolved oxygen concentrations are often called dead zones. Previous researchers have shown that different bacterial groups inhabit these regions, but very little is known about their metabolic roles in the ecosystem. This study employs a metagenomic approach to assemble genomes of bacteria found in different regions of the Gulf of Mexico dead zone and uses metatranscriptomic data to assess their metabolic activity.
