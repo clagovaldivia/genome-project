@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH -A uppmax2022-2-5
+#SBATCH -A uppmax2023-2-8
 #SBATCH -M snowy
 #SBATCH -p core
 #SBATCH -n 1
@@ -15,7 +15,7 @@ module load bioinfo-tools
 module load FastQC/0.11.9
 
 # Sequence directories 
-SEQDIR="/home/claudg/genome-project/raw_data"
+SEQDIR="/proj/genomeanalysis2023/nobackup/work/claudg/raw_data"
 OUTDIR="/home/claudg/genome-project/analyses"
 
 # Run FastQC trimmed DNA
@@ -28,4 +28,4 @@ fastqc $SEQDIR/RNA_untrimmed/* -o $OUTDIR/1_RNA_untrimmed_fastqc/
 
 #Run FastQC on trimmed RNA
 mkdir $OUTDIR/1_RNA_trimmed_fastqc
-fastqc $SEQDIR/RNA_trimmed/* -o $OUTDIR/1_RNA_trimmed_fastqc/
+fastqc $OUTDIR/RNA_trimmed/* -o $OUTDIR/1_RNA_trimmed_fastqc/

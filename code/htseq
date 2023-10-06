@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH -A uppmax2022-2-5
+#SBATCH -A uppmax2023-2-8
 #SBATCH -M snowy
 #SBATCH -p core
 #SBATCH -n 4
@@ -14,28 +14,29 @@ module load htseq
 
 #Load path to files
 export DATA="/home/claudg/genome-project/analyses"
-BWA=$DATA/RNA_bwa
-GFF="/proj/genomeanalysis2022/nobackup/work/claudg/DNA_egg"
+BWA="$DATA/DNA_bwa"
+GFF="$DATA/DNA_egg"
 mkdir -p $DATA/RNA_htseq
 OUTDIR=$DATA/RNA_htseq
 
 #Expression count
 
-cd $GFF
-for gff in $GFF/1/*.gff
+cd $GFF/1
+for gff in *.gff
 do	
-	name=$(basename ${gff})
-	bin=$(echo $name | cut -f1-2 -d ".")
-	echo $bin
-	htseq-count -f bam -t CDS --idattr ID -r pos $BWA/${bin}.fa.bam $gff > $OUTDIR/1/${bin}.sam
+	name=$(basename "${gff}")
+	bin=$(echo "$name" | cut -f1-2 -d ".")
+	echo "$bin"
+	htseq-count -f bam -t CDS --idattr ID -r pos -o "$OUTDIR/1/${bin}.sam" "$BWA/1/aln-sorted_${bin}.bam" "$gff"
 
 done
 
-#for gff in $GFF/2/*.gff
-#do
-	#name=$(basename ${gff})
-	#bin=$(echo $name | cut -f1-2 -d ".")
-        #echo $bin
-	#htseq-count -f bam -t CDS --idattr ID -r pos $BWA/${bin}.fa.bam $gff > $OUTDIR/2/${bin}.sam
+cd $GFF/2
+for gff in *.gff
+do      
+        name=$(basename "${gff}")
+        bin=$(echo "$name" | cut -f1-2 -d ".")
+        echo "$bin"
+        htseq-count -f bam -t CDS --idattr ID -r pos -o "$OUTDIR/2/${bin}.sam" "$BWA/2/aln-sorted_${bin}.bam" "$gff"
 
-#done
+done

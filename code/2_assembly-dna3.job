@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH -A uppmax2022-2-5
+#SBATCH -A uppmax2023-2-8
 #SBATCH -M snowy
 #SBATCH -p core
 #SBATCH -n 4
@@ -12,7 +12,7 @@
 module load bioinfo-tools megahit
 
 #DATA
-SEQDIR="/home/claudg/genome-project/raw_data/DNA_trimmed"
+SEQDIR="/proj/genomeanalysis2023/nobackup/work/claudg/raw_data/DNA_trimmed"
 OUTDIR="/home/claudg/genome-project/analyses/DNA_assembled_megahit"
 
 #assembly 1

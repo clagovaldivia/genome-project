@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH -A uppmax2022-2-5 -M snowy
+#SBATCH -A uppmax2023-2-8 -M snowy
 #SBATCH -p core
 #SBATCH -n 6
 #SBATCH -J phylophlan
@@ -18,10 +18,10 @@ module load muscle/3.8.31
 
 #Make directory look like installation dir
 export DIR="/home/claudg/genome-project/analyses"
-export OUTDIR="/proj/genomeanalysis2022/nobackup/work/claudg"
+export OUTDIR="/proj/genomeanalysis2023/nobackup/work/claudg"
 mkdir -p $OUTDIR/8_DNA_phylophlan
 export PROJ=$OUTDIR/8_DNA_phylophlan
-export INDIR=$DIR/5_DNA_prokka
+export INDIR=$DIR/DNA_annotation_prokka
 mkdir -p $PROJ/input
 mkdir -p $PROJ/output
 mkdir -p $PROJ/data/ppaalns

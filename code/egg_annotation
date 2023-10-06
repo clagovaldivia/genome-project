@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH -A uppmax2022-2-5 -M snowy
+#SBATCH -A uppmax2023-2-8 -M snowy
 #SBATCH -p core
 #SBATCH -n 8
 #SBATCH -J annotation-egg
@@ -12,25 +12,25 @@ module load bioinfo-tools eggNOG-mapper
 
 #Load directories
 export INDIR="/domus/h1/claudg/genome-project/analyses/DNA_bins_metabat"
-export OUTDIR="/proj/genomeanalysis2022/nobackup/work/claudg/DNA_egg"
-cd $INDIR/1
+#mkdir "/domus/h1/claudg/genome-project/analyses/DNA_egg"
+export OUTDIR="/domus/h1/claudg/genome-project/analyses/DNA_egg"
+
+
+cd $INDIR/2
+#Load modules
+
+module load bioinfo-tools eggNOG-mapper
+
 
 #Run
- 
-for sample in *
-do
-	echo $sample
-	#emapper.py -i FASTA_FILE_PROTEINS --itype type of data --output_dir $OUTDIR/1 #output directory
-	#emapper.py --itype metagenome -i $sample -o $sample --output_dir $OUTDIR/1
-	emapper.py --itype metagenome -i $sample -o $sample --output_dir $OUTDIR/1
-done
+echo "SRR4342133_bins.4.fa" 
+emapper.py --itype metagenome -i SRR4342133_bins.4.fa -o SRR4342133_bins.4.fa --output_dir $OUTDIR/2 --override
 
+echo "SRR4342133_bins.7.fa"
+emapper.py --itype metagenome -i SRR4342133_bins.7.fa -o SRR4342133_bins.7.fa --output_dir $OUTDIR/2 --override
 
-cd $INDIR/2 
-for sample in *
-do
-	echo $sample
-	#emapper.py -i FASTA_FILE_PROTEINS --itype type of data --output_dir $OUTDIR/2 #output directory
-	#emapper.py --itype metagenome -i $f -o $f --output_dir $OUTDIR/2
-	emapper.py --itype metagenome -i $sample -o $sample --output_dir $OUTDIR/2
-done
+echo SRR4342133_bins.8.fa 
+emapper.py --itype metagenome -i SRR4342133_bins.8.fa -o SRR4342133_bins.8.fa --output_dir $OUTDIR/2 --override
+
+echo SRR4342133_bins.9.fa
+emapper.py --itype metagenome -i SRR4342133_bins.9.fa -o SRR4342133_bins.9.fa --output_dir $OUTDIR/2 --override

@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH -A uppmax2022-2-5
+#SBATCH -A uppmax2023-2-8
 #SBATCH -M snowy
 #SBATCH -p core
 #SBATCH -n 2
@@ -15,12 +15,12 @@ module load bioinfo-tools
 module load trimmomatic
 
 # Sequence directories 
-SEQDIR="/home/claudg/genome-project/raw_data"
+SEQDIR="/proj/genomeanalysis2023/nobackup/work/claudg/raw_data"
 OUTDIR="/home/claudg/genome-project/analyses/"
 
 #Trimming sample 1
-#mkdir $OUTDIR/RNA_trimmed
-#java -jar /sw/apps/bioinfo/trimmomatic/0.36/milou/trimmomatic-0.36.jar PE -threads 5 -phred33 -trimlog $OUTDIR/RNA_trimmed/trim_RNA_SRR4342137.log $SEQDIR/RNA_untrimmed/SRR4342137.1.fastq.gz $SEQDIR/RNA_untrimmed/SRR4342137.2.fastq.gz $OUTDIR/RNA_trimmed/SRR4342137.forward_paired.trimmed.fastq.gz $OUTDIR/RNA_trimmed/SRR4342137.forward_unpaired.trimmed.fastq.gz $OUTDIR/RNA_trimmed/SRR4342137.reverse_paired.trimmed.fastq.gz $OUTDIR/RNA_trimmed/SRR4342137.reverse_unpaired.trimmed.fastq.gz ILLUMINACLIP:/sw/apps/bioinfo/trimmomatic/0.36/milou/adapters/TruSeq3-PE.fa:2:30:10:2:keepBothReads LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+mkdir $OUTDIR/RNA_trimmed
+java -jar /sw/apps/bioinfo/trimmomatic/0.36/milou/trimmomatic-0.36.jar PE -threads 5 -phred33 -trimlog $OUTDIR/RNA_trimmed/trim_RNA_SRR4342137.log $SEQDIR/RNA_untrimmed/SRR4342137.1.fastq.gz $SEQDIR/RNA_untrimmed/SRR4342137.2.fastq.gz $OUTDIR/RNA_trimmed/SRR4342137.forward_paired.trimmed.fastq.gz $OUTDIR/RNA_trimmed/SRR4342137.forward_unpaired.trimmed.fastq.gz $OUTDIR/RNA_trimmed/SRR4342137.reverse_paired.trimmed.fastq.gz $OUTDIR/RNA_trimmed/SRR4342137.reverse_unpaired.trimmed.fastq.gz ILLUMINACLIP:/sw/apps/bioinfo/trimmomatic/0.36/milou/adapters/TruSeq3-PE.fa:2:30:10:2:keepBothReads LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
 
 #Trimming sample 2
 java -jar /sw/apps/bioinfo/trimmomatic/0.36/milou/trimmomatic-0.36.jar PE -threads 5 -phred33 -trimlog $OUTDIR/RNA_trimmed/trim_RNA_SRR4342139.log $SEQDIR/RNA_untrimmed/SRR4342139.1.fastq.gz $SEQDIR/RNA_untrimmed/SRR4342139.2.fastq.gz $OUTDIR/RNA_trimmed/SRR4342139.forward_paired.trimmed.fastq.gz $OUTDIR/RNA_trimmed/SRR4342139.forward_unpaired.trimmed.fastq.gz $OUTDIR/RNA_trimmed/SRR4342139.reverse_paired.trimmed.fastq.gz $OUTDIR/RNA_trimmed/SRR4342139.reverse_unpaired.trimmed.fastq.gz ILLUMINACLIP:/sw/apps/bioinfo/trimmomatic/0.36/milou/adapters/TruSeq3-PE.fa:2:30:10:2:keepBothReads LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36

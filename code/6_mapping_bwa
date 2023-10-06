@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH -A uppmax2022-2-5
+#SBATCH -A uppmax2023-2-8
 #SBATCH -M snowy
 #SBATCH -p core
 #SBATCH -n 4
@@ -16,8 +16,8 @@ module load MetaBat
 
 #Load path to input data dir and output dir
 export HOME="/home/claudg/genome-project/analyses"
-INDIR=$HOME/3_DNA_bins_metabat
-export RNA="/home/claudg/genome-project/raw_data/RNA_trimmed"
+INDIR=$HOME/DNA_bins_metabat
+export RNA="/home/claudg/genome-project/analyses/RNA_trimmed"
 mkdir -p $HOME/6_RNA_bwa
 OUTDIR=$HOME/6_RNA_bwa
 

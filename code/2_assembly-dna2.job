@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH -A uppmax2022-2-5
+#SBATCH -A uppmax2023-2-8
 #SBATCH -M snowy
 #SBATCH -p core
 #SBATCH -n 4
@@ -13,9 +13,9 @@
 module load bioinfo-tools megahit
 
 #DATA
-SEQDIR="/home/claudg/genome-project/raw_data/DNA_trimmed"
+SEQDIR="/proj/genomeanalysis2023/Genome_Analysis/3_Thrash_2017/DNA_trimmed/"
 mkdir /home/claudg/genome-project/analyses/DNA_assembled_megahit
-OUTDIR="/home/claudg/genome-project/analyses/DNA_assembled_megahit"
+OUTDIR="/home/claudg/genome-project/analyses"
 
 #Assembly trimmed DNA
 # --kmin-1pass to reduce memory usage in UPPMAX

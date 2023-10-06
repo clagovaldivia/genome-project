@@ -19,17 +19,39 @@ export OUTDIR=$DATA/DNA_annotation_prokka
 
 
 cd $INDIR/1
-for bins in *
-do
-echo $bins
-bin={bin%.*}
-prokka --addgenes --metagenome --cpus 2 --prefix $bin $bins --force --outdir $OUTDIR/1
+	for bins in *
+		do
+		if [ -f "$bins" ]; then
+    		echo "Processing: $bins"
+    
+    		# Remove the file extension from the filename
+    		bin="${bins%.*}"
+		echo $bin
+    
+    # Run Prokka with the corrected variables
+    		prokka --addgenes --metagenome --cpus 2 --prefix "$bin" --force --outdir $OUTDIR/1 $bins
+    
+    		echo "Finished processing: $bins"
+  	else
+    		echo "Skipping non-file: $bins"
+  	fi
 done
 
 cd $INDIR/2
-for bins in *
-do
-echo bins
-bin={bin%.*}
-prokka --addgenes --metagenome --cpus 2 --prefix $bin $bins --force --outdir $OUTDIR/2
+	for bins in *
+		do
+		if [ -f "$bins" ]; then
+    		echo "Processing: $bins"
+    
+    		# Remove the file extension from the filename
+    		bin="${bins%.*}"
+		echo $bin
+    
+    		# Run Prokka with the corrected variables
+    		prokka --addgenes --metagenome --cpus 2 --prefix "$bin" --force --outdir $OUTDIR/2 $bins
+    
+    		echo "Finished processing: $bins"
+  	else
+    		echo "Skipping non-file: $bins"
+  	fi
 done
